@@ -1,0 +1,19 @@
+window.AutomatorCommandPaste_coffeSource = '''
+# 
+
+
+class AutomatorCommandPaste extends AutomatorCommand
+  clipboardText: null
+
+  @replayFunction: (automatorRecorderAndPlayer, commandBeingPlayed) ->
+    console.log "test player inserting text: " + commandBeingPlayed.clipboardText
+    automatorRecorderAndPlayer.worldMorph.processPaste null, commandBeingPlayed.clipboardText
+
+
+  constructor: (@clipboardText, automatorRecorderAndPlayer) ->
+    super(automatorRecorderAndPlayer)
+    # it's important that this is the same name of
+    # the class cause we need to use the static method
+    # replayFunction to replay the command
+    @automatorCommandName = "AutomatorCommandPaste"
+'''

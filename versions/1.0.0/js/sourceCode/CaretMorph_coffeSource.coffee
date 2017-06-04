@@ -249,7 +249,6 @@ class CaretMorph extends BlinkerMorph
     @gotoSlot 0
   
   insert: (symbol, shiftKey) ->
-    debugger
     if symbol is "\\t"
       @target.escalateEvent 'reactToEdit', @target
       if shiftKey

@@ -1439,4 +1439,4 @@ Mousetrap = {
 
 window.Mousetrap = Mousetrap;
 
-morphicVersion = 'version of 2017-06-08 12:44:37';
+morphicVersion = 'version of 2017-06-04 21:50:17';

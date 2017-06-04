@@ -26,8 +26,8 @@ class Point
       return false
 
   debugIfFloats: ->
-    #if !@onlyContainingIntegers()
-    #  debugger
+    if !@onlyContainingIntegers()
+      debugger
   
   # Point string representation: e.g. '12@68'
   toString: ->

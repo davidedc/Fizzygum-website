@@ -52,6 +52,10 @@ class CanvasMorph extends FrameMorph
 
         # copy back the original canvas in the new one.
         @backBufferContext.drawImage original_backBuffer, 0, 0
+        
+        # we leave the context with the correct pixel scaling.
+        # ALWAYS leave the context with the correct pixel scaling.
+        @backBufferContext.scale pixelRatio, pixelRatio
         return [@backBuffer, @backBufferContext]
 
     @backBuffer = newCanvas extent.scaleBy pixelRatio
@@ -61,7 +65,9 @@ class CanvasMorph extends FrameMorph
       @backBufferContext.fillStyle = @color.toString()
       @backBufferContext.fillRect 0, 0, extent.x * pixelRatio, extent.y * pixelRatio
 
-
+    # we leave the context with the correct scaling.
+    # ALWAYS leave the context with the correct pixel scaling.
+    @backBufferContext.scale pixelRatio, pixelRatio
     return [@backBuffer, @backBufferContext]
 
 
@@ -74,10 +80,16 @@ class CanvasMorph extends FrameMorph
     # just in case we get a dirty transformation matrix:
     # set it to the identity.
     @backBufferContext.setTransform(1, 0, 0, 1, 0, 0)
+    # no need to scale here because we get the physical pixels
+    # in backBufferExtent 
     #@backBufferContext.scale pixelRatio, pixelRatio
     
     @backBufferContext.fillStyle = color
     @backBufferContext.fillRect 0, 0, backBufferExtent.x, backBufferExtent.y
+
+    # we leave the context with the correct scaling.
+    # ALWAYS leave the context with the correct pixel scaling.
+    @backBufferContext.scale pixelRatio, pixelRatio
     @changed()
 
   drawLine: (start, dest, lineWidth, color) ->

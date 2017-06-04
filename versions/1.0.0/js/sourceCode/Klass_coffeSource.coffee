@@ -214,11 +214,6 @@ class Klass
 
     window[@name].klass = @
 
-    #window[@name].prototype.toString = ->
-    #  @constructor.name + " class"
-
-
-
   notifyInstancesOfSourceChange: (propertiesArray)->
     for eachInstance in @instances
       eachInstance.sourceChanged()

@@ -288,7 +288,6 @@ class HandMorph extends Morph
     return [relativePos.x, relativePos.y]
 
   processMouseDown: (button, buttons, ctrlKey, shiftKey, altKey, metaKey) ->
-    debugger
     @destroyTemporaries()
     @morphToGrab = null
 
@@ -386,7 +385,6 @@ class HandMorph extends Morph
       else
         fade 'leftMouseButtonIndicator', 1, 0, 500, new Date().getTime()
 
-    debugger
     morph = @topMorphUnderPointer()
 
     alreadyRecordedLeftOrRightClickOnMenuItem = false
@@ -832,7 +830,6 @@ class HandMorph extends Morph
 
       # if a morph is marked for grabbing, just grab it
       if @morphToGrab
-        debugger
         if @morphToGrab.isTemplate
           [skipDragging, displacementDueToGrabDragThreshold] = @checkDraggingTreshold()
           if skipDragging then return

@@ -1,6 +1,7 @@
 window.FridgeMagnetsCanvasMorph_coffeSource = '''
 # FridgeMagnetsCanvasMorph //////////////////////////////////////////////////////////
 # REQUIRES BackBufferMixin
+# REQUIRES numbertimes
 # 
 # 
 # "container"/"contained" scenario going on.
@@ -11,13 +12,24 @@ class FridgeMagnetsCanvasMorph extends CanvasMorph
   namedClasses[@name] = @prototype
 
   primitiveTypes: {}
+  codeCompiler: new CodeCompiler()
 
   createRefreshOrGetBackBuffer: ->
     [@backBuffer, @backBufferContext] = super
+    debugger
     @paintNewFrame()
     return [@backBuffer, @backBufferContext]
 
+  oldGraphicsCode: ->
+
   graphicsCode: ->
+
+  newGraphicsCode: (newCode) ->
+    debugger
+    @oldGraphicsCode = @graphicsCode
+    compilation = @codeCompiler.compileCode newCode
+    if compilation.program?
+      @graphicsCode = compilation.program
 
   constructor: ->
     super
@@ -38,13 +50,15 @@ class FridgeMagnetsCanvasMorph extends CanvasMorph
     @paintNewFrame()
 
   paintNewFrame: ->
+    # we get the context already with the correct pixel scaling
+    # (ALWAYS leave the context with the correct pixel scaling.)
     @clear()
     context = @backBufferContext
-    context.setTransform 1, 0, 0, 1, 0, 0
-    context.scale pixelRatio, pixelRatio
     context.translate @width()/2, @height()/2
-
-    @graphicsCode()
+    try
+      @graphicsCode()
+    catch
+      @graphicsCode = @oldGraphicsCode
 
   pulse: (frequency) ->
 

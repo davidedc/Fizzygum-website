@@ -999,7 +999,7 @@ class AutomatorRecorderAndPlayer
 
       aGoodImageName = (failedImage).imageName.replace("obtained-", "")
       filenameForScript = aGoodImageName.replace(/_image_.*/g, "")
-      renamerScript += "rm " + "../Zombie-Kernel-tests/tests/" + filenameForScript + "/automation-assets/" +
+      renamerScript += "rm " + "../Fizzygum-tests/tests/" + filenameForScript + "/automation-assets/" +
               systemInfo.os.replace(/\\s+/g, "-").replace(/\\.+/g, "_") + "/" +
               systemInfo.osVersion.replace(/\\s+/g, "-").replace(/\\.+/g, "_") + "/" +
               systemInfo.browser.replace(/\\s+/g, "-").replace(/\\.+/g, "_") + "/" +
@@ -1009,13 +1009,13 @@ class AutomatorRecorderAndPlayer
       # someone could get rid of the pixelRatio directories
       # that don't apply to him/her (say, to save space)
       # so make sure you create it if it doesn't exist.
-      renamerScript += "mkdir -p " + "../Zombie-Kernel-tests/tests/" + filenameForScript + "/automation-assets/" +
+      renamerScript += "mkdir -p " + "../Fizzygum-tests/tests/" + filenameForScript + "/automation-assets/" +
               systemInfo.os.replace(/\\s+/g, "-").replace(/\\.+/g, "_") + "/" +
               systemInfo.osVersion.replace(/\\s+/g, "-").replace(/\\.+/g, "_") + "/" +
               systemInfo.browser.replace(/\\s+/g, "-").replace(/\\.+/g, "_") + "/" +
               systemInfo.browserVersion.replace(/\\s+/g, "-").replace(/\\.+/g, "_") + "/" +
               "devicePixelRatio_" + pixelRatioString + "\\n"
-      renamerScript += "cp " + (failedImage).imageName + "-* ../Zombie-Kernel-tests/tests/" + filenameForScript + "/automation-assets/" +
+      renamerScript += "cp " + (failedImage).imageName + "-* ../Fizzygum-tests/tests/" + filenameForScript + "/automation-assets/" +
               systemInfo.os.replace(/\\s+/g, "-").replace(/\\.+/g, "_") + "/" +
               systemInfo.osVersion.replace(/\\s+/g, "-").replace(/\\.+/g, "_") + "/" +
               systemInfo.browser.replace(/\\s+/g, "-").replace(/\\.+/g, "_") + "/" +
@@ -1044,7 +1044,7 @@ class AutomatorRecorderAndPlayer
           , subtractionCanvas.toDataURL().replace(/^data:image\\/png;base64,/, ""), {base64: true})
 
     renamerScript += "# take away all the 'obtained' prefixes in all the files" + "\\n"
-    renamerScript += "find ../Zombie-Kernel-tests/tests/ -name 'obtained-*' -type f -exec bash -c 'mv \\"$1\\" \\"${1/\\\\/obtained-//}\\"' -- {} \\\\;" + "\\n"
+    renamerScript += "find ../Fizzygum-tests/tests/ -name 'obtained-*' -type f -exec bash -c 'mv \\"$1\\" \\"${1/\\\\/obtained-//}\\"' -- {} \\\\;" + "\\n"
 
     zip.file "replace_all_images.sh", renamerScript
 
@@ -1114,6 +1114,8 @@ class AutomatorRecorderAndPlayer
     script = document.createElement('script')
     script.src = "js/tests/"+@testsList()[testNumber] + "_automationCommands.js"
 
+    # todo: you should be able to remove the script once it's loaded/executed...
+    # any implication of that? debugger still working OK finding the source code?
     script.onload = =>
       @loadImagesOfTest testNumber, andThenDoThis
 
@@ -1126,6 +1128,8 @@ class AutomatorRecorderAndPlayer
         pureImageName = eachCommand.screenShotImageName
         for eachAssetInManifest in AutomatorRecorderAndPlayer.testsAssetsManifest
           if eachAssetInManifest.contains pureImageName
+            # todo: you should be able to remove the script once it's loaded/executed...
+            # any implication of that? debugger still working OK finding the source code?
             script = document.createElement('script')
             ###
             systemInfo = new SystemTestsSystemInfo()
@@ -1175,6 +1179,8 @@ class AutomatorRecorderAndPlayer
     script = document.createElement('script')
     script.src = "js/tests/" + AutomatorRecorderAndPlayer.testsManifest[testNumber] + ".js"
 
+    # todo: you should be able to remove the script once it's loaded/executed...
+    # any implication of that? debugger still working OK finding the source code?
     script.onload = =>
       @loadTestMetadata(testNumber+1, andThen)
 

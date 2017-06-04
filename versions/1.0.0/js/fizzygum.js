@@ -655,6 +655,30 @@ extend = function(child, parent) {
   return child;
 };
 
+Number.prototype.timesWithVariable = function(scope, func) {
+  var i, results1, v;
+  v = this.valueOf();
+  i = 0;
+  results1 = [];
+  while (i < v) {
+    func.call(scope || window, i);
+    results1.push(i++);
+  }
+  return results1;
+};
+
+Number.prototype.times = function(scope, func) {
+  var i, results1, v;
+  v = this.valueOf();
+  i = 0;
+  results1 = [];
+  while (i < v) {
+    func.call(scope || window, i);
+    results1.push(i++);
+  }
+  return results1;
+};
+
 
 /*
 Copyright 2013 Craig Campbell
@@ -1415,4 +1439,4 @@ Mousetrap = {
 
 window.Mousetrap = Mousetrap;
 
-morphicVersion = 'version of 2017-05-26 10:05:44';
+morphicVersion = 'version of 2017-06-06 19:10:21';

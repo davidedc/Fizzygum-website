@@ -110,10 +110,13 @@ class InspectorMorph extends BoxMorph
 
     #alert "stat fun " + staticFunctions + " stat attr " + staticAttributes
     attribs = (attribs.concat staticFunctions).concat staticAttributes
+
+    # I expected this sort of filtering based on property names to work
+    # but it doesn't, leaving it here as a curiosity and in case I try this
+    # again...
     #attribs = attribs.filter((prop) => prop.indexOf("_class_injected_in") == -1)
     #attribs = attribs.filter((prop) => prop.indexOf("function ") == -1)
     #attribs = attribs.unique()
-    #alert " all attribs " + attribs
     
     # caches the own methods of the object
     if @markOwnershipOfProperties

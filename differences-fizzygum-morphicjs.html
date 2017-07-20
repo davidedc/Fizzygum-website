@@ -22,8 +22,10 @@
 <li>canvases can now be resized without losing their content</li>
 <li>new string and text morphs, allowing selection from a larger variety of fonts</li>
 <li>morphs always have a shadow when on the desktop</li>
-<li>shadows painting mechanism completely redesigned, it's now vector based, which saves memory and allows for more culling of unnecessary painting. Shadows are not morphs anymore (which seems more suitable since they don't share any of the characteristics of morphs, for example they can't be picked up, targeted, inspected, and in general manipulated on their own), but rather just Morphs' properties affecting the rendering mechanism. Only flat shadows are supported, since blurred shadows would require more expensive bitmap operations (with special blending modes) on complete renders of shadows of whole morph trees.</li>
+<li>shadows painting mechanism completely redesigned, it's now vector based, which saves memory and allows for more culling of unnecessary painting. Also shadows remain correct while the morph is animating.</li>
+<li>Shadows are not morphs anymore (which seems more suitable since they don't share any of the characteristics of morphs, for example they can't be picked up, targeted, inspected, and in general manipulated on their own), but rather just Morphs' properties affecting the rendering mechanism. Only flat shadows are supported, since blurred shadows would require more expensive bitmap operations (with special blending modes) on complete renders of shadows of whole morph trees.</li>
 <li>menus can have submenus, and a (rather complex) logic is applied for how to selectively and automatically close menus/submenus (e.g. when the user clicks outside of them). Menus/submenus can be independently dragged and pinned. Different shadows applied to menus depending on whether they are pinned, dragged, or in "normal" state.</li>
+<li>frames can have borders, which helps in visual clarity (more tricky to implement than it sounds, due to the fact that Frames clip at their bounds)</li>
 </ul>
 <p>For more details, please reference the complete list of 1600+ commits here: <a href="https://github.com/davidedc/Fizzygum-core/commits/master">https://github.com/davidedc/Fizzygum-core/commits/master</a></p>
 

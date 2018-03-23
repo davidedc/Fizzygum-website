@@ -858,4 +858,4 @@ Number.prototype.times = function(scope, func) {
   return results1;
 };
 
-morphicVersion = 'version of 2018-03-23 14:58:42';
+morphicVersion = 'version of 2018-03-23 17:10:13';

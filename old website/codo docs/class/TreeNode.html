@@ -1,0 +1,1361 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset='UTF-8'>
+  <title>CoffeeScript API Documentation</title>
+  <script src='../javascript/application.js'></script>
+  <script src='../javascript/search.js'></script>
+  <link rel='stylesheet' href='../stylesheets/application.css' type='text/css'>
+</head>
+  <body>
+    <div id='base' data-path='../'></div>
+<div id='header'>
+  <div id='menu'>
+    <a href='../alphabetical_index.html' title='Index'>
+      Index
+    </a>
+    &raquo;
+    <span class='title'>TreeNode</span>
+  </div>
+</div>
+    <div id='content'>
+      <h1>
+        Class:
+        TreeNode
+      </h1>
+      <table class='box'>
+        <tr>
+          <td>Defined in:</td>
+          <td>src&#47;basic-data-structures&#47;TreeNode.coffee</td>
+        </tr>
+      </table>
+      <h2>Direct Known Subclasses</h2>
+      <p class='children'>
+        <a href='../class/Widget.html'>Widget</a>
+      </p>
+      <h2>Variables Summary</h2>
+      <dl class='constants'>
+  <dt id='parent-variable'>
+    parent
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>nil</code></pre>
+    
+  </dd>
+  <dt id='children-variable'>
+    children
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>nil</code></pre>
+    <div class='docstring'>
+  <p>&quot;children&quot; is an ordered list of the immediate
+children of this node. First child is at the
+back relative to other children, last child is at the
+top.</p><p>The repaint mechanism in Fizzygum is back-to-front,
+so first the &quot;parent&quot; morph is drawn, then the children,
+where first child is re-painted first.</p><p>The slight exception is the shadow, which, when it exists,
+is the first
+child, but includes the shadow of the parent morph.
+So, the shadow is drawn AFTER the parent morph, but it&#39;s
+drawn with a special blending mode, such that it can be
+painted over and it still looks like it&#39;s at the back.</p><p>This makes intuitive sense if you think for example
+at a textMorph being added to a box morph: it is
+added to the children list of the box morph, at the end,
+and it&#39;s painted on top (otherwise it wouldn&#39;t be visible).</p><p>Note that when you add a morph A to a morph B, it doesn&#39;t
+mean that A is cointained in B. The two potentially might
+not even overlap.</p>
+</div>
+<div class='tags'>
+</div>
+  </dd>
+  <dt id='rootCache-variable'>
+    rootCache
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>nil</code></pre>
+    
+  </dd>
+  <dt id='rootCacheChecker-variable'>
+    rootCacheChecker
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>nil</code></pre>
+    
+  </dd>
+  <dt id='checkFirstParentClippingAtBoundsCache-variable'>
+    checkFirstParentClippingAtBoundsCache
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>nil</code></pre>
+    
+  </dd>
+  <dt id='cachedFirstParentClippingAtBounds-variable'>
+    cachedFirstParentClippingAtBounds
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>nil</code></pre>
+    
+  </dd>
+  <dt id='gcSessionIdMark-variable'>
+    gcSessionIdMark
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>0</code></pre>
+    
+  </dd>
+  <dt id='gcReferenceExaminedSessionIdMark-variable'>
+    gcReferenceExaminedSessionIdMark
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>0</code></pre>
+    
+  </dd>
+</dl>
+      <h2>Instance Method Summary</h2>
+      <ul class='summary'>
+  <li>
+    <span class='signature'>
+      <a href='#toString-dynamic'>
+        #
+(void)
+<b>toString</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+      TreeNode string representation: e.g. 
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#childrenTopToBottom-dynamic'>
+        #
+(void)
+<b>childrenTopToBottom</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+      currently unused in ZK 
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#addChild-dynamic'>
+        #
+(void)
+<b>addChild</b><span>(aMorphicNode, position = nil)</span>
+      </a>
+    </span>
+    <span class='desc'>
+      TreeNode accessing: 
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#addChildFirst-dynamic'>
+        #
+(void)
+<b>addChildFirst</b><span>(aMorphicNode)</span>
+      </a>
+    </span>
+    <span class='desc'>
+      currently used to add the shadow. 
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#moveAsLastChild-dynamic'>
+        #
+(void)
+<b>moveAsLastChild</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+      used from bringToForeground method for example when you
+click morphs around...
+
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#removeChild-dynamic'>
+        #
+(void)
+<b>removeChild</b><span>(aMorphicNode)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#markReferenceAsVisited-dynamic'>
+        #
+(void)
+<b>markReferenceAsVisited</b><span>(newGcSessionId)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#wasReferenceVisited-dynamic'>
+        #
+(void)
+<b>wasReferenceVisited</b><span>(newGcSessionId)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#markItAndItsParentsAsReachable-dynamic'>
+        #
+(void)
+<b>markItAndItsParentsAsReachable</b><span>(newGcSessionId)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#isOrphan-dynamic'>
+        #
+(void)
+<b>isOrphan</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+      is this Widget attached to neither the world nor to the hand?
+
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#isDirectlyInBasement-dynamic'>
+        #
+(void)
+<b>isDirectlyInBasement</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+      check if the widget is on its own in the basement (rather than being part of a widget that is in the
+basement)
+
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#isInBasement-dynamic'>
+        #
+(void)
+<b>isInBasement</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+      check if it&#39;s in the basement on its own or as part of another widget.
+
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#isInBasementButReachable-dynamic'>
+        #
+(void)
+<b>isInBasementButReachable</b><span>(newGcSessionId)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#SLOWroot-dynamic'>
+        #
+(void)
+<b>SLOWroot</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+      TreeNode functions: 
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#root-dynamic'>
+        #
+(void)
+<b>root</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+      TreeNode functions: 
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#pathOfChildrenPositionsRelativeToWorld-dynamic'>
+        #
+(void)
+<b>pathOfChildrenPositionsRelativeToWorld</b><span>(pathSoFar)</span>
+      </a>
+    </span>
+    <span class='desc'>
+      returns the path of this morph in terms of children positions relative to the world.
+
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#depth-dynamic'>
+        #
+(void)
+<b>depth</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+      currently unused 
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#allChildrenBottomToTop-dynamic'>
+        #
+(void)
+<b>allChildrenBottomToTop</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#allChildrenTopToBottom-dynamic'>
+        #
+(void)
+<b>allChildrenTopToBottom</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#allChildrenTopToBottomSuchThat-dynamic'>
+        #
+(void)
+<b>allChildrenTopToBottomSuchThat</b><span>(predicate)</span>
+      </a>
+    </span>
+    <span class='desc'>
+      the easiest way here would be to just return arrayShallowCopyAndReverse(@allChildrenBottomToTop()) but that&#39;s slower.
+
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#forAllChildrenBottomToTop-dynamic'>
+        #
+(void)
+<b>forAllChildrenBottomToTop</b><span>(aFunction)</span>
+      </a>
+    </span>
+    <span class='desc'>
+      A shorthand to run a function on all the internal/terminal nodes in the subtree starting at this node - including this node.
+
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#allLeafsBottomToTop-dynamic'>
+        #
+(void)
+<b>allLeafsBottomToTop</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+      not used in ZK so far 
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#allParentsBottomToTop-dynamic'>
+        #
+(void)
+<b>allParentsBottomToTop</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+      Return all &quot;parent&quot; nodes from the root down to this node (including both) 
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#allParentsTopToBottom-dynamic'>
+        #
+(void)
+<b>allParentsTopToBottom</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+      Return all &quot;parent&quot; nodes from this note up to the root (including both) 
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#allParentsBottomToTopSuchThat-dynamic'>
+        #
+(void)
+<b>allParentsBottomToTopSuchThat</b><span>(predicate)</span>
+      </a>
+    </span>
+    <span class='desc'>
+      this should be quicker than allParentsTopToBottomSuchThat cause there are no concats making shallow copies.
+
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#allParentsTopToBottomSuchThat-dynamic'>
+        #
+(void)
+<b>allParentsTopToBottomSuchThat</b><span>(predicate)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#isAncestorOf-dynamic'>
+        #
+(void)
+<b>isAncestorOf</b><span>(morph)</span>
+      </a>
+    </span>
+    <span class='desc'>
+      quicker version that doesn&#39;t need us to create any intermediate arrays
+but rather just loops up the chain
+and lets us return as soon as
+we find a match
+
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#siblings-dynamic'>
+        #
+(void)
+<b>siblings</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+      The direct children of the parent of this node. 
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#firstSiblingsSuchThat-dynamic'>
+        #
+(void)
+<b>firstSiblingsSuchThat</b><span>(predicate)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#amITheFirstSibling-dynamic'>
+        #
+(void)
+<b>amITheFirstSibling</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#amITheLastSibling-dynamic'>
+        #
+(void)
+<b>amITheLastSibling</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#positionAmongSiblings-dynamic'>
+        #
+(void)
+<b>positionAmongSiblings</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#siblingBeforeMeIsA-dynamic'>
+        #
+(void)
+<b>siblingBeforeMeIsA</b><span>(theConstructor)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#siblingAfterMeIsA-dynamic'>
+        #
+(void)
+<b>siblingAfterMeIsA</b><span>(theConstructor)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#howManySiblingsBeforeMeSuchThat-dynamic'>
+        #
+(void)
+<b>howManySiblingsBeforeMeSuchThat</b><span>(predicate)</span>
+      </a>
+    </span>
+    <span class='desc'>
+      find how many siblings before me satisfy a property
+This is used when figuring out
+how many buttons before a particular button
+are labeled in the same way,
+in the test system.
+
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#lastSiblingBeforeMeSuchThat-dynamic'>
+        #
+(void)
+<b>lastSiblingBeforeMeSuchThat</b><span>(predicate)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#firstSiblingAfterMeSuchThat-dynamic'>
+        #
+(void)
+<b>firstSiblingAfterMeSuchThat</b><span>(predicate)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#nthChildSuchThat-dynamic'>
+        #
+(void)
+<b>nthChildSuchThat</b><span>(n, predicate)</span>
+      </a>
+    </span>
+    <span class='desc'>
+      find the nth child satisfying a property.
+
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#firstChildSuchThat-dynamic'>
+        #
+(void)
+<b>firstChildSuchThat</b><span>(predicate)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#SLOWfirstParentClippingAtBounds-dynamic'>
+        #
+(void)
+<b>SLOWfirstParentClippingAtBounds</b><span>(morphToStartFrom = @undefined)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#firstParentClippingAtBounds-dynamic'>
+        #
+(void)
+<b>firstParentClippingAtBounds</b><span>(morphToStartFrom = @undefined)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#parentThatIsA-dynamic'>
+        #
+(void)
+<b>parentThatIsA</b><span>(constructors...)</span>
+      </a>
+    </span>
+    <span class='desc'>
+      returns the first parent (going up from this node) that is of a particular class (includes this particular node)
+This is a subcase of &quot;parentThatIsAnyOf&quot;.
+
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#isADescendantOf-dynamic'>
+        #
+(void)
+<b>isADescendantOf</b><span>(theSupposedAncestorMorph)</span>
+      </a>
+    </span>
+    <span class='desc'>
+      checks whether the morph is a child, directly or indirectly, of a specified
+supposed ancestor morph
+this is currently unused
+
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#topMorphSuchThat-dynamic'>
+        #
+(void)
+<b>topMorphSuchThat</b><span>(predicate)</span>
+      </a>
+    </span>
+    <span class='desc'>
+      There would be another, simpler, implementation which is also slower, where you first collect all
+the children from top to bottom and then do the
+test on each.
+
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#topmostChildSuchThat-dynamic'>
+        #
+(void)
+<b>topmostChildSuchThat</b><span>(predicate)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#collectAllChildrenBottomToTopSuchThat-dynamic'>
+        #
+(void)
+<b>collectAllChildrenBottomToTopSuchThat</b><span>(predicate)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+</ul>
+      <h2>Constructor Details</h2>
+      <div class='methods'>
+  <div class='method_details'>
+    <p class='signature' id='constructor-dynamic'>
+      #
+(void)
+<b>constructor</b><span>(parent = nil, children = [])</span>
+      <br>
+    </p>
+    
+  </div>
+</div>
+      <h2>Instance Method Details</h2>
+      <div class='methods'>
+  <div class='method_details'>
+    <p class='signature' id='toString-dynamic'>
+      #
+(void)
+<b>toString</b><span>()</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>TreeNode string representation: e.g. &#39;a TreeNode[3]&#39;</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='childrenTopToBottom-dynamic'>
+      #
+(void)
+<b>childrenTopToBottom</b><span>()</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>currently unused in ZK</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='addChild-dynamic'>
+      #
+(void)
+<b>addChild</b><span>(aMorphicNode, position = nil)</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>TreeNode accessing:</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='addChildFirst-dynamic'>
+      #
+(void)
+<b>addChildFirst</b><span>(aMorphicNode)</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>currently used to add the shadow. The shadow
+is in the background in respect to everything
+else, BUT it&#39;s drawn as the first child
+(i.e. AFTER the morph itself, but the shadow has a hole
+or semi-transparency for it!)</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='moveAsLastChild-dynamic'>
+      #
+(void)
+<b>moveAsLastChild</b><span>()</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>used from bringToForeground method
+for example when you
+click morphs around... they
+pop to the foreground</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='removeChild-dynamic'>
+      #
+(void)
+<b>removeChild</b><span>(aMorphicNode)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='markReferenceAsVisited-dynamic'>
+      #
+(void)
+<b>markReferenceAsVisited</b><span>(newGcSessionId)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='wasReferenceVisited-dynamic'>
+      #
+(void)
+<b>wasReferenceVisited</b><span>(newGcSessionId)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='markItAndItsParentsAsReachable-dynamic'>
+      #
+(void)
+<b>markItAndItsParentsAsReachable</b><span>(newGcSessionId)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='isOrphan-dynamic'>
+      #
+(void)
+<b>isOrphan</b><span>()</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>is this Widget attached to neither the world nor to
+the hand?</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='isDirectlyInBasement-dynamic'>
+      #
+(void)
+<b>isDirectlyInBasement</b><span>()</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>check if the widget is on its own in the basement
+(rather than being part of a widget that is in the
+basement)</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='isInBasement-dynamic'>
+      #
+(void)
+<b>isInBasement</b><span>()</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>check if it&#39;s in the basement on its own or
+as part of another widget.</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='isInBasementButReachable-dynamic'>
+      #
+(void)
+<b>isInBasementButReachable</b><span>(newGcSessionId)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='SLOWroot-dynamic'>
+      #
+(void)
+<b>SLOWroot</b><span>()</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>TreeNode functions:</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='root-dynamic'>
+      #
+(void)
+<b>root</b><span>()</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>TreeNode functions:</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='pathOfChildrenPositionsRelativeToWorld-dynamic'>
+      #
+(void)
+<b>pathOfChildrenPositionsRelativeToWorld</b><span>(pathSoFar)</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>returns the path of this morph in terms
+of children positions relative to the world.
+Meaning that if the morph is not attached to the
+world or if it&#39;s attached to the hand, then
+nil is returned.
+Example: [0, 2, 1] means that this morph is
+at
+ world.children[0].children[2].children[1]</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='depth-dynamic'>
+      #
+(void)
+<b>depth</b><span>()</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>currently unused</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='allChildrenBottomToTop-dynamic'>
+      #
+(void)
+<b>allChildrenBottomToTop</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='allChildrenTopToBottom-dynamic'>
+      #
+(void)
+<b>allChildrenTopToBottom</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='allChildrenTopToBottomSuchThat-dynamic'>
+      #
+(void)
+<b>allChildrenTopToBottomSuchThat</b><span>(predicate)</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>the easiest way here would be to just return arrayShallowCopyAndReverse(@allChildrenBottomToTop())
+but that&#39;s slower.
+So we do the proper visit here instead.</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='forAllChildrenBottomToTop-dynamic'>
+      #
+(void)
+<b>forAllChildrenBottomToTop</b><span>(aFunction)</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>A shorthand to run a function on all the internal/terminal nodes in the subtree
+starting at this node - including this node.
+Note that the function first runs on this node
+(which is, when painted, the very bottom-est morph of them all)
+and the proceeds by visiting the first child
+which is the most &quot;bottom&quot; of the children
+(i.e. when painted, the first child in the &quot;children&quot; array
+and its children are painted just above the parent node)
+and then recursively depht-first all its children
+and then the second - bottomest child and children etc.
+Also note that there is a more elegant implementation where
+we just use @allChildrenBottomToTop() but that would mean to create
+all the intermediary arrays with also all the unneeded node elements,
+there is no need for that.
+This is the simplest and cheapest way to visit all Widgets in
+a tree of morphs.</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='allLeafsBottomToTop-dynamic'>
+      #
+(void)
+<b>allLeafsBottomToTop</b><span>()</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>not used in ZK so far</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='allParentsBottomToTop-dynamic'>
+      #
+(void)
+<b>allParentsBottomToTop</b><span>()</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>Return all &quot;parent&quot; nodes from the root down to this node (including both)</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='allParentsTopToBottom-dynamic'>
+      #
+(void)
+<b>allParentsTopToBottom</b><span>()</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>Return all &quot;parent&quot; nodes from this note up to the root (including both)</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='allParentsBottomToTopSuchThat-dynamic'>
+      #
+(void)
+<b>allParentsBottomToTopSuchThat</b><span>(predicate)</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>this should be quicker than allParentsTopToBottomSuchThat
+cause there are no concats making shallow copies.</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='allParentsTopToBottomSuchThat-dynamic'>
+      #
+(void)
+<b>allParentsTopToBottomSuchThat</b><span>(predicate)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='isAncestorOf-dynamic'>
+      #
+(void)
+<b>isAncestorOf</b><span>(morph)</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>quicker version that doesn&#39;t need us
+to create any intermediate arrays
+but rather just loops up the chain
+and lets us return as soon as
+we find a match</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='siblings-dynamic'>
+      #
+(void)
+<b>siblings</b><span>()</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>The direct children of the parent of this node. (current node not included)
+never used in ZK
+There is an alternative solution here below, in comment,
+but I believe to be slower because it requires applying a function to
+all the children. My version below just required an array copy, then
+finding an element and splicing it out. I didn&#39;t test it so I don&#39;t
+even know whether it works, but gut feeling...
+ siblings: -&gt;
+   return []  unless @parent
+   @parent.children.filter (child) =&gt;
+     child isnt @</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='firstSiblingsSuchThat-dynamic'>
+      #
+(void)
+<b>firstSiblingsSuchThat</b><span>(predicate)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='amITheFirstSibling-dynamic'>
+      #
+(void)
+<b>amITheFirstSibling</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='amITheLastSibling-dynamic'>
+      #
+(void)
+<b>amITheLastSibling</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='positionAmongSiblings-dynamic'>
+      #
+(void)
+<b>positionAmongSiblings</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='siblingBeforeMeIsA-dynamic'>
+      #
+(void)
+<b>siblingBeforeMeIsA</b><span>(theConstructor)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='siblingAfterMeIsA-dynamic'>
+      #
+(void)
+<b>siblingAfterMeIsA</b><span>(theConstructor)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='howManySiblingsBeforeMeSuchThat-dynamic'>
+      #
+(void)
+<b>howManySiblingsBeforeMeSuchThat</b><span>(predicate)</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>find how many siblings before me
+satisfy a property
+This is used when figuring out
+how many buttons before a particular button
+are labeled in the same way,
+in the test system.
+(so that we can say: automatically
+click on the nth button labelled &quot;X&quot;)</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='lastSiblingBeforeMeSuchThat-dynamic'>
+      #
+(void)
+<b>lastSiblingBeforeMeSuchThat</b><span>(predicate)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='firstSiblingAfterMeSuchThat-dynamic'>
+      #
+(void)
+<b>firstSiblingAfterMeSuchThat</b><span>(predicate)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='nthChildSuchThat-dynamic'>
+      #
+(void)
+<b>nthChildSuchThat</b><span>(n, predicate)</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>find the nth child satisfying
+a property.
+This is used when finding
+the nth buttons of a menu
+having a particular label.
+(so that we can say: automatically
+click on the nth button labelled &quot;X&quot;)</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='firstChildSuchThat-dynamic'>
+      #
+(void)
+<b>firstChildSuchThat</b><span>(predicate)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='SLOWfirstParentClippingAtBounds-dynamic'>
+      #
+(void)
+<b>SLOWfirstParentClippingAtBounds</b><span>(morphToStartFrom = @undefined)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='firstParentClippingAtBounds-dynamic'>
+      #
+(void)
+<b>firstParentClippingAtBounds</b><span>(morphToStartFrom = @undefined)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='parentThatIsA-dynamic'>
+      #
+(void)
+<b>parentThatIsA</b><span>(constructors...)</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>returns the first parent (going up from this node) that is of a particular class
+(includes this particular node)
+This is a subcase of &quot;parentThatIsAnyOf&quot;.</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='isADescendantOf-dynamic'>
+      #
+(void)
+<b>isADescendantOf</b><span>(theSupposedAncestorMorph)</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>checks whether the morph is a child,
+directly or indirectly, of a specified
+supposed ancestor morph
+this is currently unused</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='topMorphSuchThat-dynamic'>
+      #
+(void)
+<b>topMorphSuchThat</b><span>(predicate)</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>There would be another, simpler, implementation
+which is also slower, where you first collect all
+the children from top to bottom and then do the
+test on each. But this is more efficient - we don&#39;t
+need to create that entire list to start with, we
+just navigate through the children arrays depth-first
+(in reverse order though, see below)
+and stop at the first morph that satisfies the test.</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='topmostChildSuchThat-dynamic'>
+      #
+(void)
+<b>topmostChildSuchThat</b><span>(predicate)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='collectAllChildrenBottomToTopSuchThat-dynamic'>
+      #
+(void)
+<b>collectAllChildrenBottomToTopSuchThat</b><span>(predicate)</span>
+      <br>
+    </p>
+    
+  </div>
+</div>
+    </div>
+    <div id='footer'>
+  By
+  <a href='https://github.com/coffeedoc/codo' title='CoffeeScript API documentation generator'>
+    Codo
+  </a>
+  2.1.2
+  &#10034;
+  Press H to see the keyboard shortcuts
+  &#10034;
+  <a href='http://twitter.com/netzpirat' target='_parent'>@netzpirat</a>
+  &#10034;
+  <a href='http://twitter.com/_inossidabile' target='_parent'>@_inossidabile</a>
+</div>
+<iframe id='search_frame'></iframe>
+<div id='fuzzySearch'>
+  <input type='text'>
+  <ol></ol>
+</div>
+<div id='help'>
+  <p>
+    Quickly fuzzy find classes, mixins, methods, file:
+  </p>
+  <ul>
+    <li>
+      <span>T</span>
+      Open fuzzy finder dialog
+    </li>
+  </ul>
+  <p>
+    Control the navigation frame:
+  </p>
+  <ul>
+    <li>
+      <span>L</span>
+      Toggle list view
+    </li>
+    <li>
+      <span>C</span>
+      Show class list
+    </li>
+    <li>
+      <span>I</span>
+      Show mixin list
+    </li>
+    <li>
+      <span>F</span>
+      Show file list
+    </li>
+    <li>
+      <span>M</span>
+      Show method list
+    </li>
+    <li>
+      <span>E</span>
+      Show extras list
+    </li>
+  </ul>
+  <p>
+    You can focus and blur the search input:
+  </p>
+  <ul>
+    <li>
+      <span>S</span>
+      Focus search input
+    </li>
+    <li>
+      <span>Esc</span>
+      Blur search input
+    </li>
+  </ul>
+</div>
+  </body>
+</html>

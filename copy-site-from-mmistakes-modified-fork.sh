@@ -1,3 +1,4 @@
+cp -r ../Fizzygum.org-website/minimal-mistakes/favicon.ico .
 cp -r ../Fizzygum.org-website/minimal-mistakes/staticman.yml .
 cp -r ../Fizzygum.org-website/minimal-mistakes/Rakefile .
 cp -r ../Fizzygum.org-website/minimal-mistakes/package.json .

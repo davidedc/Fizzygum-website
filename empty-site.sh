@@ -1,3 +1,4 @@
+rm -rf favicon.icon
 rm -rf staticman.yml
 rm -rf Rakefile
 rm -rf package.json

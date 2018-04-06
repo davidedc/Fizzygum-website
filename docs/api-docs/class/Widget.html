@@ -1,0 +1,8195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset='UTF-8'>
+  <title>CoffeeScript API Documentation</title>
+  <script src='../javascript/application.js'></script>
+  <script src='../javascript/search.js'></script>
+  <link rel='stylesheet' href='../stylesheets/application.css' type='text/css'>
+</head>
+  <body>
+    <div id='base' data-path='../'></div>
+<div id='header'>
+  <div id='menu'>
+    <a href='../alphabetical_index.html' title='Index'>
+      Index
+    </a>
+    &raquo;
+    <span class='title'>Widget</span>
+  </div>
+</div>
+    <div id='content'>
+      <h1>
+        Class:
+        Widget
+      </h1>
+      <table class='box'>
+        <tr>
+          <td>Defined in:</td>
+          <td>src&#47;basic-widgets&#47;Widget.coffee</td>
+        </tr>
+        <tr>
+          <td>Inherits:</td>
+          <td>
+            <a href='../class/TreeNode.html'>TreeNode</a>
+          </td>
+        </tr>
+      </table>
+      <h2>Direct Known Subclasses</h2>
+      <p class='children'>
+        <a href='../class/BouncerWdgt.html'>BouncerWdgt</a>
+        <a href='../class/CodePromptMorph.html'>CodePromptMorph</a>
+        <a href='../class/ColorPaletteMorph.html'>ColorPaletteMorph</a>
+        <a href='../class/ColorPickerMorph.html'>ColorPickerMorph</a>
+        <a href='../class/EmptyButtonMorph.html'>EmptyButtonMorph</a>
+        <a href='../class/ErrorsLogViewerMorph.html'>ErrorsLogViewerMorph</a>
+        <a href='../class/GlassBoxTopWdgt.html'>GlassBoxTopWdgt</a>
+        <a href='../class/HandMorph.html'>HandMorph</a>
+        <a href='../class/HandleMorph.html'>HandleMorph</a>
+        <a href='../class/IconMorph.html'>IconMorph</a>
+        <a href='../class/LayoutElementAdderOrDropletMorph.html'>LayoutElementAdderOrDropletMorph</a>
+        <a href='../class/LayoutSpacerMorph.html'>LayoutSpacerMorph</a>
+        <a href='../class/ModifiedTextTriangleAnnotationWdgt.html'>ModifiedTextTriangleAnnotationWdgt</a>
+        <a href='../class/PenMorph.html'>PenMorph</a>
+        <a href='../class/PopUpWdgt.html'>PopUpWdgt</a>
+        <a href='../class/RadioButtonsHolderMorph.html'>RadioButtonsHolderMorph</a>
+        <a href='../class/ScriptWdgt.html'>ScriptWdgt</a>
+        <a href='../class/SimpleDropletWdgt.html'>SimpleDropletWdgt</a>
+        <a href='../class/SimpleLinkWdgt.html'>SimpleLinkWdgt</a>
+        <a href='../class/SimpleVerticalStackPanelWdgt.html'>SimpleVerticalStackPanelWdgt</a>
+        <a href='../class/SpeechBubbleWdgt.html'>SpeechBubbleWdgt</a>
+        <a href='../class/StackElementsSizeAdjustingMorph.html'>StackElementsSizeAdjustingMorph</a>
+        <a href='../class/StretchableEditableWdgt.html'>StretchableEditableWdgt</a>
+        <a href='../class/SwitchButtonMorph.html'>SwitchButtonMorph</a>
+        <a href='../class/ToolTipWdgt.html'>ToolTipWdgt</a>
+        <a href='../class/UpperRightTriangle.html'>UpperRightTriangle</a>
+        <a href='../class/AnalogClockWdgt.html'>AnalogClockWdgt</a>
+        <a href='../class/SimpleDocumentWdgt.html'>SimpleDocumentWdgt</a>
+        <a href='../class/BlinkerMorph.html'>BlinkerMorph</a>
+        <a href='../class/BoxMorph.html'>BoxMorph</a>
+        <a href='../class/CircleBoxMorph.html'>CircleBoxMorph</a>
+        <a href='../class/PanelWdgt.html'>PanelWdgt</a>
+        <a href='../class/RectangleMorph.html'>RectangleMorph</a>
+        <a href='../class/StringMorph.html'>StringMorph</a>
+        <a href='../class/StringMorph2.html'>StringMorph2</a>
+        <a href='../class/StringMorph3.html'>StringMorph3</a>
+        <a href='../class/TriggerMorph.html'>TriggerMorph</a>
+        <a href='../class/AlignCenterButtonWdgt.html'>AlignCenterButtonWdgt</a>
+        <a href='../class/AlignLeftButtonWdgt.html'>AlignLeftButtonWdgt</a>
+        <a href='../class/AlignRightButtonWdgt.html'>AlignRightButtonWdgt</a>
+        <a href='../class/BoldButtonWdgt.html'>BoldButtonWdgt</a>
+        <a href='../class/CreatorButtonWdgt.html'>CreatorButtonWdgt</a>
+        <a href='../class/ItalicButtonWdgt.html'>ItalicButtonWdgt</a>
+        <a href='../class/FridgeMagnetsMorph.html'>FridgeMagnetsMorph</a>
+        <a href='../class/AxisWdgt.html'>AxisWdgt</a>
+        <a href='../class/Example3DPlotWdgt.html'>Example3DPlotWdgt</a>
+        <a href='../class/GraphsPlotsChartsWdgt.html'>GraphsPlotsChartsWdgt</a>
+        <a href='../class/PlotWithAxesWdgt.html'>PlotWithAxesWdgt</a>
+        <a href='../class/ConsoleWdgt.html'>ConsoleWdgt</a>
+        <a href='../class/InspectorMorph2.html'>InspectorMorph2</a>
+        <a href='../class/CalculatingPatchNodeWdgt.html'>CalculatingPatchNodeWdgt</a>
+        <a href='../class/DiffingPatchNodeWdgt.html'>DiffingPatchNodeWdgt</a>
+        <a href='../class/FanoutPinWdgt.html'>FanoutPinWdgt</a>
+        <a href='../class/RegexSubstitutionPatchNodeWdgt.html'>RegexSubstitutionPatchNodeWdgt</a>
+      </p>
+      <h2>Variables Summary</h2>
+      <dl class='constants'>
+  <dt id='instancesCounter-variable'>
+    instancesCounter
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>0</code></pre>
+    
+  </dd>
+  <dt id='lastBuiltInstanceNumericID-variable'>
+    lastBuiltInstanceNumericID
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>0</code></pre>
+    
+  </dd>
+  <dt id='instanceNumericID-variable'>
+    instanceNumericID
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>0</code></pre>
+    
+  </dd>
+  <dt id='appearance-variable'>
+    appearance
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>nil</code></pre>
+    
+  </dd>
+  <dt id='dragsDropsAndEditingEnabled-variable'>
+    dragsDropsAndEditingEnabled
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>true</code></pre>
+    
+  </dd>
+  <dt id='propertyUpTheChain-variable'>
+    propertyUpTheChain
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[1, 2, 3]</code></pre>
+    <div class='docstring'>
+  <p>Just some tests here ////////////////////</p>
+</div>
+<div class='tags'>
+</div>
+  </dd>
+  <dt id='isMorph-variable'>
+    isMorph
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>true</code></pre>
+    
+  </dd>
+  <dt id='bounds-variable'>
+    bounds
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>nil</code></pre>
+    <div class='docstring'>
+  <p>we conveniently keep all geometry information
+into a single property (a Rectangle). Only
+a few geometry-related methods should directly
+access this property.</p>
+</div>
+<div class='tags'>
+</div>
+  </dd>
+  <dt id='minimumExtent-variable'>
+    minimumExtent
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>nil</code></pre>
+    
+  </dd>
+  <dt id='strokeColor-variable'>
+    strokeColor
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>nil</code></pre>
+    
+  </dd>
+  <dt id='texture-variable'>
+    texture
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>nil</code></pre>
+    
+  </dd>
+  <dt id='cachedTexture-variable'>
+    cachedTexture
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>nil</code></pre>
+    
+  </dd>
+  <dt id='lastTime-variable'>
+    lastTime
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>nil</code></pre>
+    
+  </dd>
+  <dt id='desiredExtent-variable'>
+    desiredExtent
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>nil</code></pre>
+    <div class='docstring'>
+  <p>when you use the high-level geometry-change APIs
+you don&#39;t actually change the geometry right away,
+you just ask for the desired change and wait for the
+layouting mechanism to do its best to satisfy it.
+Here we store the desired extent and position.</p>
+</div>
+<div class='tags'>
+</div>
+  </dd>
+  <dt id='desiredPosition-variable'>
+    desiredPosition
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>nil</code></pre>
+    
+  </dd>
+  <dt id='alpha-variable'>
+    alpha
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>1</code></pre>
+    <div class='docstring'>
+  <p>1: fully opaque, 0: fully transparent</p>
+</div>
+<div class='tags'>
+</div>
+  </dd>
+  <dt id='paddingTop-variable'>
+    paddingTop
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>0</code></pre>
+    <div class='docstring'>
+  <p>the padding area of a morph is INSIDE a morph and
+responds to mouse events.
+The padding area should be empty, not drawn, except
+for debugging or &quot;interim painting&quot; purposes such
+as highlights.
+The padding&#39;s purpose is to give the option to morphs
+to accommodate for spacing between their contents and
+their bounds, so to enable consecutive morphs to
+have some spacing in between them.
+Note that paddings of consecutive morphs do add up.
+The padding area reacts to mouse events ONLY IF
+it&#39;s filled with color. Otherwise, it doesn&#39;t.
+This is consistent with the concept that Widgets only
+react within their &quot;filled&quot; region.</p>
+</div>
+<div class='tags'>
+</div>
+  </dd>
+  <dt id='paddingBottom-variable'>
+    paddingBottom
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>0</code></pre>
+    
+  </dd>
+  <dt id='paddingLeft-variable'>
+    paddingLeft
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>0</code></pre>
+    
+  </dd>
+  <dt id='paddingRight-variable'>
+    paddingRight
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>0</code></pre>
+    
+  </dd>
+  <dt id='backgroundColor-variable'>
+    backgroundColor
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>nil</code></pre>
+    <div class='docstring'>
+  <p>backgroundColor and backgroundTransparency fill the
+entire rectangular bounds of the morph.
+I.e. they area they fill is not affected by the
+padding or the actual design of the morph.</p>
+</div>
+<div class='tags'>
+</div>
+  </dd>
+  <dt id='backgroundTransparency-variable'>
+    backgroundTransparency
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>1</code></pre>
+    
+  </dd>
+  <dt id='isVisible-variable'>
+    isVisible
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>true</code></pre>
+    <div class='docstring'>
+  <p>for a Widget, being visible and collapsed
+are two separate things.
+isVisible means that the morph is meant to show
+ as empty or without any surface. BUT the morph
+ will still take the usual space.
+Collapsed means that the morph, whatever its
+ content or appearance or design, is not drawn
+ on the desktop AND it doesn&#39;t occupy any space.</p>
+</div>
+<div class='tags'>
+</div>
+  </dd>
+  <dt id='collapsed-variable'>
+    collapsed
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>false</code></pre>
+    
+  </dd>
+  <dt id='isTemplate-variable'>
+    isTemplate
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>false</code></pre>
+    <div class='docstring'>
+  <p>if a morph is a &quot;template&quot; it means that
+when you floatDrag it, it creates a copy of itself.
+it&#39;s a nice shortcut instead of doing
+right click and then &quot;duplicate...&quot;</p>
+</div>
+<div class='tags'>
+</div>
+  </dd>
+  <dt id='_acceptsDrops-variable'>
+    _acceptsDrops
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>false</code></pre>
+    
+  </dd>
+  <dt id='noticesTransparentClick-variable'>
+    noticesTransparentClick
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>false</code></pre>
+    
+  </dd>
+  <dt id='fps-variable'>
+    fps
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>0</code></pre>
+    
+  </dd>
+  <dt id='isLockingToPanels-variable'>
+    isLockingToPanels
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>false</code></pre>
+    <div class='docstring'>
+  <p>usually Widgets can be detached from Panels
+by grabbing them (there are exceptions, for example
+buttons don&#39;t stick to the world but stick to Panels,
+morph that &quot;select&quot; based on dragging such as the ColorPanelMorph).
+However you can get them to stick to Panels (and the desktop)
+by toggling this flag</p>
+</div>
+<div class='tags'>
+</div>
+  </dd>
+  <dt id='defaultRejectDrags-variable'>
+    defaultRejectDrags
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>false</code></pre>
+    <div class='docstring'>
+  <p>even if a Widget is locked to its parent (which is
+the default) or locks to Panels (because isLockingToPanels is
+set to true), it could be STILL BE dragged
+(if any of its parents is loose).</p><p>Setting this flag prevents that: a Widget rejecting
+a drag can never be part of a chain that is dragged.
+An example is buttons that are part of a compund Widget
+(such as the Inspector):
+in those cases you can never drag the compound Widget by
+dragging a button (because it is a common behaviour to
+&quot;drag away&quot; from a button to avoid actioning it when one
+mousedowns on it). (Note however that buttont on the desktop
+are draggable).
+Another example are morphs like the ColorPanelMorph where
+users can drag the mouse on them to pick a color: it would be
+weird if that caused a drag of anything.</p>
+</div>
+<div class='tags'>
+</div>
+  </dd>
+  <dt id='overridingContextMenu-variable'>
+    overridingContextMenu
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>nil</code></pre>
+    <div class='docstring'>
+  <p>if you place a menu construction function here,
+it gets the priority over the normal context
+menu. This is done for example in the Inspector
+panes, where the context menu is about running the
+code contained in the text panel, rather than
+to fiddle with the properties of the text panel
+itself.</p>
+</div>
+<div class='tags'>
+</div>
+  </dd>
+  <dt id='takesOverAndCoalescesChildrensMenus-variable'>
+    takesOverAndCoalescesChildrensMenus
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>false</code></pre>
+    <div class='docstring'>
+  <p>menu coalescing is useful when you want a &quot;parent&quot;
+menu to take over the menus of their children.
+This assumes that for certain morphs is OK to just exist
+&quot;in their whole&quot; without letting the user obviously take it
+apart or mess with its parts.</p><p>The best example is scrollable text: when one right-clicks
+on scrollable text, the menu OF THE SCROLLFRAME that
+contains it takes over.</p><p>Otherwise, without coalescing, there would FIRST be a
+multiple-selection menu to spacially demultiplex which
+morph is the one of interest
+(the TextMorph, or the Panel, or the ScrollPanelWdgt?). And
+if the user wanted to resize the scroll text, which Widget
+would the user have to pick? It would be very confusing.</p><p>Instead, in this example above, one can naturally
+resize the ScrollPanel, or change its color, or delete it,
+instead of operating on the text content.</p><p>Note that, on the other side, for this to work the menu of
+the ScrollPanelWdgt has to give menu entries &quot;peeking&quot; them
+from the TextMorph it contains, e.g. to change the font size</p><p>Note that this mechanism could be overridden for &quot;advanced&quot;
+users who want to mangle with the sub-components of a scrollable
+text</p>
+</div>
+<div class='tags'>
+</div>
+  </dd>
+  <dt id='shadowBlur-variable'>
+    shadowBlur
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>10</code></pre>
+    
+  </dd>
+  <dt id='onNextStep-variable'>
+    onNextStep
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>nil</code></pre>
+    
+  </dd>
+  <dt id='clickOutsideMeOrAnyOfMeChildrenCallback-variable'>
+    clickOutsideMeOrAnyOfMeChildrenCallback
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[nil]</code></pre>
+    
+  </dd>
+  <dt id='textDescription-variable'>
+    textDescription
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>nil</code></pre>
+    
+  </dd>
+  <dt id='geometryOrPositionPossiblyChanged-variable'>
+    geometryOrPositionPossiblyChanged
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>false</code></pre>
+    <div class='docstring'>
+  <p>note that not all the changed morphs have this flag set
+because if a parent does a fullChanged, we don&#39;t set this
+flag in the children. This is intentionally so,
+as we don&#39;t want to navigate the children too many times.
+If you want to know whether a morph has changed its
+position, use the hasMaybeChangedGeometryOrPosition:
+method instead, which looks at this flag (and another one).
+See comment below on fullGeometryOrPositionPossiblyChanged
+for more information.</p>
+</div>
+<div class='tags'>
+</div>
+  </dd>
+  <dt id='clippedBoundsWhenLastPainted-variable'>
+    clippedBoundsWhenLastPainted
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>nil</code></pre>
+    
+  </dd>
+  <dt id='fullGeometryOrPositionPossiblyChanged-variable'>
+    fullGeometryOrPositionPossiblyChanged
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>false</code></pre>
+    <div class='docstring'>
+  <p>you&#39;d be tempted to check this flag to figure out
+whether any morph has possibly changed position but
+you can&#39;t. If a PARENT has done a fullChanged, the
+children are NOT set this flag. This flag is set
+only for the parent morph, and it&#39;s important that
+it stays that way for how the mechanism for fleshing out
+the broken rectangles works. We flesh out the rectangles
+of the &quot;fully broken&quot; morphs separately looking at this
+flag, and we remove the rectangles of the sub-morphs that
+have a parent with this flag since we know that they are
+already covered.
+If you want to figure out whether a morph has changed,
+use the hasMaybeChangedGeometryOrPosition: method,
+which checks recursively with the parents both the
+fullGeometryOrPositionPossiblyChanged flag and the
+geometryOrPositionPossiblyChanged flag.
+Another way of doing this is to mark with a special flag
+all the morph that touch their bounds or positions, but
+then it&#39;s sort of costly to un-set such flag in all such
+morphs, as we&#39;d have to keep the &quot;changed&quot; morphs in a special
+array to do that. Seems quite a bit more work and complication,
+so just use the method.</p>
+</div>
+<div class='tags'>
+</div>
+  </dd>
+  <dt id='fullClippedBoundsWhenLastPainted-variable'>
+    fullClippedBoundsWhenLastPainted
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>nil</code></pre>
+    
+  </dd>
+  <dt id='cachedFullBounds-variable'>
+    cachedFullBounds
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>nil</code></pre>
+    
+  </dd>
+  <dt id='cachedFullClippedBounds-variable'>
+    cachedFullClippedBounds
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>nil</code></pre>
+    
+  </dd>
+  <dt id='checkFullClippedBoundsCache-variable'>
+    checkFullClippedBoundsCache
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>nil</code></pre>
+    
+  </dd>
+  <dt id='visibleBasedOnIsVisiblePropertyCache-variable'>
+    visibleBasedOnIsVisiblePropertyCache
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>nil</code></pre>
+    
+  </dd>
+  <dt id='checkVisibleBasedOnIsVisiblePropertyCache-variable'>
+    checkVisibleBasedOnIsVisiblePropertyCache
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>&quot;&quot;</code></pre>
+    
+  </dd>
+  <dt id='clippedThroughBoundsCache-variable'>
+    clippedThroughBoundsCache
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>nil</code></pre>
+    
+  </dd>
+  <dt id='checkClippedThroughBoundsCache-variable'>
+    checkClippedThroughBoundsCache
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>&quot;&quot;</code></pre>
+    
+  </dd>
+  <dt id='clipThroughCache-variable'>
+    clipThroughCache
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>nil</code></pre>
+    
+  </dd>
+  <dt id='checkClipThroughCache-variable'>
+    checkClipThroughCache
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>nil</code></pre>
+    
+  </dd>
+  <dt id='srcBrokenRect-variable'>
+    srcBrokenRect
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>nil</code></pre>
+    
+  </dd>
+  <dt id='dstBrokenRect-variable'>
+    dstBrokenRect
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>nil</code></pre>
+    
+  </dd>
+  <dt id='layoutIsValid-variable'>
+    layoutIsValid
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>true</code></pre>
+    
+  </dd>
+  <dt id='layoutSpec-variable'>
+    layoutSpec
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>LayoutSpec</code></pre>
+    
+  </dd>
+  <dt id='layoutSpecDetails-variable'>
+    layoutSpecDetails
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>nil</code></pre>
+    
+  </dd>
+  <dt id='_showsAdders-variable'>
+    _showsAdders
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>false</code></pre>
+    
+  </dd>
+  <dt id='highlighted-variable'>
+    highlighted
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>false</code></pre>
+    
+  </dd>
+  <dt id='morphThisMorphIsHighlighting-variable'>
+    morphThisMorphIsHighlighting
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>nil</code></pre>
+    <div class='docstring'>
+  <p>if this morph has the purpose of highlighting
+another morph, then this field points to the
+morph that this morph is supposed to highlight</p>
+</div>
+<div class='tags'>
+</div>
+  </dd>
+  <dt id='destroyed-variable'>
+    destroyed
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>false</code></pre>
+    
+  </dd>
+  <dt id='shadowInfo-variable'>
+    shadowInfo
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>nil</code></pre>
+    
+  </dd>
+  <dt id='userMovedThisFromComputedPosition-variable'>
+    userMovedThisFromComputedPosition
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>false</code></pre>
+    <div class='docstring'>
+  <p>some morphs such as references are given a
+default &quot;computed&quot; position on the screen.
+As long as the user didn&#39;t manually
+reposition them, then we keep giving them a
+computed position. BUT as soon as the user manually
+places them, then we quit giving the widget a
+computed position and rather we stick with the
+position the user gave.</p>
+</div>
+<div class='tags'>
+</div>
+  </dd>
+  <dt id='positionFractionalInHoldingPanel-variable'>
+    positionFractionalInHoldingPanel
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>nil</code></pre>
+    
+  </dd>
+  <dt id='wasPositionedSlightlyOutsidePanel-variable'>
+    wasPositionedSlightlyOutsidePanel
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>false</code></pre>
+    
+  </dd>
+  <dt id='connectionsCalculationToken-variable'>
+    connectionsCalculationToken
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>314</code></pre>
+    
+  </dd>
+  <dt id='step-variable'>
+    step
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>noOperation</code></pre>
+    <div class='docstring'>
+  <p>leaving this function as step means that the morph wants to do nothing
+but the children <em>are</em> traversed and their step function is invoked.
+If a Widget wants to do nothing and wants to prevent the children to be
+traversed, then this function should be set to nil.</p>
+</div>
+<div class='tags'>
+</div>
+  </dd>
+  <dt id='minWidth-variable'>
+    minWidth
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>10</code></pre>
+    
+  </dd>
+  <dt id='desiredWidth-variable'>
+    desiredWidth
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>20</code></pre>
+    
+  </dd>
+  <dt id='maxWidth-variable'>
+    maxWidth
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>100</code></pre>
+    
+  </dd>
+  <dt id='minHeight-variable'>
+    minHeight
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>10</code></pre>
+    
+  </dd>
+  <dt id='desiredHeight-variable'>
+    desiredHeight
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>20</code></pre>
+    
+  </dd>
+  <dt id='maxHeight-variable'>
+    maxHeight
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>100</code></pre>
+    
+  </dd>
+</dl>
+      <h3 class='inherited'>
+        Variable inherited from
+        <a href='../class/TreeNode.html'>TreeNode</a>
+      </h3>
+      <p class='inherited'>
+        <a href='../class/TreeNode.html#parent-variable'>parent</a>
+        <a href='../class/TreeNode.html#children-variable'>children</a>
+        <a href='../class/TreeNode.html#rootCache-variable'>rootCache</a>
+        <a href='../class/TreeNode.html#rootCacheChecker-variable'>rootCacheChecker</a>
+        <a href='../class/TreeNode.html#checkFirstParentClippingAtBoundsCache-variable'>checkFirstParentClippingAtBoundsCache</a>
+        <a href='../class/TreeNode.html#cachedFirstParentClippingAtBounds-variable'>cachedFirstParentClippingAtBounds</a>
+        <a href='../class/TreeNode.html#gcSessionIdMark-variable'>gcSessionIdMark</a>
+        <a href='../class/TreeNode.html#gcReferenceExaminedSessionIdMark-variable'>gcReferenceExaminedSessionIdMark</a>
+      </p>
+      <h2>Class Method Summary</h2>
+      <ul class='summary'>
+  <li>
+    <span class='signature'>
+      <a href='#morphStaticMethod-static'>
+        .
+(void)
+<b>morphStaticMethod</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#morphFromUniqueIDString-static'>
+        .
+(void)
+<b>morphFromUniqueIDString</b><span>(theUniqueID)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#roundNumericIDsToNextThousand-static'>
+        .
+(void)
+<b>roundNumericIDsToNextThousand</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+      some test commands specify morphs via their uniqueIDString.
+
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#setupTestScreen1-static'>
+        .
+(void)
+<b>setupTestScreen1</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+      »&gt;&gt; this part is excluded from the fizzygum homepage build 
+    </span>
+  </li>
+</ul>
+      <h2>Instance Method Summary</h2>
+      <ul class='summary'>
+  <li>
+    <span class='signature'>
+      <a href='#morphMethod-dynamic'>
+        #
+(void)
+<b>morphMethod</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#initialiseDefaultWindowContentLayoutSpec-dynamic'>
+        #
+(void)
+<b>initialiseDefaultWindowContentLayoutSpec</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#initialiseDefaultVerticalStackLayoutSpec-dynamic'>
+        #
+(void)
+<b>initialiseDefaultVerticalStackLayoutSpec</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#mouseClickRight-dynamic'>
+        #
+(void)
+<b>mouseClickRight</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#getTextDescription-dynamic'>
+        #
+(void)
+<b>getTextDescription</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#identifyViaTextLabel-dynamic'>
+        #
+(void)
+<b>identifyViaTextLabel</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#setTextDescription-dynamic'>
+        #
+(void)
+<b>setTextDescription</b><span>(textDescription)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#uniqueIDString-dynamic'>
+        #
+(void)
+<b>uniqueIDString</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#morphClassString-dynamic'>
+        #
+(void)
+<b>morphClassString</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#assignUniqueID-dynamic'>
+        #
+(void)
+<b>assignUniqueID</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#startCountdownForBubbleHelp-dynamic'>
+        #
+(void)
+<b>startCountdownForBubbleHelp</b><span>(contents)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#registerThisInstance-dynamic'>
+        #
+(void)
+<b>registerThisInstance</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+      this happens when the Widget&#39;s constructor runs and also when the Widget is duplicated
+
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#unregisterThisInstance-dynamic'>
+        #
+(void)
+<b>unregisterThisInstance</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+      this happens when the Widget is destroyed 
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#isTransparentAt-dynamic'>
+        #
+(void)
+<b>isTransparentAt</b><span>(aPoint)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#paintHighlight-dynamic'>
+        #
+(void)
+<b>paintHighlight</b><span>(aContext, al, at, w, h)</span>
+      </a>
+    </span>
+    <span class='desc'>
+      useful for example when hovering over references to morphs.
+
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#paintIntoAreaOrBlitFromBackBuffer-dynamic'>
+        #
+(void)
+<b>paintIntoAreaOrBlitFromBackBuffer</b><span>(aContext, clippingRectangle, appliedShadow)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#paintStroke-dynamic'>
+        #
+(void)
+<b>paintStroke</b><span>(aContext, clippingRectangle)</span>
+      </a>
+    </span>
+    <span class='desc'>
+      painting strokes is a little delicate because they need to be painted INSIDE the morph (otherwise a) adjacent morphs, of morphs
+within a layout would make a mess and b) clipping morph would
+present a problem).
+
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#addShapeSpecificMenuItems-dynamic'>
+        #
+(void)
+<b>addShapeSpecificMenuItems</b><span>(menu)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#addShapeSpecificNumericalSetters-dynamic'>
+        #
+(void)
+<b>addShapeSpecificNumericalSetters</b><span>(menuEntriesStrings, functionNamesStrings)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#toString-dynamic'>
+        #
+(void)
+<b>toString</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+      Widget string representation: e.g. 
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#close-dynamic'>
+        #
+(void)
+<b>close</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#closeFromContainerWindow-dynamic'>
+        #
+(void)
+<b>closeFromContainerWindow</b><span>(containerWindow)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#destroy-dynamic'>
+        #
+(void)
+<b>destroy</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+      Widgets destroying ====== this is different from a widget being closed/deleted
+when a widget is destroyed, it&#39;s removed from the stepping
+list and marked as destroyed.
+
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#fullDestroy-dynamic'>
+        #
+(void)
+<b>fullDestroy</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+      destroys the whole tree from the bottom (leaf widgets, drawn on top
+of everything) to the top
+
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#closeChildren-dynamic'>
+        #
+(void)
+<b>closeChildren</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#fullDestroyChildren-dynamic'>
+        #
+(void)
+<b>fullDestroyChildren</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#setLayoutSpec-dynamic'>
+        #
+(void)
+<b>setLayoutSpec</b><span>(newLayoutSpec)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#nextSteps-dynamic'>
+        #
+(void)
+<b>nextSteps</b><span>(lst = [])</span>
+      </a>
+    </span>
+    <span class='desc'>
+      not used within Fizzygum yet. 
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#left-dynamic'>
+        #
+(void)
+<b>left</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+      Widget accessing - geometry getting: 
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#right-dynamic'>
+        #
+(void)
+<b>right</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#top-dynamic'>
+        #
+(void)
+<b>top</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#bottom-dynamic'>
+        #
+(void)
+<b>bottom</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#center-dynamic'>
+        #
+(void)
+<b>center</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#bottomCenter-dynamic'>
+        #
+(void)
+<b>bottomCenter</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#bottomLeft-dynamic'>
+        #
+(void)
+<b>bottomLeft</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#bottomRight-dynamic'>
+        #
+(void)
+<b>bottomRight</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#boundingBox-dynamic'>
+        #
+(void)
+<b>boundingBox</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#leftTight-dynamic'>
+        #
+(void)
+<b>leftTight</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+      Widget accessing - geometry getting: 
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#rightTight-dynamic'>
+        #
+(void)
+<b>rightTight</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#topTight-dynamic'>
+        #
+(void)
+<b>topTight</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#bottomTight-dynamic'>
+        #
+(void)
+<b>bottomTight</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#bottomCenterTight-dynamic'>
+        #
+(void)
+<b>bottomCenterTight</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#bottomLeftTight-dynamic'>
+        #
+(void)
+<b>bottomLeftTight</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#bottomRightTight-dynamic'>
+        #
+(void)
+<b>bottomRightTight</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#boundingBoxTight-dynamic'>
+        #
+(void)
+<b>boundingBoxTight</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#rawResizeToWithoutSpacing-dynamic'>
+        #
+(void)
+<b>rawResizeToWithoutSpacing</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#rawSetWidthSizeHeightAccordingly-dynamic'>
+        #
+(void)
+<b>rawSetWidthSizeHeightAccordingly</b><span>(newWidth)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#rawSetBounds-dynamic'>
+        #
+(void)
+<b>rawSetBounds</b><span>(newBounds)</span>
+      </a>
+    </span>
+    <span class='desc'>
+      note that using this one, the children morphs attached as floating don&#39;t move
+
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#setBounds-dynamic'>
+        #
+(void)
+<b>setBounds</b><span>(aRectangle, morphStartingTheChange = nil)</span>
+      </a>
+    </span>
+    <span class='desc'>
+      high-level geometry-change API, you don&#39;t actually change the geometry right away,
+you just ask for the desired change and wait for the
+layouting mechanism to do its best to satisfy it
+
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#silentRawSetBounds-dynamic'>
+        #
+(void)
+<b>silentRawSetBounds</b><span>(newBounds)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#corners-dynamic'>
+        #
+(void)
+<b>corners</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#leftCenter-dynamic'>
+        #
+(void)
+<b>leftCenter</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#rightCenter-dynamic'>
+        #
+(void)
+<b>rightCenter</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#topCenter-dynamic'>
+        #
+(void)
+<b>topCenter</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#topLeft-dynamic'>
+        #
+(void)
+<b>topLeft</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+      same as position() 
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#topRight-dynamic'>
+        #
+(void)
+<b>topRight</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#position-dynamic'>
+        #
+(void)
+<b>position</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#positionFractionalInMorph-dynamic'>
+        #
+(void)
+<b>positionFractionalInMorph</b><span>(theMorph)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#extentFractionalInMorph-dynamic'>
+        #
+(void)
+<b>extentFractionalInMorph</b><span>(theMorph)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#positionPixelsInMorph-dynamic'>
+        #
+(void)
+<b>positionPixelsInMorph</b><span>(theMorph)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#extent-dynamic'>
+        #
+(void)
+<b>extent</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#width-dynamic'>
+        #
+(void)
+<b>width</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#widthWithoutSpacing-dynamic'>
+        #
+(void)
+<b>widthWithoutSpacing</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+      e.g. 
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#height-dynamic'>
+        #
+(void)
+<b>height</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#cornersTight-dynamic'>
+        #
+(void)
+<b>cornersTight</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#leftCenterTight-dynamic'>
+        #
+(void)
+<b>leftCenterTight</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#rightCenterTight-dynamic'>
+        #
+(void)
+<b>rightCenterTight</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#topCenterTight-dynamic'>
+        #
+(void)
+<b>topCenterTight</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#topLeftTight-dynamic'>
+        #
+(void)
+<b>topLeftTight</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+      same as position() 
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#topRightTight-dynamic'>
+        #
+(void)
+<b>topRightTight</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#positionTight-dynamic'>
+        #
+(void)
+<b>positionTight</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#extentTight-dynamic'>
+        #
+(void)
+<b>extentTight</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#widthTight-dynamic'>
+        #
+(void)
+<b>widthTight</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#heightTight-dynamic'>
+        #
+(void)
+<b>heightTight</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#plausibleTargetAndDestinationMorphs-dynamic'>
+        #
+(void)
+<b>plausibleTargetAndDestinationMorphs</b><span>(theMorph)</span>
+      </a>
+    </span>
+    <span class='desc'>
+      used for example: 
+to determine which morphs you can attach a morph to
+for a SliderMorph&#39;s &quot;set target&quot; so you can change properties of another Widget
+by the HandleMorph when you attach it to some other morph
+Note that this method has a slightly different
+version in PanelWdgt (because it clips, so we need
+to check that we don&#39;t consider overlaps with
+morphs contained in a Panel that are clipped and
+hence <em>actually</em> not overlapping).
+
+
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#surelyNotShowingUpOnScreenBasedOnVisibilityCollapseAndOrphanage-dynamic'>
+        #
+(void)
+<b>surelyNotShowingUpOnScreenBasedOnVisibilityCollapseAndOrphanage</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+      both methods invoked in here are cached
+used in the method fleshOutBroken
+to skip the &quot;destination&quot; broken rects
+for morphs that marked themselves
+as broken but at moment of destination
+might be invisible
+TODO for sure this should also check for the .destroyed flag
+
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#SLOWvisibleBasedOnIsVisibleProperty-dynamic'>
+        #
+(void)
+<b>SLOWvisibleBasedOnIsVisibleProperty</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#visibleBasedOnIsVisibleProperty-dynamic'>
+        #
+(void)
+<b>visibleBasedOnIsVisibleProperty</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+      doesn&#39;t check orphanage 
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#invalidateFullBoundsCache-dynamic'>
+        #
+(void)
+<b>invalidateFullBoundsCache</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+      Note that in a case of a fullMove* you should also invalidate all the morphs in
+the subtree as well.
+
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#invalidateFullClippedBoundsCache-dynamic'>
+        #
+(void)
+<b>invalidateFullClippedBoundsCache</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#SLOWfullBounds-dynamic'>
+        #
+(void)
+<b>SLOWfullBounds</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+      doesn&#39;t take into account orphanage or visibility
+
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#SLOWfullClippedBounds-dynamic'>
+        #
+(void)
+<b>SLOWfullClippedBounds</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#subMorphsMergedFullBounds-dynamic'>
+        #
+(void)
+<b>subMorphsMergedFullBounds</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+      for PanelWdgt scrolling support 
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#fullBounds-dynamic'>
+        #
+(void)
+<b>fullBounds</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+      does not take into account orphanage or visibility 
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#fullClippedBounds-dynamic'>
+        #
+(void)
+<b>fullClippedBounds</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+      this one does take into account orphanage and visibility.
+
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#clippedThroughBounds-dynamic'>
+        #
+(void)
+<b>clippedThroughBounds</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+      this one does take into account orphanage and visibility.
+
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#clipThrough-dynamic'>
+        #
+(void)
+<b>clipThrough</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+      this one does take into account orphanage and visibility.
+
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#fullRawMoveBy-dynamic'>
+        #
+(void)
+<b>fullRawMoveBy</b><span>(delta)</span>
+      </a>
+    </span>
+    <span class='desc'>
+      Widget accessing - simple changes: 
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#silentFullRawMoveBy-dynamic'>
+        #
+(void)
+<b>silentFullRawMoveBy</b><span>(delta)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#breakNumberOfRawMovesAndResizesCaches-dynamic'>
+        #
+(void)
+<b>breakNumberOfRawMovesAndResizesCaches</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#fullRawMoveInDesktopToFractionalPosition-dynamic'>
+        #
+(void)
+<b>fullRawMoveInDesktopToFractionalPosition</b><span>(boundsOfParent)</span>
+      </a>
+    </span>
+    <span class='desc'>
+      moving to fractional position within the desktop is different from the case below because the desktop can be
+resized to any ratio
+
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#fullRawMoveInStretchablePanelToFractionalPosition-dynamic'>
+        #
+(void)
+<b>fullRawMoveInStretchablePanelToFractionalPosition</b><span>(boundsOfParent)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#rawSetExtentToFractionalExtentInPaneUserHasSet-dynamic'>
+        #
+(void)
+<b>rawSetExtentToFractionalExtentInPaneUserHasSet</b><span>(boundsOfParent)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#fullRawMoveTo-dynamic'>
+        #
+(void)
+<b>fullRawMoveTo</b><span>(aPoint)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#fullMoveTo-dynamic'>
+        #
+(void)
+<b>fullMoveTo</b><span>(aPoint, morphStartingTheChange = nil)</span>
+      </a>
+    </span>
+    <span class='desc'>
+      high-level geometry-change API, you don&#39;t actually change the geometry right away,
+you just ask for the desired change and wait for the
+layouting mechanism to do its best to satisfy it
+
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#rememberFractionalPositionInHoldingPanel-dynamic'>
+        #
+(void)
+<b>rememberFractionalPositionInHoldingPanel</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#rememberFractionalExtentInHoldingPanel-dynamic'>
+        #
+(void)
+<b>rememberFractionalExtentInHoldingPanel</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#rememberFractionalSituationInHoldingPanel-dynamic'>
+        #
+(void)
+<b>rememberFractionalSituationInHoldingPanel</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+      TODO this is used a lot, where I suspect all we need to do is to do this automatically ALSO when a widget is added/moved
+to a new parent.
+
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#silentFullRawMoveTo-dynamic'>
+        #
+(void)
+<b>silentFullRawMoveTo</b><span>(aPoint)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#fullRawMoveLeftSideTo-dynamic'>
+        #
+(void)
+<b>fullRawMoveLeftSideTo</b><span>(x)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#fullRawMoveRightSideTo-dynamic'>
+        #
+(void)
+<b>fullRawMoveRightSideTo</b><span>(x)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#fullRawMoveTopSideTo-dynamic'>
+        #
+(void)
+<b>fullRawMoveTopSideTo</b><span>(y)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#fullRawMoveBottomSideTo-dynamic'>
+        #
+(void)
+<b>fullRawMoveBottomSideTo</b><span>(y)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#fullRawMoveCenterTo-dynamic'>
+        #
+(void)
+<b>fullRawMoveCenterTo</b><span>(aPoint)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#fullRawMoveToSideOf-dynamic'>
+        #
+(void)
+<b>fullRawMoveToSideOf</b><span>(aWidget)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#fullRawMoveFullCenterTo-dynamic'>
+        #
+(void)
+<b>fullRawMoveFullCenterTo</b><span>(aPoint)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#fullRawMoveWithin-dynamic'>
+        #
+(void)
+<b>fullRawMoveWithin</b><span>(aMorph)</span>
+      </a>
+    </span>
+    <span class='desc'>
+      make sure I am completely within another Widget&#39;s bounds 
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#notifyChildrenThatParentHasReLayouted-dynamic'>
+        #
+(void)
+<b>notifyChildrenThatParentHasReLayouted</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#parentHasReLayouted-dynamic'>
+        #
+(void)
+<b>parentHasReLayouted</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+      normally morphs do nothing when the parent is layouting, as they are
+placed with absolute positioning.
+
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#layoutInset-dynamic'>
+        #
+(void)
+<b>layoutInset</b><span>(morphStartingTheChange = nil)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#layoutSubmorphs-dynamic'>
+        #
+(void)
+<b>layoutSubmorphs</b><span>(morphStartingTheChange = nil)</span>
+      </a>
+    </span>
+    <span class='desc'>
+      the default of layoutSubmorphs is to do nothing apart from notifying
+the children (in case, for example,
+there is a HandleMorph in this morph
+which will cause the HandleMorph to
+replace itself in the new position)
+, but things like
+the inspector might well want to
+tweak many of their children...
+
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#childChangedExtent-dynamic'>
+        #
+(void)
+<b>childChangedExtent</b><span>(theMorphChangingTheExtent)</span>
+      </a>
+    </span>
+    <span class='desc'>
+      do nothing in most cases but for example for layouts, if something inside a layout wants to
+change extent, then the whole layout might need to
+change extent.
+
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#getMinimumExtent-dynamic'>
+        #
+(void)
+<b>getMinimumExtent</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+      more complex Widgets, e.g. 
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#setMinimumExtent-dynamic'>
+        #
+(void)
+<b>setMinimumExtent</b><span>(minimumExtent)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#rawSetExtent-dynamic'>
+        #
+(void)
+<b>rawSetExtent</b><span>(aPoint, morphStartingTheChange = nil)</span>
+      </a>
+    </span>
+    <span class='desc'>
+      Widget accessing - dimensional changes requiring a complete redraw 
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#setExtent-dynamic'>
+        #
+(void)
+<b>setExtent</b><span>(aPoint, morphStartingTheChange = nil)</span>
+      </a>
+    </span>
+    <span class='desc'>
+      high-level geometry-change API, you don&#39;t actually change the geometry right away,
+you just ask for the desired change and wait for the
+layouting mechanism to do its best to satisfy it
+
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#silentRawSetExtent-dynamic'>
+        #
+(void)
+<b>silentRawSetExtent</b><span>(aPoint)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#refreshScrollPanelWdgtOrVerticalStackIfIamInIt-dynamic'>
+        #
+(void)
+<b>refreshScrollPanelWdgtOrVerticalStackIfIamInIt</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#rawSetWidth-dynamic'>
+        #
+(void)
+<b>rawSetWidth</b><span>(width)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#setWidth-dynamic'>
+        #
+(void)
+<b>setWidth</b><span>(width)</span>
+      </a>
+    </span>
+    <span class='desc'>
+      high-level geometry-change API, you don&#39;t actually change the geometry right away,
+you just ask for the desired change and wait for the
+layouting mechanism to do its best to satisfy it
+
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#silentRawSetWidth-dynamic'>
+        #
+(void)
+<b>silentRawSetWidth</b><span>(width)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#rawSetHeight-dynamic'>
+        #
+(void)
+<b>rawSetHeight</b><span>(height)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#setHeight-dynamic'>
+        #
+(void)
+<b>setHeight</b><span>(height)</span>
+      </a>
+    </span>
+    <span class='desc'>
+      high-level geometry-change API, you don&#39;t actually change the geometry right away,
+you just ask for the desired change and wait for the
+layouting mechanism to do its best to satisfy it
+
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#silentRawSetHeight-dynamic'>
+        #
+(void)
+<b>silentRawSetHeight</b><span>(height)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#setColor-dynamic'>
+        #
+(void)
+<b>setColor</b><span>(aColorOrAMorphGivingAColor, morphGivingColor, connectionsCalculationToken, superCall)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#setBackgroundColor-dynamic'>
+        #
+(void)
+<b>setBackgroundColor</b><span>(aColorOrAMorphGivingAColor, morphGivingColor, connectionsCalculationToken, superCall)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#drawCachedTexture-dynamic'>
+        #
+(void)
+<b>drawCachedTexture</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+      tiles the texture - never used in Fizzygum at the moment. 
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#boundsContainPoint-dynamic'>
+        #
+(void)
+<b>boundsContainPoint</b><span>(aPoint)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#areBoundsIntersecting-dynamic'>
+        #
+(void)
+<b>areBoundsIntersecting</b><span>(aMorph)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#calculateKeyValues-dynamic'>
+        #
+(void)
+<b>calculateKeyValues</b><span>(aContext, clippingRectangle)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#turnOnHighlight-dynamic'>
+        #
+(void)
+<b>turnOnHighlight</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#turnOffHighlight-dynamic'>
+        #
+(void)
+<b>turnOffHighlight</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#paintRectangle-dynamic'>
+        #
+(void)
+<b>paintRectangle</b><span>(aContext, al, at, w, h, color, transparency = nil, pushAndPopContext = false, appliedShadow)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#preliminaryCheckNothingToDraw-dynamic'>
+        #
+(void)
+<b>preliminaryCheckNothingToDraw</b><span>(clippingRectangle, aContext)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#recordDrawnAreaForNextBrokenRects-dynamic'>
+        #
+(void)
+<b>recordDrawnAreaForNextBrokenRects</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#fullPaintIntoAreaOrBlitFromBackBuffer-dynamic'>
+        #
+(void)
+<b>fullPaintIntoAreaOrBlitFromBackBuffer</b><span>(aContext, clippingRectangle, appliedShadow)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#fullPaintIntoAreaOrBlitFromBackBufferJustShadow-dynamic'>
+        #
+(void)
+<b>fullPaintIntoAreaOrBlitFromBackBufferJustShadow</b><span>(aContext, clippingRectangle, appliedShadow)</span>
+      </a>
+    </span>
+    <span class='desc'>
+      to draw the shadow, most of the times you have to draw the whole of the contents, but with a darker/fainter color, and with
+transparency.
+
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#fullPaintIntoAreaOrBlitFromBackBufferContentPotentiallyAsShadow-dynamic'>
+        #
+(void)
+<b>fullPaintIntoAreaOrBlitFromBackBufferContentPotentiallyAsShadow</b><span>(aContext, clippingRectangle, appliedShadow)</span>
+      </a>
+    </span>
+    <span class='desc'>
+      this just draws the tree of the widgets recursively, potentially &quot;normally&quot; or potentally more faintly to draw a shadow.
+
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#silentHide-dynamic'>
+        #
+(void)
+<b>silentHide</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+      ... 
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#hide-dynamic'>
+        #
+(void)
+<b>hide</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#show-dynamic'>
+        #
+(void)
+<b>show</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#toggleVisibility-dynamic'>
+        #
+(void)
+<b>toggleVisibility</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#collapse-dynamic'>
+        #
+(void)
+<b>collapse</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#unCollapse-dynamic'>
+        #
+(void)
+<b>unCollapse</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#isCollapsed-dynamic'>
+        #
+(void)
+<b>isCollapsed</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#removeFromTree-dynamic'>
+        #
+(void)
+<b>removeFromTree</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#colloquialName-dynamic'>
+        #
+(void)
+<b>colloquialName</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#representativeIcon-dynamic'>
+        #
+(void)
+<b>representativeIcon</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#createPointerMorph-dynamic'>
+        #
+(void)
+<b>createPointerMorph</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#createReference-dynamic'>
+        #
+(void)
+<b>createReference</b><span>(referenceName, placeToDropItIn = world)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#createReferenceAndClose-dynamic'>
+        #
+(void)
+<b>createReferenceAndClose</b><span>(referenceName, placeToDropItIn = world)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#fullImage-dynamic'>
+        #
+(void)
+<b>fullImage</b><span>(bounds, noShadow = false, forceShadow = false)</span>
+      </a>
+    </span>
+    <span class='desc'>
+      Widget full image: Fixes <a href="https://github.com/jmoenig/morphic.js/issues/7">https://github.com/jmoenig/morphic.js/issues/7</a>
+and <a href="https://github.com/davidedc/Fizzygum/issues/160">https://github.com/davidedc/Fizzygum/issues/160</a>
+if you want to forceShadow that noShadow must be
+sent as false
+
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#fullImageNoShadow-dynamic'>
+        #
+(void)
+<b>fullImageNoShadow</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#fullImageData-dynamic'>
+        #
+(void)
+<b>fullImageData</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#fullImageAsItAppearsOnScreen-dynamic'>
+        #
+(void)
+<b>fullImageAsItAppearsOnScreen</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+      the way we take a picture here is different than the way we usually take a picture.
+
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#fullImageHashCode-dynamic'>
+        #
+(void)
+<b>fullImageHashCode</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#addShadow-dynamic'>
+        #
+(void)
+<b>addShadow</b><span>(offset = new Point(4, 4), alpha = 0.2)</span>
+      </a>
+    </span>
+    <span class='desc'>
+      shadow is added to a morph by the HandMorph while floatDragging
+
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#silentAddShadow-dynamic'>
+        #
+(void)
+<b>silentAddShadow</b><span>(offset, alpha)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#hasShadow-dynamic'>
+        #
+(void)
+<b>hasShadow</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#removeShadow-dynamic'>
+        #
+(void)
+<b>removeShadow</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#changed-dynamic'>
+        #
+(void)
+<b>changed</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+      Widget updating /////////////////////////////////////////////////////////////// 
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#hasMaybeChangedGeometryOrPosition-dynamic'>
+        #
+(void)
+<b>hasMaybeChangedGeometryOrPosition</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+      to actually make sure if a morph has changed position, you need to check it and all its
+parents.
+
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#fullChanged-dynamic'>
+        #
+(void)
+<b>fullChanged</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+      See comment on the fullGeometryOrPositionPossiblyChanged property above for more info.
+
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#childChanged-dynamic'>
+        #
+(void)
+<b>childChanged</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#iHaveBeenAddedTo-dynamic'>
+        #
+(void)
+<b>iHaveBeenAddedTo</b><span>(whereTo, beingDropped)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#addAsSiblingAfterMe-dynamic'>
+        #
+(void)
+<b>addAsSiblingAfterMe</b><span>(aMorph, position = nil, layoutSpec = LayoutSpec.ATTACHEDAS_FREEFLOATING)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#addAsSiblingBeforeMe-dynamic'>
+        #
+(void)
+<b>addAsSiblingBeforeMe</b><span>(aMorph, position = nil, layoutSpec = LayoutSpec.ATTACHEDAS_FREEFLOATING)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#add-dynamic'>
+        #
+(void)
+<b>add</b><span>(aMorph, position = nil, layoutSpec = LayoutSpec.ATTACHEDAS_FREEFLOATING, beingDropped)</span>
+      </a>
+    </span>
+    <span class='desc'>
+      this level of indirection is needed because you have a &quot;raw&quot; &quot;tree&quot; need of adding stuff
+and a higher level way to &quot;add&quot;.
+
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#addRaw-dynamic'>
+        #
+(void)
+<b>addRaw</b><span>(aMorph, position = nil, layoutSpec = LayoutSpec.ATTACHEDAS_FREEFLOATING, beingDropped)</span>
+      </a>
+    </span>
+    <span class='desc'>
+      attaches submorph on top ??? TODO you should handle the case of Widget
+    being added to itself and the case of
+??? TODO a Widget being added to one of its
+    children
+
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#addInset-dynamic'>
+        #
+(void)
+<b>addInset</b><span>(aMorph)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#sourceChanged-dynamic'>
+        #
+(void)
+<b>sourceChanged</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#reLayout-dynamic'>
+        #
+(void)
+<b>reLayout</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+      this is done before the updating of the backing store in some morphs that
+need to figure out their whole
+layout (which depends on the children)
+before painting themselves
+e.g.
+
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#calculateAndUpdateExtent-dynamic'>
+        #
+(void)
+<b>calculateAndUpdateExtent</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#silentAdd-dynamic'>
+        #
+(void)
+<b>silentAdd</b><span>(aMorph, avoidExtentCalculation, position = nil)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#duplicateMenuAction-dynamic'>
+        #
+(void)
+<b>duplicateMenuAction</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#duplicateMenuActionAndPickItUp-dynamic'>
+        #
+(void)
+<b>duplicateMenuActionAndPickItUp</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#alignCopiedMorphToBrokenInfoDataStructures-dynamic'>
+        #
+(void)
+<b>alignCopiedMorphToBrokenInfoDataStructures</b><span>(copiedMorph)</span>
+      </a>
+    </span>
+    <span class='desc'>
+      in case we copy a morph, if the original was in some data structures related to broken morphs, then
+we have to add the copy too.
+
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#alignCopiedMorphToSteppingStructures-dynamic'>
+        #
+(void)
+<b>alignCopiedMorphToSteppingStructures</b><span>(copiedMorph)</span>
+      </a>
+    </span>
+    <span class='desc'>
+      in case we copy a morph, if the original was in some stepping structures, then we have to add the copy too.
+
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#fullCopy-dynamic'>
+        #
+(void)
+<b>fullCopy</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+      note that the entire copying mechanism should also take care of inserting the copied
+morph in whatever other data structures where the
+original morph was.
+
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#serialize-dynamic'>
+        #
+(void)
+<b>serialize</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#deserialize-dynamic'>
+        #
+(void)
+<b>deserialize</b><span>(serializationString)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#injectProperty-dynamic'>
+        #
+(void)
+<b>injectProperty</b><span>(propertyName, txt)</span>
+      </a>
+    </span>
+    <span class='desc'>
+      if a function, the txt must contain the parameters and the arrow and the body
+
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#injectProperties-dynamic'>
+        #
+(void)
+<b>injectProperties</b><span>(codeBlurb)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#grabsToParentWhenDragged-dynamic'>
+        #
+(void)
+<b>grabsToParentWhenDragged</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#rejectDrags-dynamic'>
+        #
+(void)
+<b>rejectDrags</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#findFirstLooseMorph-dynamic'>
+        #
+(void)
+<b>findFirstLooseMorph</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+      finds the first morph (including this one) that doesn&#39;t grab to its parent
+returns nil if going up the grabbing chain
+a morph rejects the drag
+
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#findRootForGrab-dynamic'>
+        #
+(void)
+<b>findRootForGrab</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#amIDirectlyInsideScrollPanelWdgt-dynamic'>
+        #
+(void)
+<b>amIDirectlyInsideScrollPanelWdgt</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#amIPanelOfScrollPanelWdgt-dynamic'>
+        #
+(void)
+<b>amIPanelOfScrollPanelWdgt</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#amIDirectlyInsideNonTextWrappingScrollPanelWdgt-dynamic'>
+        #
+(void)
+<b>amIDirectlyInsideNonTextWrappingScrollPanelWdgt</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#firstParentOwningMyShadow-dynamic'>
+        #
+(void)
+<b>firstParentOwningMyShadow</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+      the only trick here is that we stop at the first clipping morph, because if a morph is inside a clipping
+morph, it doesn&#39;t contribute to any shadow.
+
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#detachesWhenDragged-dynamic'>
+        #
+(void)
+<b>detachesWhenDragged</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+      if true, then the drag will be a float drag otherwise it will be a nonfloating drag
+
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#isBeingFloatDragged-dynamic'>
+        #
+(void)
+<b>isBeingFloatDragged</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#firstParentThatIsAPopUp-dynamic'>
+        #
+(void)
+<b>firstParentThatIsAPopUp</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+      finds the first parent that is a PopUp 
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#anyParentPopUpMarkedForClosure-dynamic'>
+        #
+(void)
+<b>anyParentPopUpMarkedForClosure</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#rootForFocus-dynamic'>
+        #
+(void)
+<b>rootForFocus</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#moveInFrontOfSiblings-dynamic'>
+        #
+(void)
+<b>moveInFrontOfSiblings</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#bringToForeground-dynamic'>
+        #
+(void)
+<b>bringToForeground</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#propagateKillPopUps-dynamic'>
+        #
+(void)
+<b>propagateKillPopUps</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+      note that &quot;propagateKillPopUps&quot; doesn&#39;t necessarily go up the &quot;parent&quot; trail, for pop ups this method goes up
+another trail of pop up ownership named via the
+&quot;morphOpeningThePopUp&quot; property, that is
+independent of the parent trail
+
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#mouseDownLeft-dynamic'>
+        #
+(void)
+<b>mouseDownLeft</b><span>(pos)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#mouseClickLeft-dynamic'>
+        #
+(void)
+<b>mouseClickLeft</b><span>(pos)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#onClickOutsideMeOrAnyOfMyChildren-dynamic'>
+        #
+(void)
+<b>onClickOutsideMeOrAnyOfMyChildren</b><span>(functionName, arg1, arg2, arg3)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#justDropped-dynamic'>
+        #
+(void)
+<b>justDropped</b><span>(whereIn)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#wantsDropOf-dynamic'>
+        #
+(void)
+<b>wantsDropOf</b><span>(aMorph)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#enableDrops-dynamic'>
+        #
+(void)
+<b>enableDrops</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#disableDrops-dynamic'>
+        #
+(void)
+<b>disableDrops</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#pickUp-dynamic'>
+        #
+(void)
+<b>pickUp</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#grabbedWidgetSwitcheroo-dynamic'>
+        #
+(void)
+<b>grabbedWidgetSwitcheroo</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#isPickedUp-dynamic'>
+        #
+(void)
+<b>isPickedUp</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+      note how this checks whether at <em>any point</em> up in the
+morphs hierarchy there is a HandMorph
+
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#situation-dynamic'>
+        #
+(void)
+<b>situation</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#slideBackTo-dynamic'>
+        #
+(void)
+<b>slideBackTo</b><span>(situation, steps = 5)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#showResizeAndMoveHandlesAndLayoutAdjusters-dynamic'>
+        #
+(void)
+<b>showResizeAndMoveHandlesAndLayoutAdjusters</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#showMoveHandle-dynamic'>
+        #
+(void)
+<b>showMoveHandle</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#inform-dynamic'>
+        #
+(void)
+<b>inform</b><span>(msg)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#prompt-dynamic'>
+        #
+(void)
+<b>prompt</b><span>(msg, target, callback, defaultContents, width, floorNum, ceilingNum, isRounded)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#textPrompt-dynamic'>
+        #
+(void)
+<b>textPrompt</b><span>(msg, target, callback, defaultContents, width, floorNum, ceilingNum, isRounded)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#pickColor-dynamic'>
+        #
+(void)
+<b>pickColor</b><span>(msg, callback, defaultContents)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#inspect-dynamic'>
+        #
+(void)
+<b>inspect</b><span>(anotherObject)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#inspect2-dynamic'>
+        #
+(void)
+<b>inspect2</b><span>(anotherObject)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#spawnInspector-dynamic'>
+        #
+(void)
+<b>spawnInspector</b><span>(inspectee)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#spawnInspector2-dynamic'>
+        #
+(void)
+<b>spawnInspector2</b><span>(inspectee)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#createConsole-dynamic'>
+        #
+(void)
+<b>createConsole</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#spawnNextTo-dynamic'>
+        #
+(void)
+<b>spawnNextTo</b><span>(morphToBeNextTo, whereToAddIt)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#buildContextMenu-dynamic'>
+        #
+(void)
+<b>buildContextMenu</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+      context Menus are whatever appears when one right-clicks on something.
+
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#getHierarchyMenuMorphs-dynamic'>
+        #
+(void)
+<b>getHierarchyMenuMorphs</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#buildHierarchyMenu-dynamic'>
+        #
+(void)
+<b>buildHierarchyMenu</b><span>(morphsHierarchy)</span>
+      </a>
+    </span>
+    <span class='desc'>
+      When user right-clicks on a morph that is a child of other morphs, then it&#39;s ambiguous which of the morphs she wants to operate on.
+
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#popupDeveloperMenu-dynamic'>
+        #
+(void)
+<b>popupDeveloperMenu</b><span>(morphOpeningThePopUp)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#popUpColorSetter-dynamic'>
+        #
+(void)
+<b>popUpColorSetter</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#transparencyPopout-dynamic'>
+        #
+(void)
+<b>transparencyPopout</b><span>(menuItem)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#createNewStringMorph2WithBackground-dynamic'>
+        #
+(void)
+<b>createNewStringMorph2WithBackground</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#createNewStringMorph2WithoutBackground-dynamic'>
+        #
+(void)
+<b>createNewStringMorph2WithoutBackground</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#createNewTextMorph2WithBackground-dynamic'>
+        #
+(void)
+<b>createNewTextMorph2WithBackground</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#createNewWrappingSimplePlainTextWdgtWithBackground-dynamic'>
+        #
+(void)
+<b>createNewWrappingSimplePlainTextWdgtWithBackground</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#createNewNonWrappingSimplePlainTextWdgtWithBackground-dynamic'>
+        #
+(void)
+<b>createNewNonWrappingSimplePlainTextWdgtWithBackground</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#createNewWrappingAndNonWrappingSimplePlainTextWdgtWithBackground-dynamic'>
+        #
+(void)
+<b>createNewWrappingAndNonWrappingSimplePlainTextWdgtWithBackground</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#createWrappingSimplePlainTextScrollPanelWdgt-dynamic'>
+        #
+(void)
+<b>createWrappingSimplePlainTextScrollPanelWdgt</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#createNonWrappingSimplePlainTextScrollPanelWdgt-dynamic'>
+        #
+(void)
+<b>createNonWrappingSimplePlainTextScrollPanelWdgt</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#createWrappingAndNonWrappingSimplePlainTextScrollPanelWdgt-dynamic'>
+        #
+(void)
+<b>createWrappingAndNonWrappingSimplePlainTextScrollPanelWdgt</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#createWrappingSimplePlainTextPanelWdgt-dynamic'>
+        #
+(void)
+<b>createWrappingSimplePlainTextPanelWdgt</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+      this is provided for completeness, however see the note in SimplePlainTextPanelWdgt about how this is
+incomplete and why this widget is not useful anyways
+
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#createNonWrappingSimplePlainTextPanelWdgt-dynamic'>
+        #
+(void)
+<b>createNonWrappingSimplePlainTextPanelWdgt</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+      this is provided for completeness, however see the note in SimplePlainTextPanelWdgt about how this is
+incomplete and why this widget is not useful anyways
+
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#createWrappingAndNonWrappingSimplePlainTextPanelWdgt-dynamic'>
+        #
+(void)
+<b>createWrappingAndNonWrappingSimplePlainTextPanelWdgt</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+      this is provided for completeness, however see the note in SimplePlainTextPanelWdgt about how this is
+incomplete and why this widget is not useful anyways
+
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#createNewStringMorph3WithBackground-dynamic'>
+        #
+(void)
+<b>createNewStringMorph3WithBackground</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#createNewTextMorph3WithBackground-dynamic'>
+        #
+(void)
+<b>createNewTextMorph3WithBackground</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#createSimpleVerticalStackPanelWdgt-dynamic'>
+        #
+(void)
+<b>createSimpleVerticalStackPanelWdgt</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#createSimpleVerticalStackScrollPanelWdgt-dynamic'>
+        #
+(void)
+<b>createSimpleVerticalStackScrollPanelWdgt</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#createSimpleVerticalStackPanelWdgtAndScrollPanel-dynamic'>
+        #
+(void)
+<b>createSimpleVerticalStackPanelWdgtAndScrollPanel</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#createSimpleVerticalStackPanelWdgtFreeContentsWidth-dynamic'>
+        #
+(void)
+<b>createSimpleVerticalStackPanelWdgtFreeContentsWidth</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#createSimpleVerticalStackScrollPanelWdgtFreeContentsWidth-dynamic'>
+        #
+(void)
+<b>createSimpleVerticalStackScrollPanelWdgtFreeContentsWidth</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#createSimpleVerticalStackPanelWdgtAndScrollPanelFreeContentsWidth-dynamic'>
+        #
+(void)
+<b>createSimpleVerticalStackPanelWdgtAndScrollPanelFreeContentsWidth</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#createSimpleDocumentScrollPanelWdgt-dynamic'>
+        #
+(void)
+<b>createSimpleDocumentScrollPanelWdgt</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#showOutputPins-dynamic'>
+        #
+(void)
+<b>showOutputPins</b><span>(a, b, c, d)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#removeOutputPins-dynamic'>
+        #
+(void)
+<b>removeOutputPins</b><span>(a, b, c, d)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#testMenu-dynamic'>
+        #
+(void)
+<b>testMenu</b><span>(morphOpeningThePopUp, targetMorph)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#analogClock-dynamic'>
+        #
+(void)
+<b>analogClock</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#popUpIconsMenu-dynamic'>
+        #
+(void)
+<b>popUpIconsMenu</b><span>(morphOpeningThePopUp)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#popUpVerticalStackMenu-dynamic'>
+        #
+(void)
+<b>popUpVerticalStackMenu</b><span>(morphOpeningThePopUp)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#popUpDocumentMenu-dynamic'>
+        #
+(void)
+<b>popUpDocumentMenu</b><span>(morphOpeningThePopUp)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#popUpWindowsMenu-dynamic'>
+        #
+(void)
+<b>popUpWindowsMenu</b><span>(morphOpeningThePopUp)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#popUpShortcutsAndScriptsMenu-dynamic'>
+        #
+(void)
+<b>popUpShortcutsAndScriptsMenu</b><span>(morphOpeningThePopUp)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#popUpPatchProgrammingMenu-dynamic'>
+        #
+(void)
+<b>popUpPatchProgrammingMenu</b><span>(morphOpeningThePopUp)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#createEmptyInternalWindow-dynamic'>
+        #
+(void)
+<b>createEmptyInternalWindow</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#createEmptyWindow-dynamic'>
+        #
+(void)
+<b>createEmptyWindow</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#popUpSimplePlainTextWdgtMenu-dynamic'>
+        #
+(void)
+<b>popUpSimplePlainTextWdgtMenu</b><span>(morphOpeningThePopUp)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#popUpFirstMenu-dynamic'>
+        #
+(void)
+<b>popUpFirstMenu</b><span>(morphOpeningThePopUp)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#popUpSecondMenu-dynamic'>
+        #
+(void)
+<b>popUpSecondMenu</b><span>(morphOpeningThePopUp)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#serialiseToMemory-dynamic'>
+        #
+(void)
+<b>serialiseToMemory</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#deserialiseFromMemoryAndAttachToHand-dynamic'>
+        #
+(void)
+<b>deserialiseFromMemoryAndAttachToHand</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#deserialiseFromMemoryAndAttachToWorld-dynamic'>
+        #
+(void)
+<b>deserialiseFromMemoryAndAttachToWorld</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#buildBaseMorphClassContextMenu-dynamic'>
+        #
+(void)
+<b>buildBaseMorphClassContextMenu</b><span>(morphOpeningThePopUp)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#addMorphSpecificMenuEntries-dynamic'>
+        #
+(void)
+<b>addMorphSpecificMenuEntries</b><span>(morphOpeningThePopUp, menu)</span>
+      </a>
+    </span>
+    <span class='desc'>
+      Widget-specific menu entries are basically the ones beyond the generic entries above.
+
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#buildMorphContextMenu-dynamic'>
+        #
+(void)
+<b>buildMorphContextMenu</b><span>(morphOpeningThePopUp)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#calculateAlphaScaled-dynamic'>
+        #
+(void)
+<b>calculateAlphaScaled</b><span>(alpha)</span>
+      </a>
+    </span>
+    <span class='desc'>
+      Widget menu actions 
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#setPadding-dynamic'>
+        #
+(void)
+<b>setPadding</b><span>(paddingOrMorphGivingPadding, morphGivingPadding)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#setPaddingTop-dynamic'>
+        #
+(void)
+<b>setPaddingTop</b><span>(paddingOrMorphGivingPadding, morphGivingPadding)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#setPaddingBottom-dynamic'>
+        #
+(void)
+<b>setPaddingBottom</b><span>(paddingOrMorphGivingPadding, morphGivingPadding)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#setPaddingLeft-dynamic'>
+        #
+(void)
+<b>setPaddingLeft</b><span>(paddingOrMorphGivingPadding, morphGivingPadding)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#setPaddingRight-dynamic'>
+        #
+(void)
+<b>setPaddingRight</b><span>(paddingOrMorphGivingPadding, morphGivingPadding)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#setAlphaScaled-dynamic'>
+        #
+(void)
+<b>setAlphaScaled</b><span>(alphaOrMorphGivingAlpha, morphGivingAlpha)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#newParentChoice-dynamic'>
+        #
+(void)
+<b>newParentChoice</b><span>(ignored, theMorphToBeAttached)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#newParentChoiceWithHorizLayout-dynamic'>
+        #
+(void)
+<b>newParentChoiceWithHorizLayout</b><span>(ignored, theMorphToBeAttached)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#attach-dynamic'>
+        #
+(void)
+<b>attach</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#attachWithHorizLayout-dynamic'>
+        #
+(void)
+<b>attachWithHorizLayout</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#toggleIsLockingToPanels-dynamic'>
+        #
+(void)
+<b>toggleIsLockingToPanels</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#lockToPanels-dynamic'>
+        #
+(void)
+<b>lockToPanels</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#unlockFromPanels-dynamic'>
+        #
+(void)
+<b>unlockFromPanels</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#enableDragsDropsAndEditing-dynamic'>
+        #
+(void)
+<b>enableDragsDropsAndEditing</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#disableDragsDropsAndEditing-dynamic'>
+        #
+(void)
+<b>disableDragsDropsAndEditing</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#prepareToBeGrabbed-dynamic'>
+        #
+(void)
+<b>prepareToBeGrabbed</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#deduplicateSettersAndSortByMenuEntryString-dynamic'>
+        #
+(void)
+<b>deduplicateSettersAndSortByMenuEntryString</b><span>(menuEntriesStrings, functionNamesStrings)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#colorSetters-dynamic'>
+        #
+(void)
+<b>colorSetters</b><span>(menuEntriesStrings, functionNamesStrings)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#stringSetters-dynamic'>
+        #
+(void)
+<b>stringSetters</b><span>(menuEntriesStrings, functionNamesStrings)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#numericalSetters-dynamic'>
+        #
+(void)
+<b>numericalSetters</b><span>(menuEntriesStrings, functionNamesStrings)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#allSetters-dynamic'>
+        #
+(void)
+<b>allSetters</b><span>(menuEntriesStrings, functionNamesStrings)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#allEntryFields-dynamic'>
+        #
+(void)
+<b>allEntryFields</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#nextEntryField-dynamic'>
+        #
+(void)
+<b>nextEntryField</b><span>(current)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#previousEntryField-dynamic'>
+        #
+(void)
+<b>previousEntryField</b><span>(current)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#tab-dynamic'>
+        #
+(void)
+<b>tab</b><span>(editField)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#backTab-dynamic'>
+        #
+(void)
+<b>backTab</b><span>(editField)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#escalateEvent-dynamic'>
+        #
+(void)
+<b>escalateEvent</b><span>(functionName, arg1, arg2, arg3, arg4, arg5, arg6)</span>
+      </a>
+    </span>
+    <span class='desc'>
+      TODO I&#39;m sure there is a cleaner way to handle arbitrary number of arguments here
+
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#evaluateString-dynamic'>
+        #
+(void)
+<b>evaluateString</b><span>(codeSource)</span>
+      </a>
+    </span>
+    <span class='desc'>
+      Widget eval. 
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#isTouching-dynamic'>
+        #
+(void)
+<b>isTouching</b><span>(otherMorph)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#overlappingImage-dynamic'>
+        #
+(void)
+<b>overlappingImage</b><span>(otherMorph)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#makeSpacersTransparent-dynamic'>
+        #
+(void)
+<b>makeSpacersTransparent</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+      »&gt;&gt; this part is excluded from the fizzygum homepage build 
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#makeSpacersOpaque-dynamic'>
+        #
+(void)
+<b>makeSpacersOpaque</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#invalidateLayout-dynamic'>
+        #
+(void)
+<b>invalidateLayout</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#setMinAndMaxBoundsAndSpreadability-dynamic'>
+        #
+(void)
+<b>setMinAndMaxBoundsAndSpreadability</b><span>(minBounds, desiredBounds, spreadability = LayoutSpec.SPREADABILITY_MEDIUM)</span>
+      </a>
+    </span>
+    <span class='desc'>
+      »&gt;&gt; this part is excluded from the fizzygum homepage build 
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#setMaxDim-dynamic'>
+        #
+(void)
+<b>setMaxDim</b><span>(overridingMaxDim)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#getDesiredDim-dynamic'>
+        #
+(void)
+<b>getDesiredDim</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+      if you use this paragraph, then the container of further layouts will have a minimum equal to the sum of minimums
+of the contents.
+
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#getMinDim-dynamic'>
+        #
+(void)
+<b>getMinDim</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#getMaxDim-dynamic'>
+        #
+(void)
+<b>getMaxDim</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#getRecursiveDesiredDim-dynamic'>
+        #
+(void)
+<b>getRecursiveDesiredDim</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#getRecursiveMinDim-dynamic'>
+        #
+(void)
+<b>getRecursiveMinDim</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#getRecursiveMaxDim-dynamic'>
+        #
+(void)
+<b>getRecursiveMaxDim</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#countOfChildrenToLayout-dynamic'>
+        #
+(void)
+<b>countOfChildrenToLayout</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#implementsDeferredLayout-dynamic'>
+        #
+(void)
+<b>implementsDeferredLayout</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+      it&#39;s useful to know when a morph defers its layout because it means that its current size is indicative
+(particularly the children&#39;s sizes and position)
+
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#doLayout-dynamic'>
+        #
+(void)
+<b>doLayout</b><span>(newBoundsForThisLayout)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#removeAdders-dynamic'>
+        #
+(void)
+<b>removeAdders</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+      »&gt;&gt; this part is excluded from the fizzygum homepage build 
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#showAdders-dynamic'>
+        #
+(void)
+<b>showAdders</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#addOrRemoveAdders-dynamic'>
+        #
+(void)
+<b>addOrRemoveAdders</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+</ul>
+      <h2>
+        <small>Inherited Method Summary</small>
+        <h3 class='inherited'>
+          Methods inherited from
+          <a href='../class/TreeNode.html'>TreeNode</a>
+        </h3>
+        <p class='inherited'>
+          <a href='../class/TreeNode.html#childrenTopToBottom-dynamic'>#childrenTopToBottom</a>
+          <a href='../class/TreeNode.html#addChild-dynamic'>#addChild</a>
+          <a href='../class/TreeNode.html#addChildFirst-dynamic'>#addChildFirst</a>
+          <a href='../class/TreeNode.html#moveAsLastChild-dynamic'>#moveAsLastChild</a>
+          <a href='../class/TreeNode.html#removeChild-dynamic'>#removeChild</a>
+          <a href='../class/TreeNode.html#markReferenceAsVisited-dynamic'>#markReferenceAsVisited</a>
+          <a href='../class/TreeNode.html#wasReferenceVisited-dynamic'>#wasReferenceVisited</a>
+          <a href='../class/TreeNode.html#markItAndItsParentsAsReachable-dynamic'>#markItAndItsParentsAsReachable</a>
+          <a href='../class/TreeNode.html#isOrphan-dynamic'>#isOrphan</a>
+          <a href='../class/TreeNode.html#isDirectlyInBasement-dynamic'>#isDirectlyInBasement</a>
+          <a href='../class/TreeNode.html#isInBasement-dynamic'>#isInBasement</a>
+          <a href='../class/TreeNode.html#isInBasementButReachable-dynamic'>#isInBasementButReachable</a>
+          <a href='../class/TreeNode.html#SLOWroot-dynamic'>#SLOWroot</a>
+          <a href='../class/TreeNode.html#root-dynamic'>#root</a>
+          <a href='../class/TreeNode.html#pathOfChildrenPositionsRelativeToWorld-dynamic'>#pathOfChildrenPositionsRelativeToWorld</a>
+          <a href='../class/TreeNode.html#depth-dynamic'>#depth</a>
+          <a href='../class/TreeNode.html#allChildrenBottomToTop-dynamic'>#allChildrenBottomToTop</a>
+          <a href='../class/TreeNode.html#allChildrenTopToBottom-dynamic'>#allChildrenTopToBottom</a>
+          <a href='../class/TreeNode.html#allChildrenTopToBottomSuchThat-dynamic'>#allChildrenTopToBottomSuchThat</a>
+          <a href='../class/TreeNode.html#forAllChildrenBottomToTop-dynamic'>#forAllChildrenBottomToTop</a>
+          <a href='../class/TreeNode.html#allLeafsBottomToTop-dynamic'>#allLeafsBottomToTop</a>
+          <a href='../class/TreeNode.html#allParentsBottomToTop-dynamic'>#allParentsBottomToTop</a>
+          <a href='../class/TreeNode.html#allParentsTopToBottom-dynamic'>#allParentsTopToBottom</a>
+          <a href='../class/TreeNode.html#allParentsBottomToTopSuchThat-dynamic'>#allParentsBottomToTopSuchThat</a>
+          <a href='../class/TreeNode.html#allParentsTopToBottomSuchThat-dynamic'>#allParentsTopToBottomSuchThat</a>
+          <a href='../class/TreeNode.html#isAncestorOf-dynamic'>#isAncestorOf</a>
+          <a href='../class/TreeNode.html#siblings-dynamic'>#siblings</a>
+          <a href='../class/TreeNode.html#firstSiblingsSuchThat-dynamic'>#firstSiblingsSuchThat</a>
+          <a href='../class/TreeNode.html#amITheFirstSibling-dynamic'>#amITheFirstSibling</a>
+          <a href='../class/TreeNode.html#amITheLastSibling-dynamic'>#amITheLastSibling</a>
+          <a href='../class/TreeNode.html#positionAmongSiblings-dynamic'>#positionAmongSiblings</a>
+          <a href='../class/TreeNode.html#siblingBeforeMeIsA-dynamic'>#siblingBeforeMeIsA</a>
+          <a href='../class/TreeNode.html#siblingAfterMeIsA-dynamic'>#siblingAfterMeIsA</a>
+          <a href='../class/TreeNode.html#howManySiblingsBeforeMeSuchThat-dynamic'>#howManySiblingsBeforeMeSuchThat</a>
+          <a href='../class/TreeNode.html#lastSiblingBeforeMeSuchThat-dynamic'>#lastSiblingBeforeMeSuchThat</a>
+          <a href='../class/TreeNode.html#firstSiblingAfterMeSuchThat-dynamic'>#firstSiblingAfterMeSuchThat</a>
+          <a href='../class/TreeNode.html#nthChildSuchThat-dynamic'>#nthChildSuchThat</a>
+          <a href='../class/TreeNode.html#firstChildSuchThat-dynamic'>#firstChildSuchThat</a>
+          <a href='../class/TreeNode.html#SLOWfirstParentClippingAtBounds-dynamic'>#SLOWfirstParentClippingAtBounds</a>
+          <a href='../class/TreeNode.html#firstParentClippingAtBounds-dynamic'>#firstParentClippingAtBounds</a>
+          <a href='../class/TreeNode.html#parentThatIsA-dynamic'>#parentThatIsA</a>
+          <a href='../class/TreeNode.html#isADescendantOf-dynamic'>#isADescendantOf</a>
+          <a href='../class/TreeNode.html#topMorphSuchThat-dynamic'>#topMorphSuchThat</a>
+          <a href='../class/TreeNode.html#topmostChildSuchThat-dynamic'>#topmostChildSuchThat</a>
+          <a href='../class/TreeNode.html#collectAllChildrenBottomToTopSuchThat-dynamic'>#collectAllChildrenBottomToTopSuchThat</a>
+        </p>
+      </h2>
+      <h2>Class Method Details</h2>
+      <div class='methods'>
+  <div class='method_details'>
+    <p class='signature' id='morphStaticMethod-static'>
+      .
+(void)
+<b>morphStaticMethod</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='morphFromUniqueIDString-static'>
+      .
+(void)
+<b>morphFromUniqueIDString</b><span>(theUniqueID)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='roundNumericIDsToNextThousand-static'>
+      .
+(void)
+<b>roundNumericIDsToNextThousand</b><span>()</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>some test commands specify morphs via
+their uniqueIDString. This means that
+if there is one more TextMorph anywhere during
+the playback, for example because
+one new menu item is added, then
+all the subsequent IDs for the TextMorph will be off.
+In order to sort that out, we occasionally re-align
+the counts to the next 1000, so the next Widgets
+being created will all be aligned and
+minor discrepancies are ironed-out</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='setupTestScreen1-static'>
+      .
+(void)
+<b>setupTestScreen1</b><span>()</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>»&gt;&gt; this part is excluded from the fizzygum homepage build</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+</div>
+      <h2>Constructor Details</h2>
+      <div class='methods'>
+  <div class='method_details'>
+    <p class='signature' id='constructor-dynamic'>
+      #
+(void)
+<b>constructor</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+</div>
+      <h2>Instance Method Details</h2>
+      <div class='methods'>
+  <div class='method_details'>
+    <p class='signature' id='morphMethod-dynamic'>
+      #
+(void)
+<b>morphMethod</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='initialiseDefaultWindowContentLayoutSpec-dynamic'>
+      #
+(void)
+<b>initialiseDefaultWindowContentLayoutSpec</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='initialiseDefaultVerticalStackLayoutSpec-dynamic'>
+      #
+(void)
+<b>initialiseDefaultVerticalStackLayoutSpec</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='mouseClickRight-dynamic'>
+      #
+(void)
+<b>mouseClickRight</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='getTextDescription-dynamic'>
+      #
+(void)
+<b>getTextDescription</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='identifyViaTextLabel-dynamic'>
+      #
+(void)
+<b>identifyViaTextLabel</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='setTextDescription-dynamic'>
+      #
+(void)
+<b>setTextDescription</b><span>(textDescription)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='uniqueIDString-dynamic'>
+      #
+(void)
+<b>uniqueIDString</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='morphClassString-dynamic'>
+      #
+(void)
+<b>morphClassString</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='assignUniqueID-dynamic'>
+      #
+(void)
+<b>assignUniqueID</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='startCountdownForBubbleHelp-dynamic'>
+      #
+(void)
+<b>startCountdownForBubbleHelp</b><span>(contents)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='registerThisInstance-dynamic'>
+      #
+(void)
+<b>registerThisInstance</b><span>()</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>this happens when the Widget&#39;s constructor runs
+and also when the Widget is duplicated</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='unregisterThisInstance-dynamic'>
+      #
+(void)
+<b>unregisterThisInstance</b><span>()</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>this happens when the Widget is destroyed</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='isTransparentAt-dynamic'>
+      #
+(void)
+<b>isTransparentAt</b><span>(aPoint)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='paintHighlight-dynamic'>
+      #
+(void)
+<b>paintHighlight</b><span>(aContext, al, at, w, h)</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>useful for example when hovering over references
+to morphs. Can only modify the rendering of a morph,
+so any highlighting is only visible in the measure that
+the morph is visible (as opposed to HighlighterMorph being
+used to highlight a morph)</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='paintIntoAreaOrBlitFromBackBuffer-dynamic'>
+      #
+(void)
+<b>paintIntoAreaOrBlitFromBackBuffer</b><span>(aContext, clippingRectangle, appliedShadow)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='paintStroke-dynamic'>
+      #
+(void)
+<b>paintStroke</b><span>(aContext, clippingRectangle)</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>painting strokes is a little delicate because they need to
+be painted INSIDE the morph (otherwise a) adjacent morphs, of morphs
+within a layout would make a mess and b) clipping morph would
+present a problem).
+Also, Panels are tricky
+because they need to paint the strokes after they paint their
+content (because the content could paint everywhere inside the
+Panel).
+If you are thinking that you could paint the stroke before
+the contents, by just
+painting the contents of the Panel slightly clipped &quot;inside&quot; the
+border of the Panel, that could potentially work with enough
+changes, but it would only be easy to do with rectangular Panels,
+since clipping &quot;on the inside&quot; of a border of arbitrary shape is
+not trivial, maybe you&#39;d have to examine how the lines cross at
+different angles to paint &quot;inside&quot; of the lines, looks very messy.
+Much easier to just paint the stroke after the content.</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='addShapeSpecificMenuItems-dynamic'>
+      #
+(void)
+<b>addShapeSpecificMenuItems</b><span>(menu)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='addShapeSpecificNumericalSetters-dynamic'>
+      #
+(void)
+<b>addShapeSpecificNumericalSetters</b><span>(menuEntriesStrings, functionNamesStrings)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='toString-dynamic'>
+      #
+(void)
+<b>toString</b><span>()</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>Widget string representation: e.g. &#39;a Widget&#39; or &#39;a Widget#2&#39;</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='close-dynamic'>
+      #
+(void)
+<b>close</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='closeFromContainerWindow-dynamic'>
+      #
+(void)
+<b>closeFromContainerWindow</b><span>(containerWindow)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='destroy-dynamic'>
+      #
+(void)
+<b>destroy</b><span>()</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>Widgets destroying ======
+this is different from a widget being closed/deleted
+when a widget is destroyed, it&#39;s removed from the stepping
+list and marked as destroyed.
+NOTE that the tree under this widget is kept intact,
+so this widget could be duplicated and revived</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='fullDestroy-dynamic'>
+      #
+(void)
+<b>fullDestroy</b><span>()</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>destroys the whole tree
+from the bottom (leaf widgets, drawn on top
+of everything) to the top</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='closeChildren-dynamic'>
+      #
+(void)
+<b>closeChildren</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='fullDestroyChildren-dynamic'>
+      #
+(void)
+<b>fullDestroyChildren</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='setLayoutSpec-dynamic'>
+      #
+(void)
+<b>setLayoutSpec</b><span>(newLayoutSpec)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='nextSteps-dynamic'>
+      #
+(void)
+<b>nextSteps</b><span>(lst = [])</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>not used within Fizzygum yet.</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='left-dynamic'>
+      #
+(void)
+<b>left</b><span>()</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>Widget accessing - geometry getting:</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='right-dynamic'>
+      #
+(void)
+<b>right</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='top-dynamic'>
+      #
+(void)
+<b>top</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='bottom-dynamic'>
+      #
+(void)
+<b>bottom</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='center-dynamic'>
+      #
+(void)
+<b>center</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='bottomCenter-dynamic'>
+      #
+(void)
+<b>bottomCenter</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='bottomLeft-dynamic'>
+      #
+(void)
+<b>bottomLeft</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='bottomRight-dynamic'>
+      #
+(void)
+<b>bottomRight</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='boundingBox-dynamic'>
+      #
+(void)
+<b>boundingBox</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='leftTight-dynamic'>
+      #
+(void)
+<b>leftTight</b><span>()</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>Widget accessing - geometry getting:</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='rightTight-dynamic'>
+      #
+(void)
+<b>rightTight</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='topTight-dynamic'>
+      #
+(void)
+<b>topTight</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='bottomTight-dynamic'>
+      #
+(void)
+<b>bottomTight</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='bottomCenterTight-dynamic'>
+      #
+(void)
+<b>bottomCenterTight</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='bottomLeftTight-dynamic'>
+      #
+(void)
+<b>bottomLeftTight</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='bottomRightTight-dynamic'>
+      #
+(void)
+<b>bottomRightTight</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='boundingBoxTight-dynamic'>
+      #
+(void)
+<b>boundingBoxTight</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='rawResizeToWithoutSpacing-dynamic'>
+      #
+(void)
+<b>rawResizeToWithoutSpacing</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='rawSetWidthSizeHeightAccordingly-dynamic'>
+      #
+(void)
+<b>rawSetWidthSizeHeightAccordingly</b><span>(newWidth)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='rawSetBounds-dynamic'>
+      #
+(void)
+<b>rawSetBounds</b><span>(newBounds)</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>note that using this one, the children
+morphs attached as floating don&#39;t move</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='setBounds-dynamic'>
+      #
+(void)
+<b>setBounds</b><span>(aRectangle, morphStartingTheChange = nil)</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>high-level geometry-change API,
+you don&#39;t actually change the geometry right away,
+you just ask for the desired change and wait for the
+layouting mechanism to do its best to satisfy it</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='silentRawSetBounds-dynamic'>
+      #
+(void)
+<b>silentRawSetBounds</b><span>(newBounds)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='corners-dynamic'>
+      #
+(void)
+<b>corners</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='leftCenter-dynamic'>
+      #
+(void)
+<b>leftCenter</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='rightCenter-dynamic'>
+      #
+(void)
+<b>rightCenter</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='topCenter-dynamic'>
+      #
+(void)
+<b>topCenter</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='topLeft-dynamic'>
+      #
+(void)
+<b>topLeft</b><span>()</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>same as position()</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='topRight-dynamic'>
+      #
+(void)
+<b>topRight</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='position-dynamic'>
+      #
+(void)
+<b>position</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='positionFractionalInMorph-dynamic'>
+      #
+(void)
+<b>positionFractionalInMorph</b><span>(theMorph)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='extentFractionalInMorph-dynamic'>
+      #
+(void)
+<b>extentFractionalInMorph</b><span>(theMorph)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='positionPixelsInMorph-dynamic'>
+      #
+(void)
+<b>positionPixelsInMorph</b><span>(theMorph)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='extent-dynamic'>
+      #
+(void)
+<b>extent</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='width-dynamic'>
+      #
+(void)
+<b>width</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='widthWithoutSpacing-dynamic'>
+      #
+(void)
+<b>widthWithoutSpacing</b><span>()</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>e.g. images can have a lot of spacing
+around them, so here is a method to get
+the width of the actual thing, ignoring all
+the spacing that might be around</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='height-dynamic'>
+      #
+(void)
+<b>height</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='cornersTight-dynamic'>
+      #
+(void)
+<b>cornersTight</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='leftCenterTight-dynamic'>
+      #
+(void)
+<b>leftCenterTight</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='rightCenterTight-dynamic'>
+      #
+(void)
+<b>rightCenterTight</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='topCenterTight-dynamic'>
+      #
+(void)
+<b>topCenterTight</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='topLeftTight-dynamic'>
+      #
+(void)
+<b>topLeftTight</b><span>()</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>same as position()</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='topRightTight-dynamic'>
+      #
+(void)
+<b>topRightTight</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='positionTight-dynamic'>
+      #
+(void)
+<b>positionTight</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='extentTight-dynamic'>
+      #
+(void)
+<b>extentTight</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='widthTight-dynamic'>
+      #
+(void)
+<b>widthTight</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='heightTight-dynamic'>
+      #
+(void)
+<b>heightTight</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='plausibleTargetAndDestinationMorphs-dynamic'>
+      #
+(void)
+<b>plausibleTargetAndDestinationMorphs</b><span>(theMorph)</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>used for example:</p><ul>
+<li>to determine which morphs you can attach a morph to</li>
+<li>for a SliderMorph&#39;s &quot;set target&quot; so you can change properties of another Widget</li>
+<li>by the HandleMorph when you attach it to some other morph
+Note that this method has a slightly different
+version in PanelWdgt (because it clips, so we need
+to check that we don&#39;t consider overlaps with
+morphs contained in a Panel that are clipped and
+hence <em>actually</em> not overlapping).</li>
+</ul>
+
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='surelyNotShowingUpOnScreenBasedOnVisibilityCollapseAndOrphanage-dynamic'>
+      #
+(void)
+<b>surelyNotShowingUpOnScreenBasedOnVisibilityCollapseAndOrphanage</b><span>()</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>both methods invoked in here
+are cached
+used in the method fleshOutBroken
+to skip the &quot;destination&quot; broken rects
+for morphs that marked themselves
+as broken but at moment of destination
+might be invisible
+TODO for sure this should also check for the .destroyed flag</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='SLOWvisibleBasedOnIsVisibleProperty-dynamic'>
+      #
+(void)
+<b>SLOWvisibleBasedOnIsVisibleProperty</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='visibleBasedOnIsVisibleProperty-dynamic'>
+      #
+(void)
+<b>visibleBasedOnIsVisibleProperty</b><span>()</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>doesn&#39;t check orphanage</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='invalidateFullBoundsCache-dynamic'>
+      #
+(void)
+<b>invalidateFullBoundsCache</b><span>()</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>Note that in a case of a fullMove<em>
+you should also invalidate all the morphs in
+the subtree as well.
+This happens indirectly as the fullMove</em> methods
+move all the children too, so <em>that</em>
+invalidates them. Note that things might change
+if you use a different coordinate system, in which
+case you have to invalidate the caches in all the
+submorphs manually or use some other cache
+invalidation mechanism.</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='invalidateFullClippedBoundsCache-dynamic'>
+      #
+(void)
+<b>invalidateFullClippedBoundsCache</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='SLOWfullBounds-dynamic'>
+      #
+(void)
+<b>SLOWfullBounds</b><span>()</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>doesn&#39;t take into account orphanage
+or visibility</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='SLOWfullClippedBounds-dynamic'>
+      #
+(void)
+<b>SLOWfullClippedBounds</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='subMorphsMergedFullBounds-dynamic'>
+      #
+(void)
+<b>subMorphsMergedFullBounds</b><span>()</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>for PanelWdgt scrolling support</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='fullBounds-dynamic'>
+      #
+(void)
+<b>fullBounds</b><span>()</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>does not take into account orphanage or visibility</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='fullClippedBounds-dynamic'>
+      #
+(void)
+<b>fullClippedBounds</b><span>()</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>this one does take into account orphanage and
+visibility. The reason is that this is used to
+find the smallest broken rectangle created by
+a fullChanged(), which means that really we
+are interested in what&#39;s visible on screen so
+we do take into account orphanage and
+visibility.</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='clippedThroughBounds-dynamic'>
+      #
+(void)
+<b>clippedThroughBounds</b><span>()</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>this one does take into account orphanage and
+visibility. The reason is that this is used to
+find the smallest broken rectangle created by
+a changed(), which means that really we
+are interested in what&#39;s visible on screen so
+we do take into account orphanage and
+visibility.</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='clipThrough-dynamic'>
+      #
+(void)
+<b>clipThrough</b><span>()</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>this one does take into account orphanage and
+visibility. The reason is that this is used to
+find the &quot;smallest broken rectangles&quot;
+which means that really we
+are interested in what&#39;s visible on screen so
+we do take into account orphanage and
+visibility.</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='fullRawMoveBy-dynamic'>
+      #
+(void)
+<b>fullRawMoveBy</b><span>(delta)</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>Widget accessing - simple changes:</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='silentFullRawMoveBy-dynamic'>
+      #
+(void)
+<b>silentFullRawMoveBy</b><span>(delta)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='breakNumberOfRawMovesAndResizesCaches-dynamic'>
+      #
+(void)
+<b>breakNumberOfRawMovesAndResizesCaches</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='fullRawMoveInDesktopToFractionalPosition-dynamic'>
+      #
+(void)
+<b>fullRawMoveInDesktopToFractionalPosition</b><span>(boundsOfParent)</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>moving to fractional position within the desktop is
+different from the case below because the desktop can be
+resized to any ratio</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='fullRawMoveInStretchablePanelToFractionalPosition-dynamic'>
+      #
+(void)
+<b>fullRawMoveInStretchablePanelToFractionalPosition</b><span>(boundsOfParent)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='rawSetExtentToFractionalExtentInPaneUserHasSet-dynamic'>
+      #
+(void)
+<b>rawSetExtentToFractionalExtentInPaneUserHasSet</b><span>(boundsOfParent)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='fullRawMoveTo-dynamic'>
+      #
+(void)
+<b>fullRawMoveTo</b><span>(aPoint)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='fullMoveTo-dynamic'>
+      #
+(void)
+<b>fullMoveTo</b><span>(aPoint, morphStartingTheChange = nil)</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>high-level geometry-change API,
+you don&#39;t actually change the geometry right away,
+you just ask for the desired change and wait for the
+layouting mechanism to do its best to satisfy it</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='rememberFractionalPositionInHoldingPanel-dynamic'>
+      #
+(void)
+<b>rememberFractionalPositionInHoldingPanel</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='rememberFractionalExtentInHoldingPanel-dynamic'>
+      #
+(void)
+<b>rememberFractionalExtentInHoldingPanel</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='rememberFractionalSituationInHoldingPanel-dynamic'>
+      #
+(void)
+<b>rememberFractionalSituationInHoldingPanel</b><span>()</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>TODO this is used a lot, where I suspect all we need to do
+is to do this automatically ALSO when a widget is added/moved
+to a new parent. I don&#39;t dare to do this now because I don&#39;t
+have enough tests in the new environment to check for
+bad implications.</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='silentFullRawMoveTo-dynamic'>
+      #
+(void)
+<b>silentFullRawMoveTo</b><span>(aPoint)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='fullRawMoveLeftSideTo-dynamic'>
+      #
+(void)
+<b>fullRawMoveLeftSideTo</b><span>(x)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='fullRawMoveRightSideTo-dynamic'>
+      #
+(void)
+<b>fullRawMoveRightSideTo</b><span>(x)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='fullRawMoveTopSideTo-dynamic'>
+      #
+(void)
+<b>fullRawMoveTopSideTo</b><span>(y)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='fullRawMoveBottomSideTo-dynamic'>
+      #
+(void)
+<b>fullRawMoveBottomSideTo</b><span>(y)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='fullRawMoveCenterTo-dynamic'>
+      #
+(void)
+<b>fullRawMoveCenterTo</b><span>(aPoint)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='fullRawMoveToSideOf-dynamic'>
+      #
+(void)
+<b>fullRawMoveToSideOf</b><span>(aWidget)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='fullRawMoveFullCenterTo-dynamic'>
+      #
+(void)
+<b>fullRawMoveFullCenterTo</b><span>(aPoint)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='fullRawMoveWithin-dynamic'>
+      #
+(void)
+<b>fullRawMoveWithin</b><span>(aMorph)</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>make sure I am completely within another Widget&#39;s bounds</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='notifyChildrenThatParentHasReLayouted-dynamic'>
+      #
+(void)
+<b>notifyChildrenThatParentHasReLayouted</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='parentHasReLayouted-dynamic'>
+      #
+(void)
+<b>parentHasReLayouted</b><span>()</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>normally morphs do nothing when the
+parent is layouting, as they are
+placed with absolute positioning.
+In some cases though, such as in the
+case of the HandleMorph, a Widget
+make take the occasion to do special things
+In the case of the HandleMorph, it&#39;s going
+to place itself in the bottom-right
+corner.</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='layoutInset-dynamic'>
+      #
+(void)
+<b>layoutInset</b><span>(morphStartingTheChange = nil)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='layoutSubmorphs-dynamic'>
+      #
+(void)
+<b>layoutSubmorphs</b><span>(morphStartingTheChange = nil)</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>the default of layoutSubmorphs
+is to do nothing apart from notifying
+the children (in case, for example,
+there is a HandleMorph in this morph
+which will cause the HandleMorph to
+replace itself in the new position)
+, but things like
+the inspector might well want to
+tweak many of their children...</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='childChangedExtent-dynamic'>
+      #
+(void)
+<b>childChangedExtent</b><span>(theMorphChangingTheExtent)</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>do nothing in most cases but for example for
+layouts, if something inside a layout wants to
+change extent, then the whole layout might need to
+change extent.</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='getMinimumExtent-dynamic'>
+      #
+(void)
+<b>getMinimumExtent</b><span>()</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>more complex Widgets, e.g. layouts, might
+do a more complex calculation to get the
+minimum extent</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='setMinimumExtent-dynamic'>
+      #
+(void)
+<b>setMinimumExtent</b><span>(minimumExtent)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='rawSetExtent-dynamic'>
+      #
+(void)
+<b>rawSetExtent</b><span>(aPoint, morphStartingTheChange = nil)</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>Widget accessing - dimensional changes requiring a complete redraw</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='setExtent-dynamic'>
+      #
+(void)
+<b>setExtent</b><span>(aPoint, morphStartingTheChange = nil)</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>high-level geometry-change API,
+you don&#39;t actually change the geometry right away,
+you just ask for the desired change and wait for the
+layouting mechanism to do its best to satisfy it</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='silentRawSetExtent-dynamic'>
+      #
+(void)
+<b>silentRawSetExtent</b><span>(aPoint)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='refreshScrollPanelWdgtOrVerticalStackIfIamInIt-dynamic'>
+      #
+(void)
+<b>refreshScrollPanelWdgtOrVerticalStackIfIamInIt</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='rawSetWidth-dynamic'>
+      #
+(void)
+<b>rawSetWidth</b><span>(width)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='setWidth-dynamic'>
+      #
+(void)
+<b>setWidth</b><span>(width)</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>high-level geometry-change API,
+you don&#39;t actually change the geometry right away,
+you just ask for the desired change and wait for the
+layouting mechanism to do its best to satisfy it</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='silentRawSetWidth-dynamic'>
+      #
+(void)
+<b>silentRawSetWidth</b><span>(width)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='rawSetHeight-dynamic'>
+      #
+(void)
+<b>rawSetHeight</b><span>(height)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='setHeight-dynamic'>
+      #
+(void)
+<b>setHeight</b><span>(height)</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>high-level geometry-change API,
+you don&#39;t actually change the geometry right away,
+you just ask for the desired change and wait for the
+layouting mechanism to do its best to satisfy it</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='silentRawSetHeight-dynamic'>
+      #
+(void)
+<b>silentRawSetHeight</b><span>(height)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='setColor-dynamic'>
+      #
+(void)
+<b>setColor</b><span>(aColorOrAMorphGivingAColor, morphGivingColor, connectionsCalculationToken, superCall)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='setBackgroundColor-dynamic'>
+      #
+(void)
+<b>setBackgroundColor</b><span>(aColorOrAMorphGivingAColor, morphGivingColor, connectionsCalculationToken, superCall)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='drawCachedTexture-dynamic'>
+      #
+(void)
+<b>drawCachedTexture</b><span>()</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>tiles the texture - never used in Fizzygum at the moment.</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='boundsContainPoint-dynamic'>
+      #
+(void)
+<b>boundsContainPoint</b><span>(aPoint)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='areBoundsIntersecting-dynamic'>
+      #
+(void)
+<b>areBoundsIntersecting</b><span>(aMorph)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='calculateKeyValues-dynamic'>
+      #
+(void)
+<b>calculateKeyValues</b><span>(aContext, clippingRectangle)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='turnOnHighlight-dynamic'>
+      #
+(void)
+<b>turnOnHighlight</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='turnOffHighlight-dynamic'>
+      #
+(void)
+<b>turnOffHighlight</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='paintRectangle-dynamic'>
+      #
+(void)
+<b>paintRectangle</b><span>(aContext, al, at, w, h, color, transparency = nil, pushAndPopContext = false, appliedShadow)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='preliminaryCheckNothingToDraw-dynamic'>
+      #
+(void)
+<b>preliminaryCheckNothingToDraw</b><span>(clippingRectangle, aContext)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='recordDrawnAreaForNextBrokenRects-dynamic'>
+      #
+(void)
+<b>recordDrawnAreaForNextBrokenRects</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='fullPaintIntoAreaOrBlitFromBackBuffer-dynamic'>
+      #
+(void)
+<b>fullPaintIntoAreaOrBlitFromBackBuffer</b><span>(aContext, clippingRectangle, appliedShadow)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='fullPaintIntoAreaOrBlitFromBackBufferJustShadow-dynamic'>
+      #
+(void)
+<b>fullPaintIntoAreaOrBlitFromBackBufferJustShadow</b><span>(aContext, clippingRectangle, appliedShadow)</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>to draw the shadow, most of the times you have to draw the whole
+of the contents, but with a darker/fainter color, and with
+transparency.</p><p>The only variant is that if a Panel if fully opaque, then the shadow is just
+a rectangle, we don&#39;t need to draw anything inside the panel to
+contribute to the shadow of the panel</p><p>In this function the parameter &quot;appliedShadow&quot; MUST contain a shadow info.
+This parameter will cause the whole widget to be painted recursively as shadow.</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='fullPaintIntoAreaOrBlitFromBackBufferContentPotentiallyAsShadow-dynamic'>
+      #
+(void)
+<b>fullPaintIntoAreaOrBlitFromBackBufferContentPotentiallyAsShadow</b><span>(aContext, clippingRectangle, appliedShadow)</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>this just draws the tree of the widgets recursively, potentially &quot;normally&quot; or
+potentally more faintly to draw a shadow.
+The only variant is that the Panel
+draws its background, then its contents AND THEN its stroke
+(because otherwise its content would paint over its stroke)</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='silentHide-dynamic'>
+      #
+(void)
+<b>silentHide</b><span>()</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>... when you want to hide something
+but you don&#39;t want to generate any
+broken rectangles</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='hide-dynamic'>
+      #
+(void)
+<b>hide</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='show-dynamic'>
+      #
+(void)
+<b>show</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='toggleVisibility-dynamic'>
+      #
+(void)
+<b>toggleVisibility</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='collapse-dynamic'>
+      #
+(void)
+<b>collapse</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='unCollapse-dynamic'>
+      #
+(void)
+<b>unCollapse</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='isCollapsed-dynamic'>
+      #
+(void)
+<b>isCollapsed</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='removeFromTree-dynamic'>
+      #
+(void)
+<b>removeFromTree</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='colloquialName-dynamic'>
+      #
+(void)
+<b>colloquialName</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='representativeIcon-dynamic'>
+      #
+(void)
+<b>representativeIcon</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='createPointerMorph-dynamic'>
+      #
+(void)
+<b>createPointerMorph</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='createReference-dynamic'>
+      #
+(void)
+<b>createReference</b><span>(referenceName, placeToDropItIn = world)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='createReferenceAndClose-dynamic'>
+      #
+(void)
+<b>createReferenceAndClose</b><span>(referenceName, placeToDropItIn = world)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='fullImage-dynamic'>
+      #
+(void)
+<b>fullImage</b><span>(bounds, noShadow = false, forceShadow = false)</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>Widget full image:
+Fixes <a href="https://github.com/jmoenig/morphic.js/issues/7">https://github.com/jmoenig/morphic.js/issues/7</a>
+and <a href="https://github.com/davidedc/Fizzygum/issues/160">https://github.com/davidedc/Fizzygum/issues/160</a></p><p>if you want to forceShadow that noShadow must be
+sent as false</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='fullImageNoShadow-dynamic'>
+      #
+(void)
+<b>fullImageNoShadow</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='fullImageData-dynamic'>
+      #
+(void)
+<b>fullImageData</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='fullImageAsItAppearsOnScreen-dynamic'>
+      #
+(void)
+<b>fullImageAsItAppearsOnScreen</b><span>()</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>the way we take a picture here is different
+than the way we usually take a picture.
+Usually we ask the morph and submorphs to
+paint themselves anew into a new canvas.
+This is different: we take the area of the
+screen <em>as it is</em> and we crop the part of
+interest where the extent of our selected
+morph is. This means that the morph might
+be occluded by other things.
+The advantage here is that we capture
+the screen absolutely as is, without
+causing any repaints. If streaks are on the
+screen due to bad painting, we capture them
+exactly as the user sees them.</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='fullImageHashCode-dynamic'>
+      #
+(void)
+<b>fullImageHashCode</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='addShadow-dynamic'>
+      #
+(void)
+<b>addShadow</b><span>(offset = new Point(4, 4), alpha = 0.2)</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>shadow is added to a morph by
+the HandMorph while floatDragging</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='silentAddShadow-dynamic'>
+      #
+(void)
+<b>silentAddShadow</b><span>(offset, alpha)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='hasShadow-dynamic'>
+      #
+(void)
+<b>hasShadow</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='removeShadow-dynamic'>
+      #
+(void)
+<b>removeShadow</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='changed-dynamic'>
+      #
+(void)
+<b>changed</b><span>()</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>Widget updating ///////////////////////////////////////////////////////////////</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='hasMaybeChangedGeometryOrPosition-dynamic'>
+      #
+(void)
+<b>hasMaybeChangedGeometryOrPosition</b><span>()</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>to actually make sure if a morph has changed
+position, you need to check it and all its
+parents.
+See comment on the fullGeometryOrPositionPossiblyChanged
+property above for more info.</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='fullChanged-dynamic'>
+      #
+(void)
+<b>fullChanged</b><span>()</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>See comment on the fullGeometryOrPositionPossiblyChanged
+property above for more info.</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='childChanged-dynamic'>
+      #
+(void)
+<b>childChanged</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='iHaveBeenAddedTo-dynamic'>
+      #
+(void)
+<b>iHaveBeenAddedTo</b><span>(whereTo, beingDropped)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='addAsSiblingAfterMe-dynamic'>
+      #
+(void)
+<b>addAsSiblingAfterMe</b><span>(aMorph, position = nil, layoutSpec = LayoutSpec.ATTACHEDAS_FREEFLOATING)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='addAsSiblingBeforeMe-dynamic'>
+      #
+(void)
+<b>addAsSiblingBeforeMe</b><span>(aMorph, position = nil, layoutSpec = LayoutSpec.ATTACHEDAS_FREEFLOATING)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='add-dynamic'>
+      #
+(void)
+<b>add</b><span>(aMorph, position = nil, layoutSpec = LayoutSpec.ATTACHEDAS_FREEFLOATING, beingDropped)</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>this level of indirection is needed because
+you have a &quot;raw&quot; &quot;tree&quot; need of adding stuff
+and a higher level way to &quot;add&quot;.
+For example, a ScrollPanelWdgt does a &quot;high-level&quot;
+add of things in a different way, as it actually adds
+stuff to a Panel inside it. Hence a need to have
+both a high-level and a low-level.
+For most morphs the two things coincide, and the
+high-level just calls the low-level.</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='addRaw-dynamic'>
+      #
+(void)
+<b>addRaw</b><span>(aMorph, position = nil, layoutSpec = LayoutSpec.ATTACHEDAS_FREEFLOATING, beingDropped)</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>attaches submorph on top
+??? TODO you should handle the case of Widget
+    being added to itself and the case of
+??? TODO a Widget being added to one of its
+    children</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='addInset-dynamic'>
+      #
+(void)
+<b>addInset</b><span>(aMorph)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='sourceChanged-dynamic'>
+      #
+(void)
+<b>sourceChanged</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='reLayout-dynamic'>
+      #
+(void)
+<b>reLayout</b><span>()</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>this is done before the updating of the
+backing store in some morphs that
+need to figure out their whole
+layout (which depends on the children)
+before painting themselves
+e.g. the MenuMorph</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='calculateAndUpdateExtent-dynamic'>
+      #
+(void)
+<b>calculateAndUpdateExtent</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='silentAdd-dynamic'>
+      #
+(void)
+<b>silentAdd</b><span>(aMorph, avoidExtentCalculation, position = nil)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='duplicateMenuAction-dynamic'>
+      #
+(void)
+<b>duplicateMenuAction</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='duplicateMenuActionAndPickItUp-dynamic'>
+      #
+(void)
+<b>duplicateMenuActionAndPickItUp</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='alignCopiedMorphToBrokenInfoDataStructures-dynamic'>
+      #
+(void)
+<b>alignCopiedMorphToBrokenInfoDataStructures</b><span>(copiedMorph)</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>in case we copy a morph, if the original was in some
+data structures related to broken morphs, then
+we have to add the copy too.</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='alignCopiedMorphToSteppingStructures-dynamic'>
+      #
+(void)
+<b>alignCopiedMorphToSteppingStructures</b><span>(copiedMorph)</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>in case we copy a morph, if the original was in some
+stepping structures, then we have to add the copy too.</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='fullCopy-dynamic'>
+      #
+(void)
+<b>fullCopy</b><span>()</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>note that the entire copying mechanism
+should also take care of inserting the copied
+morph in whatever other data structures where the
+original morph was.
+For example, if the Widget appeared in a data
+structure related to the broken rectangles mechanism,
+we should place the copied morph there.</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='serialize-dynamic'>
+      #
+(void)
+<b>serialize</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='deserialize-dynamic'>
+      #
+(void)
+<b>deserialize</b><span>(serializationString)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='injectProperty-dynamic'>
+      #
+(void)
+<b>injectProperty</b><span>(propertyName, txt)</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>if a function, the txt must contain the parameters and
+the arrow and the body</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='injectProperties-dynamic'>
+      #
+(void)
+<b>injectProperties</b><span>(codeBlurb)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='grabsToParentWhenDragged-dynamic'>
+      #
+(void)
+<b>grabsToParentWhenDragged</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='rejectDrags-dynamic'>
+      #
+(void)
+<b>rejectDrags</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='findFirstLooseMorph-dynamic'>
+      #
+(void)
+<b>findFirstLooseMorph</b><span>()</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>finds the first morph (including this one)
+that doesn&#39;t grab to its parent
+returns nil if going up the grabbing chain
+a morph rejects the drag</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='findRootForGrab-dynamic'>
+      #
+(void)
+<b>findRootForGrab</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='amIDirectlyInsideScrollPanelWdgt-dynamic'>
+      #
+(void)
+<b>amIDirectlyInsideScrollPanelWdgt</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='amIPanelOfScrollPanelWdgt-dynamic'>
+      #
+(void)
+<b>amIPanelOfScrollPanelWdgt</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='amIDirectlyInsideNonTextWrappingScrollPanelWdgt-dynamic'>
+      #
+(void)
+<b>amIDirectlyInsideNonTextWrappingScrollPanelWdgt</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='firstParentOwningMyShadow-dynamic'>
+      #
+(void)
+<b>firstParentOwningMyShadow</b><span>()</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>the only trick here is that we stop at the first
+clipping morph, because if a morph is inside a clipping
+morph, it doesn&#39;t contribute to any shadow.</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='detachesWhenDragged-dynamic'>
+      #
+(void)
+<b>detachesWhenDragged</b><span>()</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>if true, then the drag will be a float drag
+otherwise it will be a nonfloating drag</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='isBeingFloatDragged-dynamic'>
+      #
+(void)
+<b>isBeingFloatDragged</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='firstParentThatIsAPopUp-dynamic'>
+      #
+(void)
+<b>firstParentThatIsAPopUp</b><span>()</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>finds the first parent that is a PopUp</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='anyParentPopUpMarkedForClosure-dynamic'>
+      #
+(void)
+<b>anyParentPopUpMarkedForClosure</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='rootForFocus-dynamic'>
+      #
+(void)
+<b>rootForFocus</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='moveInFrontOfSiblings-dynamic'>
+      #
+(void)
+<b>moveInFrontOfSiblings</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='bringToForeground-dynamic'>
+      #
+(void)
+<b>bringToForeground</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='propagateKillPopUps-dynamic'>
+      #
+(void)
+<b>propagateKillPopUps</b><span>()</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>note that &quot;propagateKillPopUps&quot; doesn&#39;t necessarily
+go up the &quot;parent&quot; trail, for pop ups this method goes up
+another trail of pop up ownership named via the
+&quot;morphOpeningThePopUp&quot; property, that is
+independent of the parent trail</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='mouseDownLeft-dynamic'>
+      #
+(void)
+<b>mouseDownLeft</b><span>(pos)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='mouseClickLeft-dynamic'>
+      #
+(void)
+<b>mouseClickLeft</b><span>(pos)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='onClickOutsideMeOrAnyOfMyChildren-dynamic'>
+      #
+(void)
+<b>onClickOutsideMeOrAnyOfMyChildren</b><span>(functionName, arg1, arg2, arg3)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='justDropped-dynamic'>
+      #
+(void)
+<b>justDropped</b><span>(whereIn)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='wantsDropOf-dynamic'>
+      #
+(void)
+<b>wantsDropOf</b><span>(aMorph)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='enableDrops-dynamic'>
+      #
+(void)
+<b>enableDrops</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='disableDrops-dynamic'>
+      #
+(void)
+<b>disableDrops</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='pickUp-dynamic'>
+      #
+(void)
+<b>pickUp</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='grabbedWidgetSwitcheroo-dynamic'>
+      #
+(void)
+<b>grabbedWidgetSwitcheroo</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='isPickedUp-dynamic'>
+      #
+(void)
+<b>isPickedUp</b><span>()</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>note how this checks whether
+at <em>any point</em> up in the
+morphs hierarchy there is a HandMorph</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='situation-dynamic'>
+      #
+(void)
+<b>situation</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='slideBackTo-dynamic'>
+      #
+(void)
+<b>slideBackTo</b><span>(situation, steps = 5)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='showResizeAndMoveHandlesAndLayoutAdjusters-dynamic'>
+      #
+(void)
+<b>showResizeAndMoveHandlesAndLayoutAdjusters</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='showMoveHandle-dynamic'>
+      #
+(void)
+<b>showMoveHandle</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='inform-dynamic'>
+      #
+(void)
+<b>inform</b><span>(msg)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='prompt-dynamic'>
+      #
+(void)
+<b>prompt</b><span>(msg, target, callback, defaultContents, width, floorNum, ceilingNum, isRounded)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='textPrompt-dynamic'>
+      #
+(void)
+<b>textPrompt</b><span>(msg, target, callback, defaultContents, width, floorNum, ceilingNum, isRounded)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='pickColor-dynamic'>
+      #
+(void)
+<b>pickColor</b><span>(msg, callback, defaultContents)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='inspect-dynamic'>
+      #
+(void)
+<b>inspect</b><span>(anotherObject)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='inspect2-dynamic'>
+      #
+(void)
+<b>inspect2</b><span>(anotherObject)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='spawnInspector-dynamic'>
+      #
+(void)
+<b>spawnInspector</b><span>(inspectee)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='spawnInspector2-dynamic'>
+      #
+(void)
+<b>spawnInspector2</b><span>(inspectee)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='createConsole-dynamic'>
+      #
+(void)
+<b>createConsole</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='spawnNextTo-dynamic'>
+      #
+(void)
+<b>spawnNextTo</b><span>(morphToBeNextTo, whereToAddIt)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='buildContextMenu-dynamic'>
+      #
+(void)
+<b>buildContextMenu</b><span>()</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>context Menus are whatever appears when one right-clicks
+on something. It could be a custom menu, or the standard
+menu on the desktop, or a menu to disambiguate which
+morph it&#39;s being selected...</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='getHierarchyMenuMorphs-dynamic'>
+      #
+(void)
+<b>getHierarchyMenuMorphs</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='buildHierarchyMenu-dynamic'>
+      #
+(void)
+<b>buildHierarchyMenu</b><span>(morphsHierarchy)</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>When user right-clicks on a morph that is a child of other morphs,
+then it&#39;s ambiguous which of the morphs she wants to operate on.
+An example is right-clicking on a ToolTipWdgt: did she
+mean to operate on the BubbleMorph or did she mean to operate on
+the TextMorph contained in it?
+This menu lets her disambiguate.</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='popupDeveloperMenu-dynamic'>
+      #
+(void)
+<b>popupDeveloperMenu</b><span>(morphOpeningThePopUp)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='popUpColorSetter-dynamic'>
+      #
+(void)
+<b>popUpColorSetter</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='transparencyPopout-dynamic'>
+      #
+(void)
+<b>transparencyPopout</b><span>(menuItem)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='createNewStringMorph2WithBackground-dynamic'>
+      #
+(void)
+<b>createNewStringMorph2WithBackground</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='createNewStringMorph2WithoutBackground-dynamic'>
+      #
+(void)
+<b>createNewStringMorph2WithoutBackground</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='createNewTextMorph2WithBackground-dynamic'>
+      #
+(void)
+<b>createNewTextMorph2WithBackground</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='createNewWrappingSimplePlainTextWdgtWithBackground-dynamic'>
+      #
+(void)
+<b>createNewWrappingSimplePlainTextWdgtWithBackground</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='createNewNonWrappingSimplePlainTextWdgtWithBackground-dynamic'>
+      #
+(void)
+<b>createNewNonWrappingSimplePlainTextWdgtWithBackground</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='createNewWrappingAndNonWrappingSimplePlainTextWdgtWithBackground-dynamic'>
+      #
+(void)
+<b>createNewWrappingAndNonWrappingSimplePlainTextWdgtWithBackground</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='createWrappingSimplePlainTextScrollPanelWdgt-dynamic'>
+      #
+(void)
+<b>createWrappingSimplePlainTextScrollPanelWdgt</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='createNonWrappingSimplePlainTextScrollPanelWdgt-dynamic'>
+      #
+(void)
+<b>createNonWrappingSimplePlainTextScrollPanelWdgt</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='createWrappingAndNonWrappingSimplePlainTextScrollPanelWdgt-dynamic'>
+      #
+(void)
+<b>createWrappingAndNonWrappingSimplePlainTextScrollPanelWdgt</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='createWrappingSimplePlainTextPanelWdgt-dynamic'>
+      #
+(void)
+<b>createWrappingSimplePlainTextPanelWdgt</b><span>()</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>this is provided for completeness, however see the
+note in SimplePlainTextPanelWdgt about how this is
+incomplete and why this widget is not useful anyways</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='createNonWrappingSimplePlainTextPanelWdgt-dynamic'>
+      #
+(void)
+<b>createNonWrappingSimplePlainTextPanelWdgt</b><span>()</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>this is provided for completeness, however see the
+note in SimplePlainTextPanelWdgt about how this is
+incomplete and why this widget is not useful anyways</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='createWrappingAndNonWrappingSimplePlainTextPanelWdgt-dynamic'>
+      #
+(void)
+<b>createWrappingAndNonWrappingSimplePlainTextPanelWdgt</b><span>()</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>this is provided for completeness, however see the
+note in SimplePlainTextPanelWdgt about how this is
+incomplete and why this widget is not useful anyways</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='createNewStringMorph3WithBackground-dynamic'>
+      #
+(void)
+<b>createNewStringMorph3WithBackground</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='createNewTextMorph3WithBackground-dynamic'>
+      #
+(void)
+<b>createNewTextMorph3WithBackground</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='createSimpleVerticalStackPanelWdgt-dynamic'>
+      #
+(void)
+<b>createSimpleVerticalStackPanelWdgt</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='createSimpleVerticalStackScrollPanelWdgt-dynamic'>
+      #
+(void)
+<b>createSimpleVerticalStackScrollPanelWdgt</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='createSimpleVerticalStackPanelWdgtAndScrollPanel-dynamic'>
+      #
+(void)
+<b>createSimpleVerticalStackPanelWdgtAndScrollPanel</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='createSimpleVerticalStackPanelWdgtFreeContentsWidth-dynamic'>
+      #
+(void)
+<b>createSimpleVerticalStackPanelWdgtFreeContentsWidth</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='createSimpleVerticalStackScrollPanelWdgtFreeContentsWidth-dynamic'>
+      #
+(void)
+<b>createSimpleVerticalStackScrollPanelWdgtFreeContentsWidth</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='createSimpleVerticalStackPanelWdgtAndScrollPanelFreeContentsWidth-dynamic'>
+      #
+(void)
+<b>createSimpleVerticalStackPanelWdgtAndScrollPanelFreeContentsWidth</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='createSimpleDocumentScrollPanelWdgt-dynamic'>
+      #
+(void)
+<b>createSimpleDocumentScrollPanelWdgt</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='showOutputPins-dynamic'>
+      #
+(void)
+<b>showOutputPins</b><span>(a, b, c, d)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='removeOutputPins-dynamic'>
+      #
+(void)
+<b>removeOutputPins</b><span>(a, b, c, d)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='testMenu-dynamic'>
+      #
+(void)
+<b>testMenu</b><span>(morphOpeningThePopUp, targetMorph)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='analogClock-dynamic'>
+      #
+(void)
+<b>analogClock</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='popUpIconsMenu-dynamic'>
+      #
+(void)
+<b>popUpIconsMenu</b><span>(morphOpeningThePopUp)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='popUpVerticalStackMenu-dynamic'>
+      #
+(void)
+<b>popUpVerticalStackMenu</b><span>(morphOpeningThePopUp)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='popUpDocumentMenu-dynamic'>
+      #
+(void)
+<b>popUpDocumentMenu</b><span>(morphOpeningThePopUp)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='popUpWindowsMenu-dynamic'>
+      #
+(void)
+<b>popUpWindowsMenu</b><span>(morphOpeningThePopUp)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='popUpShortcutsAndScriptsMenu-dynamic'>
+      #
+(void)
+<b>popUpShortcutsAndScriptsMenu</b><span>(morphOpeningThePopUp)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='popUpPatchProgrammingMenu-dynamic'>
+      #
+(void)
+<b>popUpPatchProgrammingMenu</b><span>(morphOpeningThePopUp)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='createEmptyInternalWindow-dynamic'>
+      #
+(void)
+<b>createEmptyInternalWindow</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='createEmptyWindow-dynamic'>
+      #
+(void)
+<b>createEmptyWindow</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='popUpSimplePlainTextWdgtMenu-dynamic'>
+      #
+(void)
+<b>popUpSimplePlainTextWdgtMenu</b><span>(morphOpeningThePopUp)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='popUpFirstMenu-dynamic'>
+      #
+(void)
+<b>popUpFirstMenu</b><span>(morphOpeningThePopUp)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='popUpSecondMenu-dynamic'>
+      #
+(void)
+<b>popUpSecondMenu</b><span>(morphOpeningThePopUp)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='serialiseToMemory-dynamic'>
+      #
+(void)
+<b>serialiseToMemory</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='deserialiseFromMemoryAndAttachToHand-dynamic'>
+      #
+(void)
+<b>deserialiseFromMemoryAndAttachToHand</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='deserialiseFromMemoryAndAttachToWorld-dynamic'>
+      #
+(void)
+<b>deserialiseFromMemoryAndAttachToWorld</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='buildBaseMorphClassContextMenu-dynamic'>
+      #
+(void)
+<b>buildBaseMorphClassContextMenu</b><span>(morphOpeningThePopUp)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='addMorphSpecificMenuEntries-dynamic'>
+      #
+(void)
+<b>addMorphSpecificMenuEntries</b><span>(morphOpeningThePopUp, menu)</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>Widget-specific menu entries are basically the ones
+beyond the generic entries above.</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='buildMorphContextMenu-dynamic'>
+      #
+(void)
+<b>buildMorphContextMenu</b><span>(morphOpeningThePopUp)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='calculateAlphaScaled-dynamic'>
+      #
+(void)
+<b>calculateAlphaScaled</b><span>(alpha)</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>Widget menu actions</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='setPadding-dynamic'>
+      #
+(void)
+<b>setPadding</b><span>(paddingOrMorphGivingPadding, morphGivingPadding)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='setPaddingTop-dynamic'>
+      #
+(void)
+<b>setPaddingTop</b><span>(paddingOrMorphGivingPadding, morphGivingPadding)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='setPaddingBottom-dynamic'>
+      #
+(void)
+<b>setPaddingBottom</b><span>(paddingOrMorphGivingPadding, morphGivingPadding)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='setPaddingLeft-dynamic'>
+      #
+(void)
+<b>setPaddingLeft</b><span>(paddingOrMorphGivingPadding, morphGivingPadding)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='setPaddingRight-dynamic'>
+      #
+(void)
+<b>setPaddingRight</b><span>(paddingOrMorphGivingPadding, morphGivingPadding)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='setAlphaScaled-dynamic'>
+      #
+(void)
+<b>setAlphaScaled</b><span>(alphaOrMorphGivingAlpha, morphGivingAlpha)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='newParentChoice-dynamic'>
+      #
+(void)
+<b>newParentChoice</b><span>(ignored, theMorphToBeAttached)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='newParentChoiceWithHorizLayout-dynamic'>
+      #
+(void)
+<b>newParentChoiceWithHorizLayout</b><span>(ignored, theMorphToBeAttached)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='attach-dynamic'>
+      #
+(void)
+<b>attach</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='attachWithHorizLayout-dynamic'>
+      #
+(void)
+<b>attachWithHorizLayout</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='toggleIsLockingToPanels-dynamic'>
+      #
+(void)
+<b>toggleIsLockingToPanels</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='lockToPanels-dynamic'>
+      #
+(void)
+<b>lockToPanels</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='unlockFromPanels-dynamic'>
+      #
+(void)
+<b>unlockFromPanels</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='enableDragsDropsAndEditing-dynamic'>
+      #
+(void)
+<b>enableDragsDropsAndEditing</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='disableDragsDropsAndEditing-dynamic'>
+      #
+(void)
+<b>disableDragsDropsAndEditing</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='prepareToBeGrabbed-dynamic'>
+      #
+(void)
+<b>prepareToBeGrabbed</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='deduplicateSettersAndSortByMenuEntryString-dynamic'>
+      #
+(void)
+<b>deduplicateSettersAndSortByMenuEntryString</b><span>(menuEntriesStrings, functionNamesStrings)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='colorSetters-dynamic'>
+      #
+(void)
+<b>colorSetters</b><span>(menuEntriesStrings, functionNamesStrings)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='stringSetters-dynamic'>
+      #
+(void)
+<b>stringSetters</b><span>(menuEntriesStrings, functionNamesStrings)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='numericalSetters-dynamic'>
+      #
+(void)
+<b>numericalSetters</b><span>(menuEntriesStrings, functionNamesStrings)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='allSetters-dynamic'>
+      #
+(void)
+<b>allSetters</b><span>(menuEntriesStrings, functionNamesStrings)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='allEntryFields-dynamic'>
+      #
+(void)
+<b>allEntryFields</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='nextEntryField-dynamic'>
+      #
+(void)
+<b>nextEntryField</b><span>(current)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='previousEntryField-dynamic'>
+      #
+(void)
+<b>previousEntryField</b><span>(current)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='tab-dynamic'>
+      #
+(void)
+<b>tab</b><span>(editField)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='backTab-dynamic'>
+      #
+(void)
+<b>backTab</b><span>(editField)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='escalateEvent-dynamic'>
+      #
+(void)
+<b>escalateEvent</b><span>(functionName, arg1, arg2, arg3, arg4, arg5, arg6)</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>TODO I&#39;m sure there is a cleaner way to handle arbitrary
+number of arguments here</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='evaluateString-dynamic'>
+      #
+(void)
+<b>evaluateString</b><span>(codeSource)</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>Widget eval. Used by the Inspector and the TextMorph.</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='isTouching-dynamic'>
+      #
+(void)
+<b>isTouching</b><span>(otherMorph)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='overlappingImage-dynamic'>
+      #
+(void)
+<b>overlappingImage</b><span>(otherMorph)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='makeSpacersTransparent-dynamic'>
+      #
+(void)
+<b>makeSpacersTransparent</b><span>()</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>»&gt;&gt; this part is excluded from the fizzygum homepage build</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='makeSpacersOpaque-dynamic'>
+      #
+(void)
+<b>makeSpacersOpaque</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='invalidateLayout-dynamic'>
+      #
+(void)
+<b>invalidateLayout</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='setMinAndMaxBoundsAndSpreadability-dynamic'>
+      #
+(void)
+<b>setMinAndMaxBoundsAndSpreadability</b><span>(minBounds, desiredBounds, spreadability = LayoutSpec.SPREADABILITY_MEDIUM)</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>»&gt;&gt; this part is excluded from the fizzygum homepage build</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='setMaxDim-dynamic'>
+      #
+(void)
+<b>setMaxDim</b><span>(overridingMaxDim)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='getDesiredDim-dynamic'>
+      #
+(void)
+<b>getDesiredDim</b><span>()</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>if you use this paragraph, then the container of further
+layouts will have a minimum equal to the sum of minimums
+of the contents.</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='getMinDim-dynamic'>
+      #
+(void)
+<b>getMinDim</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='getMaxDim-dynamic'>
+      #
+(void)
+<b>getMaxDim</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='getRecursiveDesiredDim-dynamic'>
+      #
+(void)
+<b>getRecursiveDesiredDim</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='getRecursiveMinDim-dynamic'>
+      #
+(void)
+<b>getRecursiveMinDim</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='getRecursiveMaxDim-dynamic'>
+      #
+(void)
+<b>getRecursiveMaxDim</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='countOfChildrenToLayout-dynamic'>
+      #
+(void)
+<b>countOfChildrenToLayout</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='implementsDeferredLayout-dynamic'>
+      #
+(void)
+<b>implementsDeferredLayout</b><span>()</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>it&#39;s useful to know when a morph defers its layout
+because it means that its current size is indicative
+(particularly the children&#39;s sizes and position)</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='doLayout-dynamic'>
+      #
+(void)
+<b>doLayout</b><span>(newBoundsForThisLayout)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='removeAdders-dynamic'>
+      #
+(void)
+<b>removeAdders</b><span>()</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>»&gt;&gt; this part is excluded from the fizzygum homepage build</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='showAdders-dynamic'>
+      #
+(void)
+<b>showAdders</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='addOrRemoveAdders-dynamic'>
+      #
+(void)
+<b>addOrRemoveAdders</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+</div>
+    </div>
+    <div id='footer'>
+  By
+  <a href='https://github.com/coffeedoc/codo' title='CoffeeScript API documentation generator'>
+    Codo
+  </a>
+  2.1.2
+  &#10034;
+  Press H to see the keyboard shortcuts
+  &#10034;
+  <a href='http://twitter.com/netzpirat' target='_parent'>@netzpirat</a>
+  &#10034;
+  <a href='http://twitter.com/_inossidabile' target='_parent'>@_inossidabile</a>
+</div>
+<iframe id='search_frame'></iframe>
+<div id='fuzzySearch'>
+  <input type='text'>
+  <ol></ol>
+</div>
+<div id='help'>
+  <p>
+    Quickly fuzzy find classes, mixins, methods, file:
+  </p>
+  <ul>
+    <li>
+      <span>T</span>
+      Open fuzzy finder dialog
+    </li>
+  </ul>
+  <p>
+    Control the navigation frame:
+  </p>
+  <ul>
+    <li>
+      <span>L</span>
+      Toggle list view
+    </li>
+    <li>
+      <span>C</span>
+      Show class list
+    </li>
+    <li>
+      <span>I</span>
+      Show mixin list
+    </li>
+    <li>
+      <span>F</span>
+      Show file list
+    </li>
+    <li>
+      <span>M</span>
+      Show method list
+    </li>
+    <li>
+      <span>E</span>
+      Show extras list
+    </li>
+  </ul>
+  <p>
+    You can focus and blur the search input:
+  </p>
+  <ul>
+    <li>
+      <span>S</span>
+      Focus search input
+    </li>
+    <li>
+      <span>Esc</span>
+      Blur search input
+    </li>
+  </ul>
+</div>
+  </body>
+</html>

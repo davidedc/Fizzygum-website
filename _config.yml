@@ -42,7 +42,7 @@ naver_site_verification  :
 twitter:
   username               : &twitter "fizzygum"
 facebook:
-  username               : &facebook "michaelrose"
+  username               : &facebook "Fizzygum-163721564345523"
   app_id                 :
   publisher              :
 og_image                 : "/assets/images/site-logo.png" # Open Graph/Twitter default site image
@@ -53,7 +53,7 @@ social:
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
     - "https://twitter.com/fizzygum"
-    - "https://facebook.com/michaelrose"
+    - "https://www.facebook.com/Fizzygum-163721564345523/"
 
 # Analytics
 analytics:

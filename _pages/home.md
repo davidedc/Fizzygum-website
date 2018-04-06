@@ -4,9 +4,9 @@ permalink: /
 header:
   overlay_image: /assets/images/fg-home-page-feature.jpg
   cta_label: "<i class='fas fa-play'></i> Try Now"
-  cta_url: "/docs/quick-start-guide/"
+  cta_url: "/sandboxes/latest-stable/"
   caption:
-excerpt: 'Tired of stringing libraries together?<br />Try a new web framework that does complex things, easily.<br /> {::nomarkdown}<small><a href="https://github.com/mmistakes/minimal-mistakes/releases/tag/4.10.1">Open-source (MIT-licenced) on github <i class="fab fa-github" aria-hidden="true"></i></a></small>{:/nomarkdown}<br /> <small><a href="https://github.com/mmistakes/minimal-mistakes/releases/tag/4.10.1">Watch/read the intro⚡</a></small>'
+excerpt: 'Tired of stringing libraries together?<br />Try a new web framework that does complex things, easily.<br /> {::nomarkdown}<small><a href="https://github.com/davidedc/Fizzygum">Open-source (MIT-licenced) on github <i class="fab fa-github" aria-hidden="true"></i></a></small>{:/nomarkdown}<br /> <small><a href="/docs/intro/">Watch/read the intro⚡</a></small>'
 
 feature_row:
   - image_path: /assets/images/mm-customizable-feature.png

@@ -5,7 +5,7 @@ excerpt: "Instructions on how to customize the theme's default set of layouts, i
 last_modified_at: 2018-04-05
 ---
 
-{% include video id="XsxDH4HcOWA" provider="youtube" %}
+{% include video id="F_9ScTSYtng" provider="youtube" %}
 
 ## Transcript
 

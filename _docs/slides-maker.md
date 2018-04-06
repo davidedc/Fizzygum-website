@@ -5,11 +5,11 @@ excerpt: "Text for customizing various user interface elements found in the them
 last_modified_at: 2018-03-20T15:59:46-04:00
 ---
 
-{% include video id="XsxDH4HcOWA" provider="youtube" %}
+{% include video id="R0IBdCglQgM" provider="youtube" %}
 
 ## Transcript
 
-The slides maker is one of the sample apps in Fizzygum.
+The Slides Maker is one of the sample apps in Fizzygum.
 
 To open it, double click on the slide icon:
 

@@ -207,6 +207,26 @@ CanvasGradient.prototype.deepCopy = function(doSerialize, objOriginalsClonedAlre
   return cloneOfMe;
 };
 
+Date.prototype.deepCopy = function(doSerialize, objOriginalsClonedAlready, objectClones, allMorphsInStructure) {
+  var cloneOfMe, haveIBeenCopiedAlready, positionInObjClonesArray;
+  haveIBeenCopiedAlready = objOriginalsClonedAlready.indexOf(this);
+  if (haveIBeenCopiedAlready >= 0) {
+    if (doSerialize) {
+      return "$" + haveIBeenCopiedAlready;
+    } else {
+      return objectClones[haveIBeenCopiedAlready];
+    }
+  }
+  positionInObjClonesArray = objOriginalsClonedAlready.length;
+  objOriginalsClonedAlready.push(this);
+  cloneOfMe = new Date(this.getTime());
+  objectClones.push(cloneOfMe);
+  if (doSerialize) {
+    return "$" + positionInObjClonesArray;
+  }
+  return cloneOfMe;
+};
+
 tick = "✓ ";
 
 untick = "    ";
@@ -858,4 +878,4 @@ Number.prototype.times = function(scope, func) {
   return results1;
 };
 
-morphicVersion = 'version of 2018-03-23 18:39:18';
+morphicVersion = 'version of 2018-04-06 21:04:53';

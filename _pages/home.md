@@ -9,21 +9,21 @@ header:
 excerpt: 'Tired of stringing libraries together?<br />Try a new web framework that does complex things, easily.<br /> {::nomarkdown}<small><a href="https://github.com/davidedc/Fizzygum">Open-source (MIT-licenced) on github <i class="fab fa-github" aria-hidden="true"></i></a></small>{:/nomarkdown}<br /> <small><a href="/docs/intro/">Watch/read the intro⚡</a></small>'
 
 feature_row:
-  - image_path: /assets/images/mm-customizable-feature.png
+  - image_path: /assets/images/feature-row/feature-row-image-1.gif
+    alt: "watch the intro"
+    title: "Watch the intro"
+    excerpt: "See the high-level picture in 1'30''"
+    url: "/docs/intro/"
+    btn_class: "btn--primary"
+    btn_label: "Learn More"
+  - image_path: /assets/images/feature-row/feature-row-image-3.png
     alt: "customizable"
     title: "Super Customizable"
-    excerpt: "Everything from the menus, sidebars, comments, and more can be configured or set with YAML Front Matter."
-    url: "/docs/configuration/"
+    excerpt: "Configure any part of the system without leaving/stopping it."
+    url: "/docs/hacking-fizzygum/"
     btn_class: "btn--primary"
     btn_label: "Learn More"
-  - image_path: /assets/images/mm-responsive-feature.png
-    alt: "fully responsive"
-    title: "Responsive Layouts"
-    excerpt: "Built on HTML5 + CSS3. All layouts are fully responsive with helpers to augment your content."
-    url: "/docs/layouts/"
-    btn_class: "btn--primary"
-    btn_label: "Learn More"
-  - image_path: /assets/images/mm-free-feature.png
+  - image_path: /assets/images/feature-row/feature-row-image-2.png
     alt: "100% free"
     title: "100% Free"
     excerpt: "Free to use however you want under the MIT License. Clone it, fork it, customize it, whatever!"

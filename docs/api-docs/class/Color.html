@@ -1,0 +1,1497 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset='UTF-8'>
+  <title>CoffeeScript API Documentation</title>
+  <script src='../javascript/application.js'></script>
+  <script src='../javascript/search.js'></script>
+  <link rel='stylesheet' href='../stylesheets/application.css' type='text/css'>
+</head>
+  <body>
+    <div id='base' data-path='../'></div>
+<div id='header'>
+  <div id='menu'>
+    <a href='../alphabetical_index.html' title='Index'>
+      Index
+    </a>
+    &raquo;
+    <span class='title'>Color</span>
+  </div>
+</div>
+    <div id='content'>
+      <h1>
+        Class:
+        Color
+      </h1>
+      <table class='box'>
+        <tr>
+          <td>Defined in:</td>
+          <td>src&#47;basic-data-structures&#47;Color.coffee</td>
+        </tr>
+      </table>
+      <h2>Variables Summary</h2>
+      <dl class='constants'>
+  <dt id='byName_aliceblue-variable'>
+    byName_aliceblue
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xf0, 0xf8, 0xff]</code></pre>
+    
+  </dd>
+  <dt id='byName_antiquewhite-variable'>
+    byName_antiquewhite
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xfa, 0xeb, 0xd7]</code></pre>
+    
+  </dd>
+  <dt id='byName_aqua-variable'>
+    byName_aqua
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0x00, 0xff, 0xff]</code></pre>
+    
+  </dd>
+  <dt id='byName_aquamarine-variable'>
+    byName_aquamarine
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0x7f, 0xff, 0xd4]</code></pre>
+    
+  </dd>
+  <dt id='byName_azure-variable'>
+    byName_azure
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xf0, 0xff, 0xff]</code></pre>
+    
+  </dd>
+  <dt id='byName_beige-variable'>
+    byName_beige
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xf5, 0xf5, 0xdc]</code></pre>
+    
+  </dd>
+  <dt id='byName_bisque-variable'>
+    byName_bisque
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xff, 0xe4, 0xc4]</code></pre>
+    
+  </dd>
+  <dt id='byName_black-variable'>
+    byName_black
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0x00, 0x00, 0x00]</code></pre>
+    
+  </dd>
+  <dt id='byName_blanchedalmond-variable'>
+    byName_blanchedalmond
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xff, 0xeb, 0xcd]</code></pre>
+    
+  </dd>
+  <dt id='byName_blue-variable'>
+    byName_blue
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0x00, 0x00, 0xff]</code></pre>
+    
+  </dd>
+  <dt id='byName_blueviolet-variable'>
+    byName_blueviolet
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0x8a, 0x2b, 0xe2]</code></pre>
+    
+  </dd>
+  <dt id='byName_brown-variable'>
+    byName_brown
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xa5, 0x2a, 0x2a]</code></pre>
+    
+  </dd>
+  <dt id='byName_burlywood-variable'>
+    byName_burlywood
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xde, 0xb8, 0x87]</code></pre>
+    
+  </dd>
+  <dt id='byName_cadetblue-variable'>
+    byName_cadetblue
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0x5f, 0x9e, 0xa0]</code></pre>
+    
+  </dd>
+  <dt id='byName_chartreuse-variable'>
+    byName_chartreuse
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0x7f, 0xff, 0x00]</code></pre>
+    
+  </dd>
+  <dt id='byName_chocolate-variable'>
+    byName_chocolate
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xd2, 0x69, 0x1e]</code></pre>
+    
+  </dd>
+  <dt id='byName_coral-variable'>
+    byName_coral
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xff, 0x7f, 0x50]</code></pre>
+    
+  </dd>
+  <dt id='byName_cornflowerblue-variable'>
+    byName_cornflowerblue
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0x64, 0x95, 0xed]</code></pre>
+    
+  </dd>
+  <dt id='byName_cornsilk-variable'>
+    byName_cornsilk
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xff, 0xf8, 0xdc]</code></pre>
+    
+  </dd>
+  <dt id='byName_crimson-variable'>
+    byName_crimson
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xdc, 0x14, 0x3c]</code></pre>
+    
+  </dd>
+  <dt id='byName_cyan-variable'>
+    byName_cyan
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0x00, 0xff, 0xff]</code></pre>
+    
+  </dd>
+  <dt id='byName_darkblue-variable'>
+    byName_darkblue
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0x00, 0x00, 0x8b]</code></pre>
+    
+  </dd>
+  <dt id='byName_darkcyan-variable'>
+    byName_darkcyan
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0x00, 0x8b, 0x8b]</code></pre>
+    
+  </dd>
+  <dt id='byName_darkgoldenrod-variable'>
+    byName_darkgoldenrod
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xb8, 0x86, 0x0b]</code></pre>
+    
+  </dd>
+  <dt id='byName_darkgray-variable'>
+    byName_darkgray
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xa9, 0xa9, 0xa9]</code></pre>
+    
+  </dd>
+  <dt id='byName_darkgrey-variable'>
+    byName_darkgrey
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xa9, 0xa9, 0xa9]</code></pre>
+    
+  </dd>
+  <dt id='byName_darkgreen-variable'>
+    byName_darkgreen
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0x00, 0x64, 0x00]</code></pre>
+    
+  </dd>
+  <dt id='byName_darkkhaki-variable'>
+    byName_darkkhaki
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xbd, 0xb7, 0x6b]</code></pre>
+    
+  </dd>
+  <dt id='byName_darkmagenta-variable'>
+    byName_darkmagenta
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0x8b, 0x00, 0x8b]</code></pre>
+    
+  </dd>
+  <dt id='byName_darkolivegreen-variable'>
+    byName_darkolivegreen
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0x55, 0x6b, 0x2f]</code></pre>
+    
+  </dd>
+  <dt id='byName_darkorange-variable'>
+    byName_darkorange
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xff, 0x8c, 0x00]</code></pre>
+    
+  </dd>
+  <dt id='byName_darkorchid-variable'>
+    byName_darkorchid
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0x99, 0x32, 0xcc]</code></pre>
+    
+  </dd>
+  <dt id='byName_darkred-variable'>
+    byName_darkred
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0x8b, 0x00, 0x00]</code></pre>
+    
+  </dd>
+  <dt id='byName_darksalmon-variable'>
+    byName_darksalmon
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xe9, 0x96, 0x7a]</code></pre>
+    
+  </dd>
+  <dt id='byName_darkseagreen-variable'>
+    byName_darkseagreen
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0x8f, 0xbc, 0x8f]</code></pre>
+    
+  </dd>
+  <dt id='byName_darkslateblue-variable'>
+    byName_darkslateblue
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0x48, 0x3d, 0x8b]</code></pre>
+    
+  </dd>
+  <dt id='byName_darkslategray-variable'>
+    byName_darkslategray
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0x2f, 0x4f, 0x4f]</code></pre>
+    
+  </dd>
+  <dt id='byName_darkslategrey-variable'>
+    byName_darkslategrey
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0x2f, 0x4f, 0x4f]</code></pre>
+    
+  </dd>
+  <dt id='byName_darkturquoise-variable'>
+    byName_darkturquoise
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0x00, 0xce, 0xd1]</code></pre>
+    
+  </dd>
+  <dt id='byName_darkviolet-variable'>
+    byName_darkviolet
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0x94, 0x00, 0xd3]</code></pre>
+    
+  </dd>
+  <dt id='byName_deeppink-variable'>
+    byName_deeppink
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xff, 0x14, 0x93]</code></pre>
+    
+  </dd>
+  <dt id='byName_deepskyblue-variable'>
+    byName_deepskyblue
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0x00, 0xbf, 0xff]</code></pre>
+    
+  </dd>
+  <dt id='byName_dimgray-variable'>
+    byName_dimgray
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0x69, 0x69, 0x69]</code></pre>
+    
+  </dd>
+  <dt id='byName_dimgrey-variable'>
+    byName_dimgrey
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0x69, 0x69, 0x69]</code></pre>
+    
+  </dd>
+  <dt id='byName_dodgerblue-variable'>
+    byName_dodgerblue
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0x1e, 0x90, 0xff]</code></pre>
+    
+  </dd>
+  <dt id='byName_firebrick-variable'>
+    byName_firebrick
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xb2, 0x22, 0x22]</code></pre>
+    
+  </dd>
+  <dt id='byName_floralwhite-variable'>
+    byName_floralwhite
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xff, 0xfa, 0xf0]</code></pre>
+    
+  </dd>
+  <dt id='byName_forestgreen-variable'>
+    byName_forestgreen
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0x22, 0x8b, 0x22]</code></pre>
+    
+  </dd>
+  <dt id='byName_fuchsia-variable'>
+    byName_fuchsia
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xff, 0x00, 0xff]</code></pre>
+    
+  </dd>
+  <dt id='byName_gainsboro-variable'>
+    byName_gainsboro
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xdc, 0xdc, 0xdc]</code></pre>
+    
+  </dd>
+  <dt id='byName_ghostwhite-variable'>
+    byName_ghostwhite
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xf8, 0xf8, 0xff]</code></pre>
+    
+  </dd>
+  <dt id='byName_gold-variable'>
+    byName_gold
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xff, 0xd7, 0x00]</code></pre>
+    
+  </dd>
+  <dt id='byName_goldenrod-variable'>
+    byName_goldenrod
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xda, 0xa5, 0x20]</code></pre>
+    
+  </dd>
+  <dt id='byName_gray-variable'>
+    byName_gray
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0x80, 0x80, 0x80]</code></pre>
+    
+  </dd>
+  <dt id='byName_grey-variable'>
+    byName_grey
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0x80, 0x80, 0x80]</code></pre>
+    
+  </dd>
+  <dt id='byName_green-variable'>
+    byName_green
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0x00, 0x80, 0x00]</code></pre>
+    
+  </dd>
+  <dt id='byName_greenyellow-variable'>
+    byName_greenyellow
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xad, 0xff, 0x2f]</code></pre>
+    
+  </dd>
+  <dt id='byName_honeydew-variable'>
+    byName_honeydew
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xf0, 0xff, 0xf0]</code></pre>
+    
+  </dd>
+  <dt id='byName_hotpink-variable'>
+    byName_hotpink
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xff, 0x69, 0xb4]</code></pre>
+    
+  </dd>
+  <dt id='byName_indianred-variable'>
+    byName_indianred
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xcd, 0x5c, 0x5c]</code></pre>
+    
+  </dd>
+  <dt id='byName_indigo-variable'>
+    byName_indigo
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0x4b, 0x00, 0x82]</code></pre>
+    
+  </dd>
+  <dt id='byName_ivory-variable'>
+    byName_ivory
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xff, 0xff, 0xf0]</code></pre>
+    
+  </dd>
+  <dt id='byName_khaki-variable'>
+    byName_khaki
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xf0, 0xe6, 0x8c]</code></pre>
+    
+  </dd>
+  <dt id='byName_lavender-variable'>
+    byName_lavender
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xe6, 0xe6, 0xfa]</code></pre>
+    
+  </dd>
+  <dt id='byName_lavenderblush-variable'>
+    byName_lavenderblush
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xff, 0xf0, 0xf5]</code></pre>
+    
+  </dd>
+  <dt id='byName_lawngreen-variable'>
+    byName_lawngreen
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0x7c, 0xfc, 0x00]</code></pre>
+    
+  </dd>
+  <dt id='byName_lemonchiffon-variable'>
+    byName_lemonchiffon
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xff, 0xfa, 0xcd]</code></pre>
+    
+  </dd>
+  <dt id='byName_lightblue-variable'>
+    byName_lightblue
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xad, 0xd8, 0xe6]</code></pre>
+    
+  </dd>
+  <dt id='byName_lightcoral-variable'>
+    byName_lightcoral
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xf0, 0x80, 0x80]</code></pre>
+    
+  </dd>
+  <dt id='byName_lightcyan-variable'>
+    byName_lightcyan
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xe0, 0xff, 0xff]</code></pre>
+    
+  </dd>
+  <dt id='byName_lightgoldenrodyellow-variable'>
+    byName_lightgoldenrodyellow
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xfa, 0xfa, 0xd2]</code></pre>
+    
+  </dd>
+  <dt id='byName_lightgrey-variable'>
+    byName_lightgrey
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xd3, 0xd3, 0xd3]</code></pre>
+    
+  </dd>
+  <dt id='byName_lightgray-variable'>
+    byName_lightgray
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xd3, 0xd3, 0xd3]</code></pre>
+    
+  </dd>
+  <dt id='byName_lightgreen-variable'>
+    byName_lightgreen
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0x90, 0xee, 0x90]</code></pre>
+    
+  </dd>
+  <dt id='byName_lightpink-variable'>
+    byName_lightpink
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xff, 0xb6, 0xc1]</code></pre>
+    
+  </dd>
+  <dt id='byName_lightsalmon-variable'>
+    byName_lightsalmon
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xff, 0xa0, 0x7a]</code></pre>
+    
+  </dd>
+  <dt id='byName_lightseagreen-variable'>
+    byName_lightseagreen
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0x20, 0xb2, 0xaa]</code></pre>
+    
+  </dd>
+  <dt id='byName_lightskyblue-variable'>
+    byName_lightskyblue
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0x87, 0xce, 0xfa]</code></pre>
+    
+  </dd>
+  <dt id='byName_lightslategray-variable'>
+    byName_lightslategray
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0x77, 0x88, 0x99]</code></pre>
+    
+  </dd>
+  <dt id='byName_lightslategrey-variable'>
+    byName_lightslategrey
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0x77, 0x88, 0x99]</code></pre>
+    
+  </dd>
+  <dt id='byName_lightsteelblue-variable'>
+    byName_lightsteelblue
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xb0, 0xc4, 0xde]</code></pre>
+    
+  </dd>
+  <dt id='byName_lightyellow-variable'>
+    byName_lightyellow
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xff, 0xff, 0xe0]</code></pre>
+    
+  </dd>
+  <dt id='byName_lime-variable'>
+    byName_lime
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0x00, 0xff, 0x00]</code></pre>
+    
+  </dd>
+  <dt id='byName_limegreen-variable'>
+    byName_limegreen
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0x32, 0xcd, 0x32]</code></pre>
+    
+  </dd>
+  <dt id='byName_linen-variable'>
+    byName_linen
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xfa, 0xf0, 0xe6]</code></pre>
+    
+  </dd>
+  <dt id='byName_mintcream-variable'>
+    byName_mintcream
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xf5, 0xff, 0xfa]</code></pre>
+    
+  </dd>
+  <dt id='byName_mistyrose-variable'>
+    byName_mistyrose
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xff, 0xe4, 0xe1]</code></pre>
+    
+  </dd>
+  <dt id='byName_moccasin-variable'>
+    byName_moccasin
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xff, 0xe4, 0xb5]</code></pre>
+    
+  </dd>
+  <dt id='byName_navajowhite-variable'>
+    byName_navajowhite
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xff, 0xde, 0xad]</code></pre>
+    
+  </dd>
+  <dt id='byName_navy-variable'>
+    byName_navy
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0x00, 0x00, 0x80]</code></pre>
+    
+  </dd>
+  <dt id='byName_oldlace-variable'>
+    byName_oldlace
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xfd, 0xf5, 0xe6]</code></pre>
+    
+  </dd>
+  <dt id='byName_olive-variable'>
+    byName_olive
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0x80, 0x80, 0x00]</code></pre>
+    
+  </dd>
+  <dt id='byName_olivedrab-variable'>
+    byName_olivedrab
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0x6b, 0x8e, 0x23]</code></pre>
+    
+  </dd>
+  <dt id='byName_orange-variable'>
+    byName_orange
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xff, 0xa5, 0x00]</code></pre>
+    
+  </dd>
+  <dt id='byName_orangered-variable'>
+    byName_orangered
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xff, 0x45, 0x00]</code></pre>
+    
+  </dd>
+  <dt id='byName_orchid-variable'>
+    byName_orchid
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xda, 0x70, 0xd6]</code></pre>
+    
+  </dd>
+  <dt id='byName_palegoldenrod-variable'>
+    byName_palegoldenrod
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xee, 0xe8, 0xaa]</code></pre>
+    
+  </dd>
+  <dt id='byName_palegreen-variable'>
+    byName_palegreen
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0x98, 0xfb, 0x98]</code></pre>
+    
+  </dd>
+  <dt id='byName_paleturquoise-variable'>
+    byName_paleturquoise
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xaf, 0xee, 0xee]</code></pre>
+    
+  </dd>
+  <dt id='byName_palevioletred-variable'>
+    byName_palevioletred
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xd8, 0x70, 0x93]</code></pre>
+    
+  </dd>
+  <dt id='byName_papayawhip-variable'>
+    byName_papayawhip
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xff, 0xef, 0xd5]</code></pre>
+    
+  </dd>
+  <dt id='byName_peachpuff-variable'>
+    byName_peachpuff
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xff, 0xda, 0xb9]</code></pre>
+    
+  </dd>
+  <dt id='byName_peru-variable'>
+    byName_peru
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xcd, 0x85, 0x3f]</code></pre>
+    
+  </dd>
+  <dt id='byName_pink-variable'>
+    byName_pink
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xff, 0xc0, 0xcb]</code></pre>
+    
+  </dd>
+  <dt id='byName_plum-variable'>
+    byName_plum
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xdd, 0xa0, 0xdd]</code></pre>
+    
+  </dd>
+  <dt id='byName_powderblue-variable'>
+    byName_powderblue
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xb0, 0xe0, 0xe6]</code></pre>
+    
+  </dd>
+  <dt id='byName_purple-variable'>
+    byName_purple
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0x80, 0x00, 0x80]</code></pre>
+    
+  </dd>
+  <dt id='byName_red-variable'>
+    byName_red
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xff, 0x00, 0x00]</code></pre>
+    
+  </dd>
+  <dt id='byName_rosybrown-variable'>
+    byName_rosybrown
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xbc, 0x8f, 0x8f]</code></pre>
+    
+  </dd>
+  <dt id='byName_royalblue-variable'>
+    byName_royalblue
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0x41, 0x69, 0xe1]</code></pre>
+    
+  </dd>
+  <dt id='byName_saddlebrown-variable'>
+    byName_saddlebrown
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0x8b, 0x45, 0x13]</code></pre>
+    
+  </dd>
+  <dt id='byName_salmon-variable'>
+    byName_salmon
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xfa, 0x80, 0x72]</code></pre>
+    
+  </dd>
+  <dt id='byName_sandybrown-variable'>
+    byName_sandybrown
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xf4, 0xa4, 0x60]</code></pre>
+    
+  </dd>
+  <dt id='byName_seagreen-variable'>
+    byName_seagreen
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0x2e, 0x8b, 0x57]</code></pre>
+    
+  </dd>
+  <dt id='byName_seashell-variable'>
+    byName_seashell
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xff, 0xf5, 0xee]</code></pre>
+    
+  </dd>
+  <dt id='byName_sienna-variable'>
+    byName_sienna
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xa0, 0x52, 0x2d]</code></pre>
+    
+  </dd>
+  <dt id='byName_silver-variable'>
+    byName_silver
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xc0, 0xc0, 0xc0]</code></pre>
+    
+  </dd>
+  <dt id='byName_skyblue-variable'>
+    byName_skyblue
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0x87, 0xce, 0xeb]</code></pre>
+    
+  </dd>
+  <dt id='byName_slateblue-variable'>
+    byName_slateblue
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0x6a, 0x5a, 0xcd]</code></pre>
+    
+  </dd>
+  <dt id='byName_slategray-variable'>
+    byName_slategray
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0x70, 0x80, 0x90]</code></pre>
+    
+  </dd>
+  <dt id='byName_slategrey-variable'>
+    byName_slategrey
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0x70, 0x80, 0x90]</code></pre>
+    
+  </dd>
+  <dt id='byName_snow-variable'>
+    byName_snow
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xff, 0xfa, 0xfa]</code></pre>
+    
+  </dd>
+  <dt id='byName_springgreen-variable'>
+    byName_springgreen
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0x00, 0xff, 0x7f]</code></pre>
+    
+  </dd>
+  <dt id='byName_steelblue-variable'>
+    byName_steelblue
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0x46, 0x82, 0xb4]</code></pre>
+    
+  </dd>
+  <dt id='byName_tan-variable'>
+    byName_tan
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xd2, 0xb4, 0x8c]</code></pre>
+    
+  </dd>
+  <dt id='byName_teal-variable'>
+    byName_teal
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0x00, 0x80, 0x80]</code></pre>
+    
+  </dd>
+  <dt id='byName_thistle-variable'>
+    byName_thistle
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xd8, 0xbf, 0xd8]</code></pre>
+    
+  </dd>
+  <dt id='byName_tomato-variable'>
+    byName_tomato
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xff, 0x63, 0x47]</code></pre>
+    
+  </dd>
+  <dt id='byName_turquoise-variable'>
+    byName_turquoise
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0x40, 0xe0, 0xd0]</code></pre>
+    
+  </dd>
+  <dt id='byName_violet-variable'>
+    byName_violet
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xee, 0x82, 0xee]</code></pre>
+    
+  </dd>
+  <dt id='byName_wheat-variable'>
+    byName_wheat
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xf5, 0xde, 0xb3]</code></pre>
+    
+  </dd>
+  <dt id='byName_white-variable'>
+    byName_white
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xff, 0xff, 0xff]</code></pre>
+    
+  </dd>
+  <dt id='byName_whitesmoke-variable'>
+    byName_whitesmoke
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xf5, 0xf5, 0xf5]</code></pre>
+    
+  </dd>
+  <dt id='byName_yellow-variable'>
+    byName_yellow
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0xff, 0xff, 0x00]</code></pre>
+    
+  </dd>
+  <dt id='byName_yellowgreen-variable'>
+    byName_yellowgreen
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>[0x9a, 0xcd, 0x32]</code></pre>
+    
+  </dd>
+  <dt id='byName_angleColor-variable'>
+    byName_angleColor
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>&quot;angleColor&quot;</code></pre>
+    
+  </dd>
+  <dt id='a-variable'>
+    a
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>nil</code></pre>
+    
+  </dd>
+  <dt id='r-variable'>
+    r
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>nil</code></pre>
+    
+  </dd>
+  <dt id='g-variable'>
+    g
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>nil</code></pre>
+    
+  </dd>
+  <dt id='b-variable'>
+    b
+    =
+  </dt>
+  <dd>
+    <pre><code class='coffeescript'>nil</code></pre>
+    
+  </dd>
+</dl>
+      <h2>Class Method Summary</h2>
+      <ul class='summary'>
+  <li>
+    <span class='signature'>
+      <a href='#transparent-static'>
+        .
+(void)
+<b>transparent</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+</ul>
+      <h2>Instance Method Summary</h2>
+      <ul class='summary'>
+  <li>
+    <span class='signature'>
+      <a href='#toString-dynamic'>
+        #
+(void)
+<b>toString</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+      Color string representation: e.g. 
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#prepareBeforeSerialization-dynamic'>
+        #
+(void)
+<b>prepareBeforeSerialization</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#copy-dynamic'>
+        #
+(void)
+<b>copy</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+      Color copying: 
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#eq-dynamic'>
+        #
+(void)
+<b>eq</b><span>(aColor)</span>
+      </a>
+    </span>
+    <span class='desc'>
+      Color comparison: 
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#hsv-dynamic'>
+        #
+(void)
+<b>hsv</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+      Color conversion (hsv): 
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#set_hsv-dynamic'>
+        #
+(void)
+<b>set_hsv</b><span>(h, s, v)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#mixed-dynamic'>
+        #
+(void)
+<b>mixed</b><span>(proportion, otherColor)</span>
+      </a>
+    </span>
+    <span class='desc'>
+      Color mixing: 
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#darker-dynamic'>
+        #
+(void)
+<b>darker</b><span>(percent)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#lighter-dynamic'>
+        #
+(void)
+<b>lighter</b><span>(percent)</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#dansDarker-dynamic'>
+        #
+(void)
+<b>dansDarker</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+</ul>
+      <h2>Class Method Details</h2>
+      <div class='methods'>
+  <div class='method_details'>
+    <p class='signature' id='transparent-static'>
+      .
+(void)
+<b>transparent</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+</div>
+      <h2>Constructor Details</h2>
+      <div class='methods'>
+  <div class='method_details'>
+    <p class='signature' id='constructor-dynamic'>
+      #
+(void)
+<b>constructor</b><span>(r = 0, g = 0, b = 0, a)</span>
+      <br>
+    </p>
+    
+  </div>
+</div>
+      <h2>Instance Method Details</h2>
+      <div class='methods'>
+  <div class='method_details'>
+    <p class='signature' id='toString-dynamic'>
+      #
+(void)
+<b>toString</b><span>()</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>Color string representation: e.g. &#39;rgba(255,165,0,1)&#39;</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='prepareBeforeSerialization-dynamic'>
+      #
+(void)
+<b>prepareBeforeSerialization</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='copy-dynamic'>
+      #
+(void)
+<b>copy</b><span>()</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>Color copying:</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='eq-dynamic'>
+      #
+(void)
+<b>eq</b><span>(aColor)</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>Color comparison:</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='hsv-dynamic'>
+      #
+(void)
+<b>hsv</b><span>()</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>Color conversion (hsv):</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='set_hsv-dynamic'>
+      #
+(void)
+<b>set_hsv</b><span>(h, s, v)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='mixed-dynamic'>
+      #
+(void)
+<b>mixed</b><span>(proportion, otherColor)</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>Color mixing:</p>
+</div>
+<div class='tags'>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='darker-dynamic'>
+      #
+(void)
+<b>darker</b><span>(percent)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='lighter-dynamic'>
+      #
+(void)
+<b>lighter</b><span>(percent)</span>
+      <br>
+    </p>
+    
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='dansDarker-dynamic'>
+      #
+(void)
+<b>dansDarker</b><span>()</span>
+      <br>
+    </p>
+    
+  </div>
+</div>
+    </div>
+    <div id='footer'>
+  By
+  <a href='https://github.com/coffeedoc/codo' title='CoffeeScript API documentation generator'>
+    Codo
+  </a>
+  2.1.2
+  &#10034;
+  Press H to see the keyboard shortcuts
+  &#10034;
+  <a href='http://twitter.com/netzpirat' target='_parent'>@netzpirat</a>
+  &#10034;
+  <a href='http://twitter.com/_inossidabile' target='_parent'>@_inossidabile</a>
+</div>
+<iframe id='search_frame'></iframe>
+<div id='fuzzySearch'>
+  <input type='text'>
+  <ol></ol>
+</div>
+<div id='help'>
+  <p>
+    Quickly fuzzy find classes, mixins, methods, file:
+  </p>
+  <ul>
+    <li>
+      <span>T</span>
+      Open fuzzy finder dialog
+    </li>
+  </ul>
+  <p>
+    Control the navigation frame:
+  </p>
+  <ul>
+    <li>
+      <span>L</span>
+      Toggle list view
+    </li>
+    <li>
+      <span>C</span>
+      Show class list
+    </li>
+    <li>
+      <span>I</span>
+      Show mixin list
+    </li>
+    <li>
+      <span>F</span>
+      Show file list
+    </li>
+    <li>
+      <span>M</span>
+      Show method list
+    </li>
+    <li>
+      <span>E</span>
+      Show extras list
+    </li>
+  </ul>
+  <p>
+    You can focus and blur the search input:
+  </p>
+  <ul>
+    <li>
+      <span>S</span>
+      Focus search input
+    </li>
+    <li>
+      <span>Esc</span>
+      Blur search input
+    </li>
+  </ul>
+</div>
+  </body>
+</html>

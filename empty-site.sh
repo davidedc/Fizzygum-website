@@ -1,0 +1,17 @@
+rm -rf staticman.yml
+rm -rf Rakefile
+rm -rf package.json
+rm -rf minimal-mistakes-jekyll.gemspec
+rm -rf Gemfile.lock
+rm -rf Gemfile
+rm -rf banner.js
+rm -rf assets
+rm -rf _sass
+rm -rf _posts
+rm -rf _pages
+rm -rf _layouts
+rm -rf _includes
+rm -rf _drafts
+rm -rf _docs
+rm -rf _data
+rm -rf _config.yml

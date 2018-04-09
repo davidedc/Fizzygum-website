@@ -7,7 +7,7 @@ header:
   cta_label: "<i class='fas fa-play'></i> Try Now"
   cta_url: "/sandboxes/latest-stable/"
   caption:
-excerpt: 'Tired of stringing libraries together?<br />Try a new web framework that does complex things, easily.<br /> {::nomarkdown}<small><a href="https://github.com/davidedc/Fizzygum">Open-source (MIT-licenced) on github <i class="fab fa-github" aria-hidden="true"></i></a></small>{:/nomarkdown}<br /> <small><a href="/docs/intro/">Watch/read the intro⚡</a></small>'
+excerpt: 'Tired of stringing libraries together?<br />Try a new web framework that handles complex things, easily.<br /> {::nomarkdown}<small><a href="https://github.com/davidedc/Fizzygum">Open-source (MIT-licenced) on github <i class="fab fa-github" aria-hidden="true"></i></a></small>{:/nomarkdown}<br /> <small><a href="/docs/intro/">Watch/read the intro⚡</a></small>'
 
 feature_row:
   - image_path: /assets/images/feature-row/feature-row-image-1.gif

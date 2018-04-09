@@ -56,7 +56,7 @@ To remove an item just drop it in the basement:
 </figure>
 
 
-The items dropped in the document keep the relative size in respect to the page. So, to make items take the full with of the page, just make sure that they are as large or larger than the page when they are dropped:
+The items dropped in the document keep the relative size in respect to the page. So, to make items take the full width of the page, just make sure that they are as large or larger than the page when they are dropped:
 
 <figure>
   <img src="{{ '/assets/images/docs-gifs/docs-maker/docs-maker-8.gif' | relative_url }}" alt="1">

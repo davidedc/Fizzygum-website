@@ -9,7 +9,7 @@ last_modified_at: 2018-04-07T13:00:00+00:00
 
 ## Transcript
 
-The Slides Maker is one of the sample apps in Fizzygum.
+The "Slides Maker" is one of the sample apps in Fizzygum.
 
 To open it, double click on the slide icon:
 

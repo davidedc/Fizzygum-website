@@ -2,6 +2,7 @@
 layout: splash
 permalink: /
 header:
+  og_image: /assets/images/fg-og-image.png
   overlay_image: /assets/images/fg-home-page-feature.jpg
   cta_label: "<i class='fas fa-play'></i> Try Now"
   cta_url: "/sandboxes/latest-stable/"
@@ -18,8 +19,8 @@ feature_row:
     btn_label: "Learn More"
   - image_path: /assets/images/feature-row/feature-row-image-3.png
     alt: "customizable"
-    title: "Super Customizable"
-    excerpt: "Configure any part of the system without leaving/stopping it."
+    title: "Super-customizable"
+    excerpt: "Configure (or even re-write) any part of the system without leaving/stopping it."
     url: "/docs/hacking-fizzygum/"
     btn_class: "btn--primary"
     btn_label: "Learn More"
@@ -32,7 +33,7 @@ feature_row:
     btn_label: "Learn More"
 
 intro:
-  - excerpt: '**Designed from the ground up to:** <br /><br />✔ make dashboards and visualise data (plots, maps, ...) <br />✔ author, organise and navigate documents <br />✔ insert dynamic calculations anywhere, via simple drag & drop <br />✔ make custom utilities visually (no coding required) <br />✔ use internal development tools to customise anything, as it runs<br />✔ do all of the above, concurrently'
+  - excerpt: '**The power of an entire Operating System at your fingertips:** <br /><br />✔ make dashboards and visualise data (plots, maps, ...) <br />✔ author, organise and navigate documents <br />✔ insert dynamic calculations anywhere, via simple drag & drop <br />✔ make custom utilities visually (no coding required) <br />✔ use internal development tools to customise anything, as it runs<br />✔ do all of the above, concurrently'
 
 get_notified:
   - excerpt: 'Get notified &nbsp; [<i class="fab fa-twitter"></i> @fizzygum](https://twitter.com/fizzygum){: .btn .btn--twitter}'

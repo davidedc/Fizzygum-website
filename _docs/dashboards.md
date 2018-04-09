@@ -1,13 +1,8 @@
 ---
 title: "Dashboards"
 permalink: /docs/dashboards/
-excerpt: "Descriptions and samples of all layouts included with the theme and how to best use them."
-single_layout_gallery:
-  - image_path: /assets/images/mm-layout-single-header.png
-    alt: "single layout with header example"
-  - image_path: /assets/images/mm-layout-single-meta.png
-    alt: "single layout with comments and related posts"
-last_modified_at: 2018-03-20T15:59:52-04:00
+excerpt: "The 'Dashboards' app is a powerful tool to create dashboards and visualise data."
+last_modified_at: 2018-04-07T13:00:00+00:00
 toc: false
 ---
 
@@ -15,7 +10,7 @@ toc: false
 
 ## Transcript
 
-The Fizzygum "Dashboards” app is a powerful tool to create dashboards and visualise data.
+The "Dashboards” app is a powerful tool to create dashboards and visualise data.
 
 To open it, double click on the Dashboards icon:
 

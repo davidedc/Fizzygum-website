@@ -1,8 +1,8 @@
 ---
 title: "Menus"
 permalink: /docs/menus/
-excerpt: "Settings for configuring and customizing the theme."
-last_modified_at: 2018-04-05
+excerpt: "Fizzygum lets you control the properties of pretty much anything via menus..."
+last_modified_at: 2018-04-07T13:00:00+00:00
 toc: false
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: "Basic Connections"
 permalink: /docs/basic-connections/
-excerpt: "Instructions and settings for working with multiple site authors."
-last_modified_at: 2016-11-03T10:55:15-04:00
+excerpt: "Fizzygum lets you connect (or 'patch') widgets together to build useful tools..."
+last_modified_at: 2018-04-07T13:00:00+00:00
 ---
 
 {% include video id="lhjljyGM2u4" provider="youtube" %}

@@ -1,8 +1,8 @@
 ---
 title: "Slides Maker"
 permalink: /docs/slides-maker/
-excerpt: "Text for customizing various user interface elements found in the theme."
-last_modified_at: 2018-03-20T15:59:46-04:00
+excerpt: "The Slides Maker is one of the sample apps in Fizzygum..."
+last_modified_at: 2018-04-07T13:00:00+00:00
 ---
 
 {% include video id="R0IBdCglQgM" provider="youtube" %}

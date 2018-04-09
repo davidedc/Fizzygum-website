@@ -2,7 +2,7 @@
 title: "License"
 permalink: /docs/license/
 excerpt: "License for Fizzygum"
-last_modified_at: 2018-04-05
+last_modified_at: 2018-04-07T13:00:00+00:00
 ---
 
 The MIT License (MIT)

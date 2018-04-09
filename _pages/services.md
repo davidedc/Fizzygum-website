@@ -13,6 +13,7 @@ We maintain a network of specialists that can help.
 
 Services include:  
  * Custom dashboards / widgets / apps / themes
+ * Persisting your data
  * Idea/concept/mockup to working solution
  * Migrations of services to Fizzygum
  * Custom test cases maintainance

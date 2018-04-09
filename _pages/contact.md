@@ -1,7 +1,7 @@
 ---
 permalink: /contact/
-title: "Contact us"
-excerpt: "???TODO"
+title: "Get/stay in touch"
+excerpt: "Get/stay in touch"
 ---
 
 

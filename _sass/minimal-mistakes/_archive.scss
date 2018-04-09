@@ -65,6 +65,8 @@
 .archive__item-teaser {
   border-radius: $border-radius;
   overflow: hidden;
+  border-style: solid;
+  border-color: darkgray;
   img {
     width: 100%;
   }

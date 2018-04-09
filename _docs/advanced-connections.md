@@ -1,15 +1,15 @@
 ---
 title: "Advanced Connections"
 permalink: /docs/advanced-connections/
-excerpt: "Instructions and settings for working with multiple site authors."
-last_modified_at: 2016-11-03T10:55:15-04:00
+excerpt: "We build a useful example: a converter between Celsius and Fahrenheit temperature scales."
+last_modified_at: 2018-04-07T13:00:00+00:00
 ---
 
 {% include video id="kxhTqdScnzw" provider="youtube" %}
 
 ## Transcript
 
-In ["Basic Connections"](/docs/basic-connections) we’ve seen simple ways of patching widgets together, we’ll now build a useful example - a converter between celsius and fahrenheit temperature scales.
+In ["Basic Connections"](/docs/basic-connections) we’ve seen simple ways of patching widgets together, we’ll now build a useful example - a converter between Celsius and Fahrenheit temperature scales.
 
 Open the patch programming area, and as a first thing we connect a slider to a textbox:
 

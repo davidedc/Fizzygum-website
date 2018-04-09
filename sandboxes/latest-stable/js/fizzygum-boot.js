@@ -354,7 +354,9 @@ Object.prototype.addInstanceProperties = function(fromClass, obj) {
     if (fromClass != null) {
       if (isFunction(value)) {
         this.prototype[key + "_class_injected_in"] = fromClass;
-        console.log("addingClassToMixin " + key + "_class_injected_in");
+        if (srcLoadCompileDebugWrites) {
+          console.log("addingClassToMixin " + key + "_class_injected_in");
+        }
       }
     }
   }
@@ -520,7 +522,9 @@ loadJSFile = function(fileName, dontLogToDiv) {
     script.src = fileName;
     script.onload = function() {
       addLineToLogDiv("loading " + this.src);
-      console.log("loading " + this.src);
+      if (srcLoadCompileDebugWrites) {
+        console.log("loading " + this.src);
+      }
       return resolve(script);
     };
     document.head.appendChild(script);
@@ -547,7 +551,6 @@ loadJSFilesWithCoffeescriptSources = function() {
 };
 
 compileFGCode = function(codeSource, bare) {
-  debugger;
   var compiled, err, errorMessage, t0, t1;
   t0 = performance.now();
   try {
@@ -556,7 +559,6 @@ compileFGCode = function(codeSource, bare) {
     });
   } catch (error) {
     err = error;
-    debugger;
     errorMessage = "error in compiling:\n";
     errorMessage += codeSource + "\n";
     errorMessage += "error:\n";
@@ -591,7 +593,6 @@ boot = function() {
           AutomatorRecorderAndPlayer.testsAssetsManifest = testsAssetsManifest;
         }
         startupActions = getParameterByName("startupActions");
-        console.log("startupActions: " + startupActions);
         if (startupActions != null) {
           return world.nextStartupAction();
         }
@@ -607,7 +608,6 @@ boot = function() {
         var startupActions;
         createWorldAndStartStepping();
         startupActions = getParameterByName("startupActions");
-        console.log("startupActions: " + startupActions);
         if (startupActions != null) {
           return world.nextStartupAction();
         }
@@ -641,7 +641,9 @@ generate_inclusion_order = function(dependencies) {
     }
     visit(dependencies, key, inclusion_order);
   }
-  console.log("inclusion_order: " + inclusion_order);
+  if (srcLoadCompileDebugWrites) {
+    console.log("inclusion_order: " + inclusion_order);
+  }
   return inclusion_order;
 };
 
@@ -681,7 +683,9 @@ generateInclusionOrder = function() {
     if (eachFile === "Mixin") {
       continue;
     }
-    console.log(eachFile + " - ");
+    if (srcLoadCompileDebugWrites) {
+      console.log(eachFile + " - ");
+    }
     dependencies[eachFile] = [];
     lines = window[eachFile + "_coffeSource"].split('\n');
     i = 0;
@@ -689,17 +693,23 @@ generateInclusionOrder = function() {
       matches = lines[i].match(EXTENDS);
       if (matches != null) {
         dependencies[eachFile].push(matches[1]);
-        console.log(eachFile + " extends " + matches[1]);
+        if (srcLoadCompileDebugWrites) {
+          console.log(eachFile + " extends " + matches[1]);
+        }
       }
       matches = lines[i].match(REQUIRES);
       if (matches != null) {
         dependencies[eachFile].push(matches[1]);
-        console.log(eachFile + " requires " + matches[1]);
+        if (srcLoadCompileDebugWrites) {
+          console.log(eachFile + " requires " + matches[1]);
+        }
       }
       matches = lines[i].match(DEPENDS);
       if (matches != null) {
         dependencies[eachFile].push(matches[1]);
-        console.log(eachFile + " has class init in instance variable " + matches[1]);
+        if (srcLoadCompileDebugWrites) {
+          console.log(eachFile + " has class init in instance variable " + matches[1]);
+        }
       }
       i++;
     }
@@ -710,7 +720,9 @@ generateInclusionOrder = function() {
 loadSourcesAndPotentiallyCompileThem = function(justLoadSources) {
   var compileEachFileFunction, createCompileSourceFunction, eachFile, inclusion_order, j, len, promiseChain;
   emptyLogDiv();
-  console.log("--------------------------------");
+  if (srcLoadCompileDebugWrites) {
+    console.log("--------------------------------");
+  }
   inclusion_order = generateInclusionOrder();
   window.hasProp = {}.hasOwnProperty;
   window.indexOf = [].indexOf;
@@ -762,7 +774,9 @@ compileSource = function(fileName, justLoadSources) {
   }
   fileContents = window[fileName + "_coffeSource"];
   t0 = performance.now();
-  console.log("checking whether " + fileName + " is already in the system ");
+  if (srcLoadCompileDebugWrites) {
+    console.log("checking whether " + fileName + " is already in the system ");
+  }
   if (/^class[ \t]*([a-zA-Z_$][0-9a-zA-Z_$]*)/m.test(fileContents)) {
     if (justLoadSources) {
       morphClass = new Class(fileContents, false, false);
@@ -776,11 +790,15 @@ compileSource = function(fileName, justLoadSources) {
       new Mixin(fileContents, true, true);
     }
   }
-  console.log("compiling and evalling " + fileName + " from souce code");
+  if (srcLoadCompileDebugWrites) {
+    console.log("compiling and evalling " + fileName + " from souce code");
+  }
   emptyLogDiv();
   addLineToLogDiv("compiling and evalling " + fileName);
   t1 = performance.now();
-  return console.log("loadSourcesAndPotentiallyCompileThem call time: " + (t1 - t0) + " milliseconds.");
+  if (srcLoadCompileDebugWrites) {
+    return console.log("loadSourcesAndPotentiallyCompileThem call time: " + (t1 - t0) + " milliseconds.");
+  }
 };
 
 trackChanges = [true];
@@ -878,4 +896,4 @@ Number.prototype.times = function(scope, func) {
   return results1;
 };
 
-morphicVersion = 'version of 2018-04-07 00:10:46';
+morphicVersion = 'version of 2018-04-09 14:22:51';

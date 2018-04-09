@@ -1,8 +1,8 @@
 ---
 title: "Documents Maker"
 permalink: /docs/documents-maker/
-excerpt: "Instructions on how to customize the theme's default set of layouts, includes, and stylesheets when using the Ruby Gem version."
-last_modified_at: 2018-04-05
+excerpt: "The Docs Maker is one of the sample apps in Fizzygum..."
+last_modified_at: 2018-04-07T13:00:00+00:00
 ---
 
 {% include video id="F_9ScTSYtng" provider="youtube" %}

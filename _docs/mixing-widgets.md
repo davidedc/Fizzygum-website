@@ -1,8 +1,8 @@
 ---
 title: "Mixing widgets"
 permalink: /docs/mixing-widgets/
-excerpt: "Instructions and settings for working with multiple site authors."
-last_modified_at: 2016-11-03T10:55:15-04:00
+excerpt: "Fizzygum allows you to compose these widgets/documents/tools in powerful ways..."
+last_modified_at: 2018-04-07T13:00:00+00:00
 ---
 
 {% include video id="4QzrmYTYDio" provider="youtube" %}

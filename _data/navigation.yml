@@ -37,6 +37,8 @@ docs:
     children:
       - title: "Intro"
         url: /docs/intro/
+        previous: false
+        next: false
   - title: For users
     children:
       - title: "Menus"
@@ -59,8 +61,17 @@ docs:
         url: /docs/hacking-fizzygum/
   - title: For developers
     children:
+      - title: "Technical intro"
+        url: /docs/technical-intro/
+      - title: "Build/install"
+        url: /docs/build-install/
+      - title: "Saving"
+        url: /docs/saving/
       - title: "API docs"
         url: /docs/api-docs/
+      - title: "For Lispers/Smalltalkers"
+        url: /docs/fizzygum-for-lispers-and-smalltalkers/
+
   - title: Meta
     children:
       - title: "Similar systems"

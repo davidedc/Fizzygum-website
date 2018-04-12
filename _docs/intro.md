@@ -63,5 +63,5 @@ use the internal development tools to create entirely new apps, or change existi
 
 ... and do all of the above, concurrently.
 
-Check the other document to see examples and details.
+Check the other documents to see examples and details.
 

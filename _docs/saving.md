@@ -10,6 +10,7 @@ However, "in-house" stable saving solutions are only available in private versio
 
 In the meantime that these solutions make their way into the public version, the Fizzygum team can [consult for you](/services/) to tailor 'saving' functionality to your needs (save to file, save to cloud, connect to databases etc. ).
 
+---
 ¹ Saving solutions:
 1. saving data with existing formats (e.g. markdown etc.). Advantages: compatibility. Disadvantages: works only with "plain" documents (no live documents, no documents within documents etc.)
 2. serialising objects graph. Advantages: fidelity. Disadvantages: needs some management of versioning of Fizzygum platform and documents

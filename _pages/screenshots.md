@@ -27,5 +27,5 @@ excerpt: "Screenshots from our Fizzygum desktops."
 
 <figure>
 	<a href="/assets/images/screenshots/screenshot-5.png"><img src="/assets/images/screenshots/screenshot-5.png"></a>
-	<figcaption><a href="/assets/images/screenshots/screenshot-5.png">°C ↔ °F converter, a drawing, and a graphic composition made with the Slide Maker</a>.</figcaption>
+	<figcaption><a href="/assets/images/screenshots/screenshot-5.png">°C ↔ °F converter, a drawing, and a graphic composition made with the Slides Maker</a>.</figcaption>
 </figure>

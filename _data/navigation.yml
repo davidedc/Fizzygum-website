@@ -61,12 +61,18 @@ docs:
         url: /docs/hacking-fizzygum/
   - title: For developers
     children:
+      - title: "Is Fizzygum for me?"
+        url: /docs/is-fizzygum-for-me/
       - title: "Technical intro"
         url: /docs/technical-intro/
       - title: "Build/install"
         url: /docs/build-install/
       - title: "Saving"
         url: /docs/saving/
+      - title: "The boot process"
+        url: /docs/the-boot-process/
+      - title: "Other languages"
+        url: /docs/support-for-other-languages/
       - title: "API docs"
         url: /docs/api-docs/
       - title: "For Lispers/Smalltalkers"
@@ -74,6 +80,8 @@ docs:
 
   - title: Meta
     children:
+      - title: "Is this really an OS?"
+        url: /docs/is-fizzygum-really-an-operating-system/
       - title: "Similar systems"
         url: /docs/similar-systems/
       - title: "Credits"

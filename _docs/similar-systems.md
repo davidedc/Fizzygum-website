@@ -23,7 +23,7 @@ Fizzygum was started from [**Morphic.js**](https://github.com/jmoenig/morphic.js
 [Lively.next](https://lively-next.org/) (was: LivelyKernel) [1] is a thriving research platform that hosts many research projects and spans many goals. Fizzygum aims at being an alternative and independent re-implementation of a narrower scope, to focus on a smaller codebase that can be more easily understandable and modifiable.
 
 ## Caffeine by Craig Latta
-[Caffeine](http://blackpagedigital.com/caffeine/) by [Caig Latta](https://github.com/ccrraaiigg) is a hybrid between SqueakJS (see below) and Morphic.js.
+[Caffeine](http://caffeine.js.org) by [Craig Latta](https://github.com/ccrraaiigg) is a hybrid between SqueakJS (see below) and Morphic.js.
 
 ## Others
 * [Avocado by Adam Spitz](https://liveprogramming.github.io/2013/papers/avocado.pdf): a Javascript lively environment evoking Self. [2]

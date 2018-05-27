@@ -101,6 +101,7 @@ include:
   - .htaccess
   - _pages
 exclude:
+  - docs
   - "*.sublime-project"
   - "*.sublime-workspace"
   - vendor
@@ -156,13 +157,7 @@ collections:
   docs:
     output: true
     permalink: /:collection/:path/
-  recipes:
-    output: true
-    permalink: /:collection/:path/
-  pets:
-    output: true
-    permalink: /:collection/:path/
-  portfolio:
+  posts:
     output: true
     permalink: /:collection/:path/
 
@@ -171,7 +166,7 @@ collections:
 defaults:
   # _posts
   - scope:
-      path: ""
+      path: "_posts"
       type: posts
     values:
       layout: single
@@ -189,7 +184,7 @@ defaults:
       author_profile: false
   # _docs
   - scope:
-      path: ""
+      path: "_docs"
       type: docs
     values:
       layout: single
@@ -199,32 +194,6 @@ defaults:
       comments: false
       sidebar:
         nav: "docs"
-  # _recipes
-  - scope:
-      path: ""
-      type: recipes
-    values:
-      layout: single
-      author_profile: false
-      share: true
-      comments: true
-  # _pets
-  - scope:
-      path: ""
-      type: pets
-    values:
-      layout: single
-      author_profile: false
-      share: true
-      comment: true
-  # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: false
-      share: true
 
 
 # Sass/SCSS

@@ -16,7 +16,7 @@ title                    : "Fizzygum"
 title_separator          : "-"
 name                     : &name "Fizzygum" # &name is a YAML anchor which can be *referenced later
 description              : &description "A new web framework to do complex things, easily."
-url                      : http://fizzygum.org/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : http://fizzygum.org # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "davidedc/Fizzygum"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"

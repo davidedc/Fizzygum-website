@@ -6,6 +6,7 @@ cp -r ../minimal-mistakes-fork-for-fizzygum-site/minimal-mistakes-jekyll.gemspec
 cp -r ../minimal-mistakes-fork-for-fizzygum-site/Gemfile.lock .
 cp -r ../minimal-mistakes-fork-for-fizzygum-site/Gemfile .
 cp -r ../minimal-mistakes-fork-for-fizzygum-site/banner.js .
+rm -rf assets
 cp -r ../minimal-mistakes-fork-for-fizzygum-site/assets .
 cp -r ../minimal-mistakes-fork-for-fizzygum-site/_sass .
 cp -r ../minimal-mistakes-fork-for-fizzygum-site/_posts .

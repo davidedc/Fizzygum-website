@@ -2,7 +2,7 @@
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-        <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}<span><img width="25" height="25"  src="/assets/images/fg-mini-logo-for-header-text.png" alt="Fizzygum mini logo" /></span></a>
+        <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}<span><img width="25" height="25"  src="{{site.url | append: site.baseurl}}/assets/images/fg-mini-logo-for-header-text.png" alt="Fizzygum mini logo" /></span></a>
         <ul class="visible-links">
           {% for link in site.data.navigation.main %}
             {% if link.url contains 'http' %}

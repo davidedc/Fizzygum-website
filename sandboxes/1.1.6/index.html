@@ -2,22 +2,16 @@
 <html>
 	<head>
 		<title>Fizzygum</title>
-
-		<style>
-			.centeredSpinner {
-			  position: fixed;
-			  top: 50%;
-			  left: 50%;
-			  animation: 0.8s rotate linear infinite;
-		  	  margin-left: -0.5em;
-		  	  margin-top: -1.5em;
-			}
-			@keyframes rotate {
-			  from {transform: rotate(0deg);}
-			  to {transform: rotate(360deg);}
-			}
-		</style>
 	</head>
+
+	<style>
+		.centeredSpinner {
+		  position: fixed;
+		  top: 50%;
+		  left: 50%;
+		  transform: translate(-50%, -50%);
+		}
+	</style>
 
 	<!-- the style below is for disabling any browser selection on
 	the DOM of the page, we don't want any of that, see
@@ -41,28 +35,30 @@
 			<p>Your browser doesn't support canvas.</p>
 		</canvas>
 
-
-		<script type="text/javascript" src="js/fizzygum-boot-min.js"></script>
-
-		<script type="text/javascript">			
-
-			var	worldCanvas;
-
-			window.onload = function () {
-				worldCanvas = document.getElementById('world');
-
-			    worldCanvas.width = 1;
-			    worldCanvas.height = 1;
-			    worldCanvas.style.width = "1px";
-			    worldCanvas.style.height = "1px";
-			    // "boot" here loads all the remaining files,
-			    // sets up the event handlers and
-			    // then kicks off the main loop.
-			    boot();
-			};
-
-		</script>
-
 	</body>
+
+	<script type="text/javascript" src="js/fizzygum-boot-min.js"></script>
+
+	<script type="text/javascript">			
+
+		var	worldCanvas, pixelRatio;
+		// retina and high-dpi displays have something like
+		// 2 here
+		pixelRatio = window.devicePixelRatio;
+
+		window.onload = function () {
+			worldCanvas = document.getElementById('world');
+
+		    worldCanvas.width = 1;
+		    worldCanvas.height = 1;
+		    worldCanvas.style.width = "1px";
+		    worldCanvas.style.height = "1px";
+		    // "boot" here loads all the remaining files,
+		    // sets up the event handlers and
+		    // then kicks off the main loop.
+		    boot();
+		};
+
+	</script>
 
 </html>
